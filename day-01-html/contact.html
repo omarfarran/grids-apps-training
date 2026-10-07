@@ -1,38 +1,112 @@
-<main>
+<!DOCTYPE html>
+<html lang="en">
 
-    <section>
-        <h2>Contact Us</h2>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact TechNova for software development services.">
+    <title>TechNova | Contact</title>
+</head>
 
-        <form action="#" method="post">
+<body>
 
-            <p>
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" required>
-            </p>
+    <header>
+        <h1>Contact TechNova</h1>
 
-            <p>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" autocomplete="email" required>
-            </p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <a href="registration.html">Register</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+    </header>
 
-            <p>
-                <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="phone">
-            </p>
+    <main>
 
-            <p>
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" name="subject" required>
-            </p>
+        <section>
+            <h2>Contact Us</h2>
 
-            <p>
-                <label for="message">Message</label>
-                <textarea id="message" name="message" minlength="20" required></textarea>
-            </p>
+            <form action="#" method="post">
 
-            <button type="submit">Send Message</button>
+                <p>
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" minlength="3" required>
+                </p>
 
-        </form>
-    </section>
+                <p>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                </p>
 
-</main>
+                <p>
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+                </p>
+
+                <p>
+                    <label for="company">Company</label>
+                    <input type="text" id="company" name="company">
+                </p>
+
+                <p>
+                    <label for="country">Country</label>
+
+                    <select id="country" name="country" required>
+                        <option value="">Select a country</option>
+                        <option value="palestine">Palestine</option>
+                        <option value="jordan">Jordan</option>
+                        <option value="egypt">Egypt</option>
+                        <option value="other">Other</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="service">Service</label>
+
+                    <select id="service" name="service" required>
+                        <option value="">Select a service</option>
+                        <option value="web">Web Development</option>
+                        <option value="backend">Backend Development</option>
+                        <option value="software">Software Development</option>
+                        <option value="database">Database Solutions</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" minlength="5" required>
+                </p>
+
+                <p>
+                    <label for="message">Message</label>
+
+                    <textarea id="message" name="message" minlength="20" maxlength="500" required></textarea>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="terms" name="terms" required>
+
+                    <label for="terms">
+                        I accept the terms and conditions.
+                    </label>
+                </p>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 TechNova. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
