@@ -36,6 +36,13 @@
     --text-width: 65ch;
     --border-width: 1px;
     --focus-width: 0.1875rem;
+
+    /* Day 4: content-driven layout dimensions, not device-specific sizes. */
+    /* Fluid gutters avoid a sudden loss of grid columns at the spacing breakpoint. */
+    --page-gutter: clamp(var(--space-sm), 4vw, var(--space-lg));
+    --card-min-width: 18rem;
+    --touch-target: 2.75rem;
+    --font-size-hero-min: var(--font-size-h1);
 }
 
 /* 2. Base styles. Typography and text color inherit from the body. */
@@ -68,7 +75,7 @@ h3 {
 }
 
 h1 {
-    font-size: var(--font-size-h1);
+    font-size: clamp(var(--font-size-h2), calc(var(--font-size-h3) + 1vw), var(--font-size-h1));
 }
 
 h2 {
@@ -94,7 +101,9 @@ a:hover {
     color: var(--color-primary);
 }
 
-:focus-visible {
+/* A native date picker has internal focusable parts; keep its whole control outlined. */
+:focus-visible,
+input[type="date"]:focus-within {
     outline: var(--focus-width) solid var(--color-focus);
     outline-offset: var(--space-xs);
 }
@@ -130,9 +139,9 @@ time {
     color: var(--color-muted);
 }
 
-/* 3. Header and navigation: ordinary block and inline flow, no layout framework. */
+/* 3. Navigation uses Flexbox: one row of links that can wrap in source order. */
 body > header {
-    padding: var(--space-lg) var(--space-md);
+    padding: var(--space-md) var(--page-gutter);
     background: var(--color-primary);
     color: var(--color-on-brand);
     border-bottom: var(--space-xs) solid var(--color-accent);
@@ -140,7 +149,7 @@ body > header {
 
 body > header h1,
 body > header nav {
-    max-width: var(--content-width);
+    max-width: calc(var(--content-width) - 2 * var(--page-gutter));
     margin-right: auto;
     margin-left: auto;
 }
@@ -149,9 +158,23 @@ body > header h1 {
     color: inherit;
 }
 
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+    justify-content: flex-start;
+    align-items: center;
+}
+
 nav a {
-    display: inline-block;
-    margin: var(--space-xs) var(--space-xs) 0 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: var(--touch-target);
+    min-height: var(--touch-target);
+    max-width: 100%;
+    margin: 0;
     padding: var(--space-xs) var(--space-sm);
     border-radius: var(--radius-sm);
     color: var(--color-on-brand);
@@ -170,7 +193,7 @@ main {
     width: 100%;
     max-width: var(--content-width);
     margin: 0 auto;
-    padding: var(--space-xl) var(--space-md);
+    padding: var(--space-lg) var(--page-gutter);
 }
 
 section {
@@ -185,7 +208,7 @@ section > h2 {
 
 /* 5. Hero and reusable buttons. Class rules specialize the element defaults. */
 .hero {
-    padding: var(--space-xl) var(--space-lg);
+    padding: var(--space-lg) var(--space-md);
     border: var(--border-width) solid var(--color-border);
     border-radius: var(--radius-lg);
     background: var(--color-surface-soft);
@@ -196,7 +219,8 @@ section > h2 {
     max-width: 22ch;
     padding-bottom: 0;
     border-bottom: 0;
-    font-size: var(--font-size-hero);
+    /* Keep the Day 3 maximum; grow smoothly from a readable mobile size. */
+    font-size: clamp(var(--font-size-hero-min), calc(var(--font-size-h3) + 2vw), var(--font-size-hero));
 }
 
 .hero p {
@@ -207,6 +231,7 @@ section > h2 {
 button {
     display: inline-block;
     max-width: 100%;
+    min-height: var(--touch-target);
     padding: var(--space-sm) var(--space-md);
     border: var(--border-width) solid transparent;
     border-radius: var(--radius-sm);
@@ -227,7 +252,6 @@ button:hover {
 }
 
 button[type="reset"] {
-    margin-left: var(--space-xs);
     border-color: var(--color-border);
     background: var(--color-surface);
     color: var(--color-primary);
@@ -237,10 +261,28 @@ button[type="reset"]:hover {
     background: var(--color-surface-soft);
 }
 
-/* 6. Cards: content + padding + border, followed by outer margin. */
+/* 6. Cards and Grid: rows and columns adapt to the available content width. */
+.card-grid {
+    display: grid;
+    /* min(100%, ...) lets a track fit even when narrower than the preferred minimum. */
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--card-min-width)), 1fr));
+    gap: var(--space-md);
+    align-items: stretch;
+}
+
+.card-grid > h2 {
+    grid-column: 1 / -1;
+    margin-bottom: 0;
+}
+
+.card-grid > .card {
+    min-width: 0;
+    margin-bottom: 0;
+}
+
 .card {
     margin-bottom: var(--space-md);
-    padding: var(--space-lg);
+    padding: var(--space-md);
     border: var(--border-width) solid var(--color-border);
     border-radius: var(--radius-md);
     background: var(--color-surface);
@@ -256,7 +298,7 @@ button[type="reset"]:hover {
 form {
     width: 100%;
     max-width: var(--form-width);
-    padding: var(--space-md);
+    padding: var(--space-sm);
     border: var(--border-width) solid var(--color-border);
     border-radius: var(--radius-md);
     background: var(--color-surface);
@@ -266,7 +308,7 @@ form {
 fieldset {
     min-width: 0;
     margin: 0 0 var(--space-lg);
-    padding: var(--space-md);
+    padding: var(--space-sm);
     border: var(--border-width) solid var(--color-border);
     border-radius: var(--radius-sm);
 }
@@ -307,7 +349,8 @@ textarea:hover {
 
 input:focus-visible,
 select:focus-visible,
-textarea:focus-visible {
+textarea:focus-visible,
+input[type="date"]:focus-within {
     border-color: var(--color-accent);
 }
 
@@ -356,15 +399,27 @@ button:disabled {
     cursor: not-allowed;
 }
 
+/* A button group is one-dimensional; gap replaces fragile inline margins. */
+.form-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+    align-items: center;
+}
+
+.form-actions > button {
+    min-width: 0;
+}
+
 /* 8. Footer. A more specific link selector keeps links readable on the brand color. */
 body > footer {
-    padding: var(--space-lg) var(--space-md);
+    padding: var(--space-lg) var(--page-gutter);
     background: var(--color-primary);
     color: var(--color-on-brand);
 }
 
 body > footer p {
-    max-width: var(--content-width);
+    max-width: calc(var(--content-width) - 2 * var(--page-gutter));
     margin-right: auto;
     margin-left: auto;
 }
@@ -379,4 +434,32 @@ body > footer a {
 
 body > footer a:hover {
     text-decoration-thickness: var(--focus-width);
+}
+
+/* 9. One mobile-first enhancement: add breathing room once the content permits it.
+   Cards find their own column count; navigation wraps without a breakpoint.
+   Every layout stays in normal flow. No positional offsets or visual reordering. */
+@media (min-width: 40rem) {
+    body > header {
+        padding-top: var(--space-lg);
+        padding-bottom: var(--space-lg);
+    }
+
+    main {
+        padding-top: var(--space-xl);
+        padding-bottom: var(--space-xl);
+    }
+
+    .hero {
+        padding: var(--space-xl) var(--space-lg);
+    }
+
+    .card {
+        padding: var(--space-lg);
+    }
+
+    form,
+    fieldset {
+        padding: var(--space-md);
+    }
 }
