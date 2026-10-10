@@ -1,0 +1,57 @@
+/* Only css-specificity-exercise.html loads this file.
+   These intentional conflicts are isolated from the production website.
+   Predict each winner before revealing the explanations in the page. */
+
+/* Type selector: (0, 0, 1). Samples A-D match this baseline. */
+mark {
+    padding: var(--space-xs);
+    background: var(--color-surface-soft);
+    color: var(--color-secondary);
+}
+
+/* ID selector: (1, 0, 0). It wins for C even over the later class rule. */
+#specificity-winner {
+    color: var(--color-primary);
+}
+
+/* Class selector: (0, 1, 0). It beats mark for B, but loses to the ID for C. */
+.priority-sample {
+    color: var(--color-accent);
+}
+
+/* Equal specificity: (0, 1, 0). Swap these two rules to change D. */
+.source-order-sample {
+    color: var(--color-primary);
+}
+
+.source-order-sample {
+    color: var(--color-accent);
+}
+
+/* E inherits these properties because the span declares neither of them. */
+.inheritance-example {
+    margin-bottom: var(--space-md);
+    padding: var(--space-md);
+    border-left: var(--space-xs) solid var(--color-accent);
+    background: var(--color-surface-soft);
+    color: var(--color-secondary);
+    font-style: italic;
+}
+
+/* F has direct declarations, so it does not use these inherited values. */
+.inheritance-override {
+    color: var(--color-primary);
+    font-style: normal;
+}
+
+/* Exercise-only presentation, without additional intentional conflicts. */
+summary {
+    margin-bottom: var(--space-sm);
+    color: var(--color-accent);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+summary:hover {
+    color: var(--color-primary);
+}
