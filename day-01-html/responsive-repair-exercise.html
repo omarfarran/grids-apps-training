@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Day 4 responsive repair: diagnose a fixed-width card and compare its flexible repair.">
+    <title>TechNova | Responsive Repair Exercise</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive-repair-exercise.css">
+</head>
+
+<body>
+    <header>
+        <h1>Responsive Repair Lab</h1>
+        <nav aria-label="Exercise navigation">
+            <a href="index.html">Back to Home</a>
+            <a href="responsive-repair-exercise.html" aria-current="page">Responsive Repair</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Find the cause, then repair the layout</h2>
+            <p>The production pages had no horizontal overflow in the initial checks.
+                This isolated exercise compares a broken card with its repaired version
+                inside the same narrow inspection region.</p>
+            <p>The broken example has a local horizontal scrollbar so its entire box can
+                be inspected. The page itself stays within the viewport; no content is hidden.</p>
+        </section>
+
+        <section>
+            <h2>1. Broken: fixed width plus padding</h2>
+            <p>Focus the inspection region below and use the arrow keys to scroll sideways.
+                Inspect the card and its parent using browser developer tools.</p>
+            <!-- Only this deliberate example exceeds its local inspection region. -->
+            <div class="repair-demo" tabindex="0" role="region" aria-label="Broken card inspection region, scroll horizontally">
+                <article class="repair-card broken-card">
+                    <h3>Web Development</h3>
+                    <p>A fixed-width card does not adapt to the available space.</p>
+                    <p>Its content width is 32rem. With content-box sizing, padding and borders
+                        are added to that width, making the rendered box even wider.</p>
+                </article>
+            </div>
+            <ul>
+                <li><strong>Root cause:</strong> <code>width: 32rem</code> exceeds the parent;
+                    <code>box-sizing: content-box</code> adds padding and borders outside it.</li>
+                <li><strong>Diagnosis:</strong> the region's <code>scrollWidth</code> is larger than
+                    its <code>clientWidth</code>. The card's box model shows the extra width.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>2. Repaired: use the available width</h2>
+            <div class="repair-demo" tabindex="0" role="region" aria-label="Repaired card inspection region, no horizontal overflow">
+                <article class="repair-card repaired-card">
+                    <h3>Web Development</h3>
+                    <p>A flexible card adapts to the available space.</p>
+                    <p>Its width is 100% of the parent. Border-box sizing includes its padding
+                        and borders within that width, and text wraps naturally.</p>
+                </article>
+            </div>
+            <ul>
+                <li><strong>Repair:</strong> use <code>width: 100%</code>, <code>max-width: 100%</code>,
+                    <code>min-width: 0</code>, and <code>box-sizing: border-box</code>.</li>
+                <li><strong>Result:</strong> the region's <code>scrollWidth</code> equals its
+                    <code>clientWidth</code>. The entire card is visible without sideways scrolling.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Try the repair yourself</h2>
+            <ol>
+                <li>Inspect at viewport widths of 320, 390, 768, and 1366 pixels.</li>
+                <li>Compare the broken card's content, padding, border, and total width.</li>
+                <li>Change its width to 100% and its box sizing to border-box in developer tools.</li>
+                <li>Confirm the local scrollbar disappears and explain why.</li>
+                <li>Inspect the production card grid: its minimum track width is capped at
+                    100% so even narrow containers can hold a card.</li>
+            </ol>
+            <a href="index.html">Back to Home</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>TechNova | Day 4: Flexbox, Grid &amp; Responsive Design</p>
+    </footer>
+</body>
+
+</html>

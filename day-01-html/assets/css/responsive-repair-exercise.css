@@ -1,0 +1,40 @@
+/* Only responsive-repair-exercise.html loads this stylesheet.
+   The fixed-width bug is deliberate and remains inside a keyboard-accessible
+   inspection region. Production CSS never receives the broken rule. */
+.repair-demo {
+    width: 100%;
+    max-width: 24rem;
+    margin-bottom: var(--space-md);
+    padding: var(--space-sm);
+    border: var(--border-width) dashed var(--color-secondary);
+    border-radius: var(--radius-md);
+    background: var(--color-surface-soft);
+    /* Expose the isolated bug for inspection; do not hide it or affect the page. */
+    overflow-x: auto;
+}
+
+.repair-card {
+    padding: var(--space-md);
+    border: var(--border-width) solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background: var(--color-surface);
+}
+
+/* Broken on purpose: an illustrative fixed content width plus external padding. */
+.broken-card {
+    box-sizing: content-box;
+    width: 32rem;
+    padding: var(--space-lg);
+}
+
+/* Same content type, repaired at its source rather than hidden. */
+.repaired-card {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+}
+
+.repair-card > :last-child {
+    margin-bottom: 0;
+}
