@@ -108,6 +108,25 @@ input[type="date"]:focus-within {
     outline-offset: var(--space-xs);
 }
 
+/* Skip navigation stays available to keyboards without changing the normal layout. */
+.skip-link {
+    position: absolute;
+    top: var(--space-sm);
+    left: var(--page-gutter);
+    z-index: 1;
+    max-width: calc(100% - 2 * var(--page-gutter));
+    padding: var(--space-sm) var(--space-md);
+    border: var(--border-width) solid var(--color-primary);
+    border-radius: var(--radius-sm);
+    background: var(--color-surface);
+    color: var(--color-primary);
+    transform: translateY(calc(-100% - var(--space-xl)));
+}
+
+.skip-link:focus-visible {
+    transform: translateY(0);
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -148,7 +167,8 @@ body > header {
 }
 
 body > header h1,
-body > header nav {
+body > header nav,
+body > footer nav {
     max-width: calc(var(--content-width) - 2 * var(--page-gutter));
     margin-right: auto;
     margin-left: auto;
@@ -194,6 +214,11 @@ main {
     max-width: var(--content-width);
     margin: 0 auto;
     padding: var(--space-lg) var(--page-gutter);
+}
+
+/* Policy pages use a narrower reading measure while retaining the shared gutters. */
+.reading-content {
+    max-width: calc(var(--text-width) + 2 * var(--page-gutter));
 }
 
 section {
@@ -334,7 +359,7 @@ textarea {
     min-width: 0;
     max-width: 100%;
     padding: var(--space-sm);
-    border: var(--border-width) solid var(--color-border);
+    border: var(--border-width) solid var(--color-muted);
     border-radius: var(--radius-sm);
     background: var(--color-surface);
     color: inherit;
@@ -416,6 +441,10 @@ body > footer {
     padding: var(--space-lg) var(--page-gutter);
     background: var(--color-primary);
     color: var(--color-on-brand);
+}
+
+body > footer nav {
+    margin-bottom: var(--space-md);
 }
 
 body > footer p {
