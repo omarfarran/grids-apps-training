@@ -1,0 +1,73 @@
+﻿/* Bootstrap owns the layout. These rules provide TechNova's visual identity. */
+:root {
+  --brand-primary: #08756d;
+  --brand-secondary: #162e3b;
+  --brand-accent: #c4f0dd;
+  --brand-surface: #f4f7f6;
+  --bs-body-color: var(--brand-secondary);
+  --bs-body-bg: var(--brand-surface);
+  --bs-secondary-rgb: 82, 100, 108;
+  --bs-secondary-color: #52646c;
+  --bs-link-color: var(--brand-primary);
+  --bs-link-hover-color: #045a54;
+}
+
+body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+.brand { color: var(--brand-secondary); font-size: 1.35rem; font-weight: 750; }
+.brand:hover { color: var(--brand-primary); }
+.brand-mark { width: 2rem; height: 2rem; background: var(--brand-primary); color: white; text-align: center; line-height: 2rem; font-size: 1rem; }
+.brand-dot { color: var(--brand-primary); }
+.nav-link { --bs-nav-link-color: #415965; --bs-nav-link-hover-color: var(--brand-primary); font-weight: 600; }
+.nav-link.active { color: var(--brand-primary); background: #e4f3ed; }
+.eyebrow { color: var(--brand-primary); font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+.text-brand, .link-brand { color: var(--brand-primary); }
+.link-brand:hover { color: #045a54; }
+.hero { background: radial-gradient(ellipse at 95% 30%, #d8f1e6, transparent 65%), #edf5f1; }
+.hero h1 { letter-spacing: -.045em; }
+.hero-preview { border-top: .3rem solid var(--brand-primary); }
+.feature-marker { width: 3rem; height: 3rem; background: #e4f3ed; color: var(--brand-primary); font-weight: 700; }
+.brand-badge { color: #045a54; background: var(--brand-accent); }
+.recommended-plan { --bs-card-border-color: var(--brand-primary); background: #f0faf5; }
+.plan-features li::marker { color: var(--brand-primary); }
+
+/* Component variables customize Bootstrap buttons without overriding utilities. */
+.btn-primary {
+  --bs-btn-bg: var(--brand-primary);
+  --bs-btn-border-color: var(--brand-primary);
+  --bs-btn-hover-bg: #045a54;
+  --bs-btn-hover-border-color: #045a54;
+  --bs-btn-active-bg: #034942;
+  --bs-btn-active-border-color: #034942;
+  --bs-btn-focus-shadow-rgb: 8, 117, 109;
+}
+.btn-outline-primary {
+  --bs-btn-color: var(--brand-primary);
+  --bs-btn-border-color: var(--brand-primary);
+  --bs-btn-hover-bg: var(--brand-primary);
+  --bs-btn-hover-border-color: var(--brand-primary);
+  --bs-btn-active-bg: #045a54;
+  --bs-btn-active-border-color: #045a54;
+  --bs-btn-focus-shadow-rgb: 8, 117, 109;
+}
+
+.dashboard-shell { min-height: 85vh; }
+.sidebar { background: var(--brand-secondary); }
+.sidebar .nav-link { --bs-nav-link-color: #e7f3ee; --bs-nav-link-hover-color: white; }
+.sidebar .nav-link:hover { background: #284551; }
+.sidebar-label { color: var(--brand-accent); }
+.sidebar-note { color: #c3d5d8; }
+.avatar { width: 2rem; height: 2rem; background: #e4f3ed; color: #045a54; }
+.report-card { background: #e4f3ed; }
+/* Keep horizontal scrolling inside the table, with enough room for each column. */
+.project-table { min-width: 38rem; }
+.project-table th, .project-table td { padding: 1rem; }
+.brand-progress { height: .55rem; display: block; border: 0; border-radius: 1rem; background: #dce8e2; accent-color: var(--brand-primary); }
+.brand-progress::-webkit-progress-bar { background: #dce8e2; border-radius: 1rem; }
+.brand-progress::-webkit-progress-value { background: var(--brand-primary); border-radius: 1rem; }
+.brand-progress::-moz-progress-bar { background: var(--brand-primary); border-radius: 1rem; }
+
+/* Preserve a distinct keyboard focus indicator on every interactive element. */
+:focus-visible { outline: 3px solid #08756d; outline-offset: 3px; }
+.sidebar a:focus-visible { outline-color: var(--brand-accent); }
+.skip-link { position: absolute; top: .5rem; left: .5rem; z-index: 10; background: white; padding: .75rem 1rem; color: var(--brand-secondary); }
+

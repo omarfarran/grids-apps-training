@@ -1,0 +1,107 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="TechNova's Bootstrap Day 6 demo: a responsive software-company hero and feature grid.">
+  <title>TechNova | Home &amp; Grid Demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="assets/css/custom.css" rel="stylesheet">
+</head>
+<body>
+  <a class="visually-hidden-focusable skip-link" href="#main-content">Skip to main content</a>
+  <header class="bg-white border-bottom">
+    <nav class="container d-flex flex-column flex-sm-row align-items-start align-items-sm-center justify-content-between gap-2 py-3" aria-label="Main navigation">
+      <a class="brand text-decoration-none d-flex align-items-center gap-2" href="index.html"><span class="brand-mark rounded" aria-hidden="true">T</span>TechNova<span class="brand-dot" aria-hidden="true">.</span></a>
+      <ul class="nav flex-wrap gap-1">
+        <li class="nav-item"><a class="nav-link active rounded" href="index.html" aria-current="page">Home</a></li>
+        <li class="nav-item"><a class="nav-link rounded" href="pricing.html">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link rounded" href="dashboard.html">Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main-content" tabindex="-1">
+    <section class="hero py-5" aria-labelledby="hero-title">
+      <div class="container py-lg-4">
+        <!-- Base: stacked columns. lg (992px+): copy and visual side by side. -->
+        <div class="row gx-4 gy-5 align-items-center">
+          <div class="col-12 col-lg-7">
+            <p class="eyebrow mb-3">Software built around your team</p>
+            <h1 id="hero-title" class="display-4 fw-bold mb-4">Less busywork.<br><span class="text-brand">More forward.</span></h1>
+            <p class="lead text-secondary mb-4">TechNova brings projects, clients, and everyday work into one clear workspace. Give your team a simpler way to plan, collaborate, and deliver.</p>
+            <div class="d-flex flex-wrap gap-3">
+              <a class="btn btn-primary px-4 py-2" href="pricing.html">Explore our plans <span aria-hidden="true">&rarr;</span></a>
+              <a class="btn btn-outline-primary px-4 py-2" href="dashboard.html">Preview the dashboard</a>
+            </div>
+            <p class="small text-secondary mt-3 mb-0">A fictional product, built as a Bootstrap learning project.</p>
+          </div>
+          <div class="col-12 col-lg-5">
+            <article class="card hero-preview shadow rounded-4">
+              <div class="card-body p-4">
+                <div class="d-flex justify-content-between align-items-center gap-2 mb-4">
+                  <h2 class="h6 fw-bold mb-0">Your week, at a glance</h2>
+                  <span class="badge brand-badge rounded-pill">Demo</span>
+                </div>
+                <p class="small text-secondary mb-1">Website launch</p>
+                <p class="h4 fw-bold mb-3">Make room for good work.</p>
+                <div class="d-flex justify-content-between gap-2 small mb-2"><label for="launch-progress">Launch readiness</label><span>75%</span></div>
+                <progress id="launch-progress" class="brand-progress w-100" value="75" max="100">75%</progress>
+                <ul class="list-unstyled mt-4 mb-4">
+                  <li class="d-flex gap-3 py-2 border-bottom"><span class="text-brand fw-bold" aria-hidden="true">&#10003;</span><span>Design system approved</span></li>
+                  <li class="d-flex gap-3 py-2 border-bottom"><span class="text-brand fw-bold" aria-hidden="true">&#10003;</span><span>Core pages ready for review</span></li>
+                  <li class="d-flex gap-3 py-2"><span class="text-secondary" aria-hidden="true">&#9675;</span><span>Final accessibility check</span></li>
+                </ul>
+                <a class="link-brand fw-semibold" href="dashboard.html#projects">View sample projects <span aria-hidden="true">&rarr;</span></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container py-5" aria-labelledby="features-title">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-3 mb-4">
+        <div><p class="eyebrow mb-2">A clearer way to work</p><h2 id="features-title" class="h2 fw-bold mb-0">One workspace. Three essentials.</h2></div>
+        <p class="text-secondary mb-0">From the first brief to the final handoff.</p>
+      </div>
+      <!-- 1 column below md, 2 at md (768px+), 3 at lg (992px+). -->
+      <div class="row g-4 feature-grid">
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card h-100 border-0 shadow-sm rounded-4">
+            <div class="card-body p-4 d-flex flex-column align-items-start">
+              <span class="feature-marker rounded-3 d-inline-flex align-items-center justify-content-center mb-4" aria-hidden="true">01</span>
+              <h3 class="h5 fw-bold">Project planning</h3>
+              <p class="text-secondary mb-4">Turn a brief into clear milestones. Keep priorities, ownership, and delivery dates easy to find.</p>
+              <a class="link-brand fw-semibold mt-auto" href="dashboard.html#projects">Explore project overview <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card h-100 border-0 shadow-sm rounded-4">
+            <div class="card-body p-4 d-flex flex-column align-items-start">
+              <span class="feature-marker rounded-3 d-inline-flex align-items-center justify-content-center mb-4" aria-hidden="true">02</span>
+              <h3 class="h5 fw-bold">Client collaboration</h3>
+              <p class="text-secondary mb-4">Bring feedback and decisions together so your team can spend less time chasing the latest update.</p>
+              <a class="link-brand fw-semibold mt-auto" href="dashboard.html#clients">Explore client summary <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card h-100 border-0 shadow-sm rounded-4">
+            <div class="card-body p-4 d-flex flex-column align-items-start">
+              <span class="feature-marker rounded-3 d-inline-flex align-items-center justify-content-center mb-4" aria-hidden="true">03</span>
+              <h3 class="h5 fw-bold">Progress reporting</h3>
+              <p class="text-secondary mb-4">See what is moving, what needs attention, and what is complete with a concise team overview.</p>
+              <a class="link-brand fw-semibold mt-auto" href="dashboard.html#reports">Explore delivery report <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="container py-4 border-top d-flex flex-column flex-sm-row justify-content-between gap-2 small text-secondary">
+    <p class="m-0">TechNova &middot; Bootstrap Day 6</p><p class="m-0">Learning project by Omar Farran</p>
+  </footer>
+</body>
+</html>
+
+
