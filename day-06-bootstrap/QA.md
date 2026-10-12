@@ -1,5 +1,7 @@
 ﻿# Day 6 Quality Review
 
+> This section records the Day 6 implementation before the Day 7 extension. Current component results are recorded in the Day 7 section below.
+
 Verified on 12 October 2026 using real Microsoft Edge / Chromium in headless mode through Playwright. Bootstrap CSS loaded successfully from the official CDN during every check. Full-page screenshots were visually reviewed at all 12 page/width combinations.
 
 ## Responsive results
@@ -63,3 +65,73 @@ Suggested commit messages for the author's review:
 - `build responsive bootstrap hero and card grid`
 - `complete B01 responsive pricing challenge`
 - `complete B03 dashboard summary challenge`
+
+
+## Day 7 — Components, Forms & Interaction
+
+Verified on 12 October 2026 in real headless Microsoft Edge 155.0.4283.45 / Chromium using the existing Playwright and axe-core tools outside the repository. No npm commands or dependency installations were used for Day 7. Bootstrap's official 5.3.8 CSS and matching bundle loaded successfully with their integrity/crossorigin attributes on all four pages. Each page has exactly one bundle include near the end of body.
+
+### Acceptance checks
+
+| Requirement | Result | Actual evidence |
+| --- | --- | --- |
+| Bootstrap JS bundle | PASS | Runtime version 5.3.8; matching CSS; one script per page; no custom application JS |
+| Navbar desktop behavior | PASS | Horizontal Home / Pricing / Dashboard / FAQ links at 1366px; toggler hidden; correct current-page state |
+| Offcanvas mobile behavior | PASS | Opens using keyboard toggle on every page at 320px, 390px, 768px; fits viewport; links remain usable |
+| Offcanvas Escape/close | PASS | Close button, Escape, backdrop dismissal, and reopening exercised at each narrow page/width combination |
+| Modal open/close | PASS | Home CTA opens modal; header close, Cancel, Escape, backdrop, and reopening exercised at all four widths |
+| Modal form validation | PASS | Native submission blocks empty fields, malformed email, missing service, short message/name, and unchecked consent; valid sample fields accepted |
+| Modal labels | PASS | Name, Email, optional Company, Service, Message, and consent have associated labels; modal title and description resolve |
+| FAQ accordion | PASS | All five questions opened/closed using Enter/Space at all widths; switching closes previous item; repeated activation works |
+| Unique IDs | PASS | No duplicates, missing Bootstrap targets, or unresolved ARIA IDs on any page |
+| Keyboard focus | PASS | Visible focus; background page controls cannot receive focus while overlays are open; dismissals return focus to triggers; skip links work |
+| No console errors | PASS | Zero console errors or uncaught page errors during responsive, interaction, validation, and navigation runs |
+| No broken links | PASS | All 40 local links/fragments verified; 32 primary navigation checks exercised on desktop and through mobile offcanvas |
+| No missing assets | PASS | No failed requests or HTTP error responses during the browser run |
+| No horizontal overflow | PASS | All 16 page/width combinations stayed within viewport width; offcanvas and modal also fit |
+| Day 6 regressions | PASS | Main sections and original CSS match pre-edit baseline, apart from the added Home consultation section; grids and table remain responsive |
+
+### Interaction and accessibility details
+
+- Offcanvas uses `navbar-expand-lg`, Bootstrap data attributes, a titled panel, labeled toggle/close controls, and the official focus/backdrop behavior. It switches to horizontal navigation at 992px.
+- Modal uses `modal-dialog-centered modal-dialog-scrollable`. Opening moves focus into the titled dialog; forward/reverse Tab checks did not focus background controls. Close button, Cancel, Escape, and backdrop all return focus to the consultation trigger.
+- Browser chrome can receive focus at the modal's forward Tab boundary; the next Tab returns into the modal. The check distinguishes browser chrome (`document.hasFocus()` is false) from background page controls. No custom focus-trap code was added.
+- Native validation uses `required`, email type, name minimum 2 characters, and message minimum 20 characters. Company is optional. No `novalidate` or custom validation script is used.
+- A static informational alert explains the demo. A valid submission navigates back to Home's consultation section without entered values in the URL. Form controls deliberately omit `name` attributes, so no personal form values are serialized. There is no endpoint, storage, transmission, or success-message simulation.
+- The FAQ has five realistic answers, unique IDs, matching targets/ARIA references, and one open answer at a time through `data-bs-parent`.
+- All four pages retain unique titles, semantic headings, descriptive navigation, and current-page markers. The FAQ accordion, offcanvas, modal/form, and representative retained pages were visually reviewed in screenshots.
+- axe-core inspected 36 distinct page/component states with WCAG 2 A/AA and WCAG 2.1 A/AA tags. Final settled-state scans reported zero violations. Four modal states were checked again after focus animations finished: early contrast flags occurred during the Cancel button's color transition, and all four follow-up scans passed. The test now waits for final colors before scanning.
+- The completed run recorded 260 passing checks after those targeted follow-ups. The form's valid submission, skip links, modal reopening, and native invalid-field focus were verified in the browser.
+- No screen-reader testing, physical-device testing, Firefox, or Safari testing was performed.
+
+### Responsive results
+
+All four pages were tested at each requested width with a 900px viewport height. There was no horizontal page overflow or unresolved layout issue; navigation worked in its appropriate mode.
+
+| Width | Navbar | Home feature columns | Pricing columns | Dashboard KPI columns | Dashboard/table | FAQ/modal |
+| ---: | --- | ---: | ---: | ---: | --- | --- |
+| 320px | Offcanvas | 1 | 1 | 1 | Sidebar above; table scrolls inside its container | Readable; dialog fits |
+| 390px | Offcanvas | 1 | 1 | 1 | Sidebar above; table scrolls inside its container | Readable; dialog fits |
+| 768px | Offcanvas | 2 | 1 | 2 | Sidebar above; table fits | Readable; dialog fits |
+| 1366px | Horizontal | 3 | 3 | 4 | Sidebar beside; table fits | Readable; centered dialog fits |
+
+Additional modal checks at **320×568** and **390×740** passed: modal content fits, the body scrolls, the consent control is reachable, and the footer/submit controls stay visible. The mobile projects table remains keyboard-scrollable.
+
+### Branding, files, and scope
+
+Created: `faq.html`.
+
+Modified: `index.html`, `pricing.html`, `dashboard.html`, `assets/css/custom.css`, `README.md`, and `QA.md`.
+
+The Day 6 teal/navy/mint palette remains intact. Narrow CSS additions theme the navbar, offcanvas header, modal accent, accordion active state, alert, form focus, checkbox, and component focus outlines. Bootstrap owns layout and interaction. No inline source styles, `!important`, Tailwind, Vite, custom JS files, DOM lessons, APIs, or Day 8 expansion were introduced.
+
+`day-01-html` is unchanged. No commit or push was performed. Test scripts, results, dependencies, and screenshots remain outside the repository in temporary storage; test browsers and temporary servers were closed.
+
+Remaining issues: none known for the requested Day 7 scope. Internet access is needed for CDN assets. The consultation form remains intentionally frontend-only.
+
+Suggested commits for the author's review:
+
+- `add Bootstrap offcanvas navigation`
+- `add Bootstrap modal contact form`
+- `add accessible Bootstrap FAQ accordion`
+- `update Day 7 interaction QA`
