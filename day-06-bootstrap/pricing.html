@@ -11,13 +11,27 @@
 <body>
   <a class="visually-hidden-focusable skip-link" href="#main-content">Skip to main content</a>
   <header class="bg-white border-bottom">
-    <nav class="container d-flex flex-column flex-sm-row align-items-start align-items-sm-center justify-content-between gap-2 py-3" aria-label="Main navigation">
-      <a class="brand text-decoration-none d-flex align-items-center gap-2" href="index.html"><span class="brand-mark rounded" aria-hidden="true">T</span>TechNova<span class="brand-dot" aria-hidden="true">.</span></a>
-      <ul class="nav flex-wrap gap-1">
-        <li class="nav-item"><a class="nav-link rounded" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link active rounded" href="pricing.html" aria-current="page">Pricing</a></li>
-        <li class="nav-item"><a class="nav-link rounded" href="dashboard.html">Dashboard</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg py-3" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand brand text-decoration-none d-flex align-items-center gap-2" href="index.html"><span class="brand-mark rounded" aria-hidden="true">T</span>TechNova<span class="brand-dot" aria-hidden="true">.</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#main-navigation" aria-controls="main-navigation" aria-label="Open main navigation">
+          <span class="navbar-toggler-icon" aria-hidden="true"></span>
+        </button>
+        <div class="offcanvas offcanvas-end brand-offcanvas" tabindex="-1" id="main-navigation" aria-labelledby="navigation-title">
+          <div class="offcanvas-header">
+            <h2 class="offcanvas-title h5" id="navigation-title">TechNova navigation</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close main navigation"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 gap-2">
+                <li class="nav-item"><a class="nav-link rounded px-3" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link rounded px-3 active" href="pricing.html" aria-current="page">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link rounded px-3" href="dashboard.html">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link rounded px-3" href="faq.html">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </nav>
   </header>
   <main id="main-content" class="container py-5" tabindex="-1">
@@ -85,5 +99,6 @@
   <footer class="container py-4 border-top d-flex flex-column flex-sm-row justify-content-between gap-2 small text-secondary">
     <p class="m-0">TechNova &middot; B01 Responsive Pricing</p><p class="m-0">Learning project by Omar Farran</p>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

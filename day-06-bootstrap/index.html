@@ -11,13 +11,27 @@
 <body>
   <a class="visually-hidden-focusable skip-link" href="#main-content">Skip to main content</a>
   <header class="bg-white border-bottom">
-    <nav class="container d-flex flex-column flex-sm-row align-items-start align-items-sm-center justify-content-between gap-2 py-3" aria-label="Main navigation">
-      <a class="brand text-decoration-none d-flex align-items-center gap-2" href="index.html"><span class="brand-mark rounded" aria-hidden="true">T</span>TechNova<span class="brand-dot" aria-hidden="true">.</span></a>
-      <ul class="nav flex-wrap gap-1">
-        <li class="nav-item"><a class="nav-link active rounded" href="index.html" aria-current="page">Home</a></li>
-        <li class="nav-item"><a class="nav-link rounded" href="pricing.html">Pricing</a></li>
-        <li class="nav-item"><a class="nav-link rounded" href="dashboard.html">Dashboard</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg py-3" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand brand text-decoration-none d-flex align-items-center gap-2" href="index.html"><span class="brand-mark rounded" aria-hidden="true">T</span>TechNova<span class="brand-dot" aria-hidden="true">.</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#main-navigation" aria-controls="main-navigation" aria-label="Open main navigation">
+          <span class="navbar-toggler-icon" aria-hidden="true"></span>
+        </button>
+        <div class="offcanvas offcanvas-end brand-offcanvas" tabindex="-1" id="main-navigation" aria-labelledby="navigation-title">
+          <div class="offcanvas-header">
+            <h2 class="offcanvas-title h5" id="navigation-title">TechNova navigation</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close main navigation"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 gap-2">
+                <li class="nav-item"><a class="nav-link rounded px-3 active" href="index.html" aria-current="page">Home</a></li>
+                <li class="nav-item"><a class="nav-link rounded px-3" href="pricing.html">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link rounded px-3" href="dashboard.html">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link rounded px-3" href="faq.html">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </nav>
   </header>
   <main id="main-content" tabindex="-1">
@@ -97,10 +111,73 @@
         </div>
       </div>
     </section>
+    <section id="consultation" class="container pb-5" aria-labelledby="consultation-heading">
+      <div class="card report-card border-0 rounded-4">
+        <div class="card-body p-4 d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between gap-3">
+          <div><p class="eyebrow mb-2">Let's talk through your next step</p><h2 id="consultation-heading" class="h4 fw-bold">Have a project in mind?</h2><p class="text-secondary mb-0">Explore the consultation form and tell us what your team needs.</p></div>
+          <button id="consultation-trigger" type="button" class="btn btn-primary flex-shrink-0" data-bs-toggle="modal" data-bs-target="#consultation-modal">Request a consultation</button>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="container py-4 border-top d-flex flex-column flex-sm-row justify-content-between gap-2 small text-secondary">
     <p class="m-0">TechNova &middot; Bootstrap Day 6</p><p class="m-0">Learning project by Omar Farran</p>
   </footer>
+  <div class="modal fade" id="consultation-modal" tabindex="-1" aria-labelledby="consultation-modal-title" aria-describedby="consultation-notice" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <!-- Demo controls deliberately omit name attributes so personal values never enter the URL. -->
+      <form class="modal-content consultation-form" action="#consultation" method="get">
+        <div class="modal-header">
+          <h2 class="modal-title h5" id="consultation-modal-title">Request a consultation</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close consultation form"></button>
+        </div>
+        <div class="modal-body">
+          <div class="alert alert-info brand-alert small" id="consultation-notice">Practice form only. Nothing is sent or saved. A valid submission returns to this page. Use sample details to try it.</div>
+          <p class="small text-secondary mb-3">All fields are required except Company.</p>
+          <div class="row g-3">
+            <div class="col-12 col-sm-6">
+              <label class="form-label" for="contact-name">Full name</label>
+              <input class="form-control" id="contact-name" type="text" autocomplete="name" required minlength="2" maxlength="100">
+            </div>
+            <div class="col-12 col-sm-6">
+              <label class="form-label" for="contact-email">Email</label>
+              <input class="form-control" id="contact-email" type="email" autocomplete="email" required maxlength="254">
+            </div>
+            <div class="col-12">
+              <label class="form-label" for="contact-company">Company <span class="small text-secondary">(optional)</span></label>
+              <input class="form-control" id="contact-company" type="text" autocomplete="organization" maxlength="100">
+            </div>
+            <div class="col-12">
+              <label class="form-label" for="contact-service">Service</label>
+              <select class="form-select" id="contact-service" required>
+                <option value="" selected>Choose a service</option>
+                <option value="project-planning">Project planning</option>
+                <option value="client-collaboration">Client collaboration</option>
+                <option value="reporting">Progress reporting</option>
+                <option value="integration">Workspace integration</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <label class="form-label" for="contact-message">Message</label>
+              <textarea class="form-control" id="contact-message" rows="3" required minlength="20" maxlength="2000" aria-describedby="message-help"></textarea>
+              <div class="form-text" id="message-help">Describe your project in 20 to 2,000 characters.</div>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="contact-consent" required>
+                <label class="form-check-label small" for="contact-consent">I understand this is a demo and agree to use sample information.</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Cancel</button>
+          <button type="submit" class="btn btn-primary">Submit demo request</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
 

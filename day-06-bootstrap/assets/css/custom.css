@@ -71,3 +71,15 @@ body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
 .sidebar a:focus-visible { outline-color: var(--brand-accent); }
 .skip-link { position: absolute; top: .5rem; left: .5rem; z-index: 10; background: white; padding: .75rem 1rem; color: var(--brand-secondary); }
 
+
+/* Day 7: theme Bootstrap components; the official bundle owns interaction. */
+.navbar { --bs-navbar-color: #415965; --bs-navbar-hover-color: var(--brand-primary); --bs-navbar-active-color: var(--brand-primary); }
+.brand-offcanvas { --bs-offcanvas-width: min(22rem, 90vw); --bs-offcanvas-bg: #fff; }
+.brand-offcanvas .offcanvas-header { background: #e4f3ed; }
+.consultation-form { --bs-modal-bg: #fff; }
+.consultation-form .modal-header { border-top: .25rem solid var(--brand-primary); }
+.brand-accordion { --bs-accordion-bg: #fff; --bs-accordion-active-color: #045a54; --bs-accordion-active-bg: #e4f3ed; --bs-accordion-btn-focus-box-shadow: 0 0 0 .25rem rgb(8 117 109 / 25%); }
+.brand-alert { --bs-alert-color: #214b48; --bs-alert-bg: #e4f3ed; --bs-alert-border-color: #acd8c7; }
+.form-control:focus, .form-select:focus, .form-check-input:focus { border-color: var(--brand-primary); box-shadow: 0 0 0 .25rem rgb(8 117 109 / 25%); }
+.form-check-input:checked { background-color: var(--brand-primary); border-color: var(--brand-primary); }
+.navbar-toggler:focus-visible, .btn-close:focus-visible { outline: 3px solid var(--brand-primary); outline-offset: 3px; }
