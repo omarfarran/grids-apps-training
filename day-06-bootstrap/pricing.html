@@ -1,0 +1,89 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Compare three fictional TechNova plans in the B01 responsive pricing challenge.">
+  <title>TechNova | Pricing &amp; B01</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="assets/css/custom.css" rel="stylesheet">
+</head>
+<body>
+  <a class="visually-hidden-focusable skip-link" href="#main-content">Skip to main content</a>
+  <header class="bg-white border-bottom">
+    <nav class="container d-flex flex-column flex-sm-row align-items-start align-items-sm-center justify-content-between gap-2 py-3" aria-label="Main navigation">
+      <a class="brand text-decoration-none d-flex align-items-center gap-2" href="index.html"><span class="brand-mark rounded" aria-hidden="true">T</span>TechNova<span class="brand-dot" aria-hidden="true">.</span></a>
+      <ul class="nav flex-wrap gap-1">
+        <li class="nav-item"><a class="nav-link rounded" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active rounded" href="pricing.html" aria-current="page">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link rounded" href="dashboard.html">Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main-content" class="container py-5" tabindex="-1">
+    <div class="text-center mb-5">
+      <p class="eyebrow mb-3">Room to grow</p>
+      <h1 class="display-5 fw-bold mb-3">A plan for your next chapter.</h1>
+      <p class="lead text-secondary mb-2">Start small, build momentum, and keep your team connected.</p>
+      <p class="small text-secondary mb-0">Sample prices in USD, billed monthly. This is a layout demo; no purchase is available.</p>
+    </div>
+    <!-- Stacked on mobile and tablet; three equal columns from lg (992px). -->
+    <div class="row g-4 pricing-grid align-items-stretch">
+      <div class="col-12 col-lg-4">
+        <article class="card h-100 shadow-sm rounded-4">
+          <div class="card-body p-4 d-flex flex-column">
+            <p class="small text-secondary fw-semibold mb-2">For a focused start</p>
+            <h2 class="h4 fw-bold">Starter</h2>
+            <p class="text-secondary">A simple workspace for freelancers and small teams.</p>
+            <p class="mb-4"><span class="display-5 fw-bold">$19</span><span class="text-secondary"> / month</span></p>
+            <ul class="plan-features ps-3 mb-4">
+              <li class="mb-2">Up to 3 team members</li><li class="mb-2">5 active projects</li><li class="mb-2">Shared task lists</li><li class="mb-2">Monthly progress summary</li><li>Email support</li>
+            </ul>
+            <a class="btn btn-outline-primary w-100 mt-auto" href="#starter-details">Explore Starter</a>
+          </div>
+        </article>
+      </div>
+      <div class="col-12 col-lg-4">
+        <article class="card recommended-plan h-100 shadow rounded-4 border-2">
+          <div class="card-body p-4 d-flex flex-column">
+            <div class="mb-2"><span class="badge brand-badge rounded-pill">Recommended</span></div>
+            <h2 class="h4 fw-bold">Professional</h2>
+            <p class="text-secondary">More structure for growing teams with multiple clients.</p>
+            <p class="mb-4"><span class="display-5 fw-bold">$49</span><span class="text-secondary"> / month</span></p>
+            <ul class="plan-features ps-3 mb-4">
+              <li class="mb-2">Up to 15 team members</li><li class="mb-2">Unlimited active projects</li><li class="mb-2">Client feedback workspace</li><li class="mb-2">Weekly progress reports</li><li>Priority email support</li>
+            </ul>
+            <a class="btn btn-primary w-100 mt-auto" href="#professional-details">Explore Professional</a>
+          </div>
+        </article>
+      </div>
+      <div class="col-12 col-lg-4">
+        <article class="card h-100 shadow-sm rounded-4">
+          <div class="card-body p-4 d-flex flex-column">
+            <p class="small text-secondary fw-semibold mb-2">For wider collaboration</p>
+            <h2 class="h4 fw-bold">Business</h2>
+            <p class="text-secondary">A connected workspace for departments and larger teams.</p>
+            <p class="mb-4"><span class="display-5 fw-bold">$99</span><span class="text-secondary"> / month</span></p>
+            <ul class="plan-features ps-3 mb-4">
+              <li class="mb-2">Up to 50 team members</li><li class="mb-2">Everything in Professional</li><li class="mb-2">Department workspaces</li><li class="mb-2">Portfolio-level reporting</li><li>Guided onboarding</li>
+            </ul>
+            <a class="btn btn-outline-primary w-100 mt-auto" href="#business-details">Explore Business</a>
+          </div>
+        </article>
+      </div>
+    </div>
+    <section class="mt-5 pt-4 border-top" aria-labelledby="plan-guide-title">
+      <h2 id="plan-guide-title" class="h3 fw-bold mb-4">Find your fit</h2>
+      <div class="row gx-4 gy-3">
+        <div class="col-12 col-lg-4"><h3 id="starter-details" class="h5">Keep the essentials close</h3><p class="text-secondary mb-0">Starter suits a small team managing a handful of projects with one shared task list.</p></div>
+        <div class="col-12 col-lg-4"><h3 id="professional-details" class="h5">Make coordination easier</h3><p class="text-secondary mb-0">Professional suits a growing agency that needs regular reporting and one place for client feedback.</p></div>
+        <div class="col-12 col-lg-4"><h3 id="business-details" class="h5">Connect the bigger picture</h3><p class="text-secondary mb-0">Business suits several departments coordinating project delivery and portfolio reporting.</p></div>
+      </div>
+      <a class="link-brand d-inline-block fw-semibold mt-4" href="dashboard.html">See the sample workspace <span aria-hidden="true">&rarr;</span></a>
+    </section>
+  </main>
+  <footer class="container py-4 border-top d-flex flex-column flex-sm-row justify-content-between gap-2 small text-secondary">
+    <p class="m-0">TechNova &middot; B01 Responsive Pricing</p><p class="m-0">Learning project by Omar Farran</p>
+  </footer>
+</body>
+</html>
