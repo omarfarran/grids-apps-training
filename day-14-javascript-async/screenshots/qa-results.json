@@ -1,0 +1,193 @@
+{
+  "runAt": "2026-10-22T21:21:12.878Z",
+  "results": [
+    {
+      "name": "Real API success and JSON parsing",
+      "status": "PASS",
+      "detail": "Unintercepted HTTP 200; 250 records parsed and rendered in Chrome; CORS allowed."
+    },
+    {
+      "name": "Four ES modules",
+      "status": "PASS",
+      "detail": "main.js, api.js, ui.js and utils.js loaded with no import errors."
+    },
+    {
+      "name": "Country fields and flags",
+      "status": "PASS",
+      "detail": "Name, capital, region, formatted population, language and labeled undistorted flag verified against live Japan record."
+    },
+    {
+      "name": "Search and empty state",
+      "status": "PASS",
+      "detail": "Exact, partial, case-insensitive, padded and blank queries; no-results query zzzz-no-country; clearing restores results."
+    },
+    {
+      "name": "Regions, combined search and reset",
+      "status": "PASS",
+      "detail": "All five primary regions and Antarctic checked; matching/excluded combinations and reset tested. One API request total; no keystroke fetches or page navigation."
+    },
+    {
+      "name": "Responsive 320px",
+      "status": "PASS",
+      "detail": "1 card columns; document/body fit viewport; controls at least 44px high; flags use contain."
+    },
+    {
+      "name": "Responsive 390px",
+      "status": "PASS",
+      "detail": "1 card columns; document/body fit viewport; controls at least 44px high; flags use contain."
+    },
+    {
+      "name": "Responsive 768px",
+      "status": "PASS",
+      "detail": "2 card columns; document/body fit viewport; controls at least 44px high; flags use contain."
+    },
+    {
+      "name": "Responsive 1366px",
+      "status": "PASS",
+      "detail": "3 card columns; document/body fit viewport; controls at least 44px high; flags use contain."
+    },
+    {
+      "name": "Keyboard and accessibility",
+      "status": "PASS",
+      "detail": "Search/select labels, focus outline, Tab order, keyboard region selection, Enter reset, focus return, and nonnavigating form submission tested; live status and flag alt checked."
+    },
+    {
+      "name": "Normal console and asset QA",
+      "status": "PASS",
+      "detail": "Zero console errors, uncaught errors, failed requests, HTTP errors, CORS errors or import failures throughout real success/search/filter/viewport flow."
+    },
+    {
+      "name": "Loading lifecycle",
+      "status": "PASS",
+      "detail": "Held request shows busy/loading and disabled controls at four widths; completing it renders results and enables controls."
+    },
+    {
+      "name": "HTTP response.ok handling and real Retry",
+      "status": "PASS",
+      "detail": "503 JSON body goes to visible error instead of success; keyboard Retry makes a second real network request, restores 250 results/focus without reloading."
+    },
+    {
+      "name": "Network failure",
+      "status": "PASS",
+      "detail": "Browser-level request abort caught; connection guidance and Retry visible with no uncaught rejection."
+    },
+    {
+      "name": "Malformed JSON",
+      "status": "PASS",
+      "detail": "Invalid JSON handled as user-facing error; busy state cleared."
+    },
+    {
+      "name": "Unexpected payloads",
+      "status": "PASS",
+      "detail": "Object payload, null record, missing required fields and duplicate country codes all rejected safely."
+    },
+    {
+      "name": "Empty API payload",
+      "status": "PASS",
+      "detail": "Empty array is a valid empty state, not a parser crash or permanent loading state."
+    },
+    {
+      "name": "Safe rendering and missing optional data",
+      "status": "PASS",
+      "detail": "HTML-like country name stays literal; missing capital/population/languages use Not listed."
+    },
+    {
+      "name": "Request timeout",
+      "status": "PASS",
+      "detail": "15-second timeout accelerated only in QA; request abort produces visible timeout guidance and clears loading."
+    },
+    {
+      "name": "Flag failure fallback",
+      "status": "PASS",
+      "detail": "Failed image replaced with explicit fallback text; country facts stay available."
+    },
+    {
+      "name": "Broken lab reproduced",
+      "status": "PASS",
+      "detail": "Real request reproduces exact TypeError; inspection confirms Promise instead of array and busy/loading remains stuck."
+    },
+    {
+      "name": "Fixed lab real success",
+      "status": "PASS",
+      "detail": "Corrected lab awaits JSON, renders three real country names, shows array inspection and clears busy with no new console errors."
+    },
+    {
+      "name": "Fixed lab HTTP failure",
+      "status": "PASS",
+      "detail": "Controlled 500 caught with visible error and cleared output/busy; no uncaught exception."
+    }
+  ],
+  "normalErrors": [],
+  "expectedFailureLogs": [
+    {
+      "scenario": "Delayed loading",
+      "logs": [],
+      "uncaught": []
+    },
+    {
+      "scenario": "HTTP 503 then real retry",
+      "logs": [
+        "HTTP: 503 https://countries.dev/countries?fields=name,alpha2Code,capital,region,population,languages",
+        "Console: Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
+      ],
+      "uncaught": []
+    },
+    {
+      "scenario": "Network failure",
+      "logs": [
+        "Request: https://countries.dev/countries?fields=name,alpha2Code,capital,region,population,languages net::ERR_FAILED",
+        "Console: Failed to load resource: net::ERR_FAILED"
+      ],
+      "uncaught": []
+    },
+    {
+      "scenario": "Malformed JSON",
+      "logs": [],
+      "uncaught": []
+    },
+    {
+      "scenario": "Unexpected schema",
+      "logs": [],
+      "uncaught": []
+    },
+    {
+      "scenario": "Unexpected schema",
+      "logs": [],
+      "uncaught": []
+    },
+    {
+      "scenario": "Unexpected schema",
+      "logs": [],
+      "uncaught": []
+    },
+    {
+      "scenario": "Unexpected schema",
+      "logs": [],
+      "uncaught": []
+    },
+    {
+      "scenario": "Empty API array",
+      "logs": [],
+      "uncaught": []
+    },
+    {
+      "scenario": "Safe text and optional fields",
+      "logs": [],
+      "uncaught": []
+    }
+  ],
+  "lab": {
+    "brokenError": "TypeError: countries.forEach is not a function\n    at loadBrokenCountries (http://127.0.0.1:49177/debug-lab/broken-app.js:14:15)\n    at async runExample (http://127.0.0.1:49177/debug-lab/lab.js:17:5)",
+    "brokenInspection": "response.ok: true\ntypeof countries: object\ncountries instanceof Promise: true",
+    "fixedFailure": "Unable to load countries: HTTP 500. Run the fixed example to try again.",
+    "uncaught": []
+  },
+  "browser": "155.0.8059.86",
+  "api": {
+    "url": "https://countries.dev/countries?fields=name,alpha2Code,capital,region,population,languages",
+    "status": 200,
+    "cors": "*",
+    "records": 250,
+    "intercepted": false
+  }
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script type="module" src="lab.js"></script>
+  <title>Async debug lab | Atlas</title>
+</head>
+<body>
+  <main class="page-shell lab-main">
+    <a href="../index.html">← Back to Country Explorer</a>
+    <p class="eyebrow">DAY 14 · DEBUGGING PRACTICE</p>
+    <h1>Follow the promise.</h1>
+    <p>The broken example intentionally treats a pending JSON promise as an array. Open the browser console, run it, and inspect the values below. Then run the fixed version to compare.</p>
+    <p>The broken example is isolated from the main explorer. Its console error and stuck loading state are intentional.</p>
+    <div class="lab-actions">
+      <button id="run-broken" type="button" class="button secondary">Run broken example</button>
+      <button id="run-fixed" type="button" class="button primary">Run fixed example</button>
+    </div>
+    <section id="lab-output" class="lab-output" aria-labelledby="lab-heading" aria-busy="false">
+      <h2 id="lab-heading">Request output</h2>
+      <p id="lab-status" role="status">Choose an example to begin.</p>
+      <pre id="lab-inspection">Variable inspection will appear here.</pre>
+      <ul id="lab-results" aria-label="First three country names"></ul>
+    </section>
+    <p>For the exact bug, root cause, HTTP failure test, and verification evidence, see <a href="FIX-REPORT.md">FIX-REPORT.md</a>.</p>
+  </main>
+</body>
+</html>
