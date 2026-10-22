@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#5543a8">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="js/app.js" defer></script>
+  <title>Taskbook | Day 13</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to tasks</a>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="./index.html" aria-label="Taskbook home"><span class="brand-mark" aria-hidden="true">✓</span> Taskbook</a>
+      <span class="course-label">GRIDS APPS <span aria-hidden="true">/</span> DAY 13</span>
+    </header>
+
+    <main id="main">
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow">A LITTLE FOCUS GOES A LONG WAY</p>
+        <h1 id="page-title">Make room for what matters.</h1>
+        <p>Your tasks, a clearer head. Capture a thought, take a small step, and check it off.</p>
+      </section>
+
+      <section class="overview" aria-label="Task overview">
+        <div><span class="stat-label">Total tasks</span><strong id="total-count">0</strong></div>
+        <div><span class="stat-label">Still to do</span><strong id="active-count">0</strong></div>
+        <div><span class="stat-label">Completed</span><strong id="completed-count">0</strong></div>
+      </section>
+
+      <section class="task-panel" aria-labelledby="tasks-heading">
+        <div class="panel-heading"><h2 id="tasks-heading">My tasks</h2><span class="small-label">ONE STEP AT A TIME</span></div>
+        <form id="task-form" novalidate>
+          <label for="task-title">What needs to get done?</label>
+          <div class="add-controls">
+            <input id="task-title" name="title" type="text" maxlength="160" placeholder="e.g. Practice DOM event delegation" aria-describedby="title-hint title-error" autocomplete="off" required>
+            <button class="button primary" type="submit"><span aria-hidden="true">+</span> Add task</button>
+          </div>
+          <p id="title-hint" class="hint">Keep it simple. A task can be up to 160 characters.</p>
+          <p id="title-error" class="error" role="alert"></p>
+        </form>
+
+        <div class="list-toolbar">
+          <div class="search-control">
+            <label for="task-search">Search tasks</label>
+            <input id="task-search" type="search" placeholder="Search by title…" autocomplete="off">
+          </div>
+          <div class="filters" role="group" aria-label="Filter tasks by status">
+            <button type="button" class="filter-button" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" class="filter-button" data-filter="active" aria-pressed="false">Active</button>
+            <button type="button" class="filter-button" data-filter="completed" aria-pressed="false">Completed</button>
+          </div>
+        </div>
+
+        <div class="list-heading"><h3>Task list</h3><p id="results-count" aria-live="polite" aria-atomic="true">Showing 0 of 0 tasks</p></div>
+        <ul id="task-list" aria-label="Tasks"></ul>
+        <div id="empty-state" class="empty-state">
+          <span class="empty-mark" aria-hidden="true">✓</span>
+          <h3 id="empty-heading">A fresh page.</h3>
+          <p id="empty-description">No tasks yet. Add your first task above to get started.</p>
+        </div>
+        <p id="action-status" class="action-status" role="status" aria-atomic="true"></p>
+        <p id="storage-status" class="storage-status" role="status" aria-atomic="true"></p>
+      </section>
+      <noscript><p class="storage-status">Enable JavaScript to add, edit, and save tasks.</p></noscript>
+    </main>
+
+    <footer class="site-footer"><p><span aria-hidden="true">◈</span> A small space for steady progress.</p><p>Saved in this browser · Frontend learning project</p></footer>
+  </div>
+</body>
+</html>
