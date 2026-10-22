@@ -1,0 +1,9 @@
+{
+  "base": "http://127.0.0.1:4173",
+  "files": [
+    "revenue-sample.txt",
+    "customer-sample.txt",
+    "operations-sample.txt"
+  ],
+  "passed": true
+}

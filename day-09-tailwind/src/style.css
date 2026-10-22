@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+/* Shared keyboard baseline. Components use Tailwind utilities. */
+@layer base {
+  :focus-visible {
+    outline: 3px solid var(--color-emerald-700);
+    outline-offset: 4px;
+  }
+}

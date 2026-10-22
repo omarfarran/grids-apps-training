@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Forma sample analytics dashboard with responsive navigation, KPIs, recent orders, and activity."
+    />
+    <meta name="theme-color" content="#064e3b" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <title>Workspace overview | Forma</title>
+  </head>
+  <body
+    class="min-h-screen bg-stone-50 font-sans text-stone-900 antialiased selection:bg-lime-200"
+  >
+    <a
+      href="#main-content"
+      class="sr-only z-50 rounded-lg bg-emerald-950 p-4 text-white focus:not-sr-only focus:fixed focus:top-3 focus:left-3"
+      >Skip to main content</a
+    >
+    <div class="min-h-screen lg:flex">
+      <aside
+        aria-label="Workspace navigation"
+        class="border-b border-stone-200 bg-white lg:sticky lg:top-0 lg:flex lg:h-screen lg:w-60 lg:shrink-0 lg:flex-col lg:overflow-y-auto lg:border-r lg:border-b-0"
+      >
+        <div
+          class="flex flex-wrap items-center justify-between gap-3 px-5 py-5 lg:px-6"
+        >
+          <a
+            href="./index.html"
+            aria-label="Forma home"
+            class="inline-flex min-h-11 items-center gap-2 rounded-lg text-2xl font-bold tracking-tight"
+            ><span
+              aria-hidden="true"
+              class="grid size-9 place-items-center rounded-xl bg-emerald-950 text-xl text-lime-200"
+              >f.</span
+            >forma<span aria-hidden="true" class="text-emerald-700">.</span></a
+          ><span
+            class="rounded-full bg-stone-100 px-3 py-1 text-xs text-stone-600 lg:hidden"
+            >Demo workspace</span
+          >
+        </div>
+        <div
+          class="mx-5 hidden rounded-xl border border-stone-200 p-3 lg:block"
+        >
+          <p class="text-sm font-semibold">Studio workspace</p>
+          <p class="mt-1 text-xs text-stone-600">Studio plan · Sample data</p>
+        </div>
+        <nav
+          aria-label="Workspace"
+          class="grid grid-cols-2 gap-1 px-4 pb-4 sm:flex sm:flex-wrap lg:mt-6 lg:flex-col lg:gap-1"
+        >
+          <a
+            href="./dashboard.html"
+            aria-current="page"
+            class="flex min-h-11 items-center gap-3 rounded-xl px-3 py-3 text-sm font-medium transition-colors bg-emerald-950 text-white hover:bg-emerald-800"
+            ><svg
+              class="size-4 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <rect x="3" y="3" width="7" height="7" rx="1.5" />
+              <rect x="14" y="3" width="7" height="7" rx="1.5" />
+              <rect x="3" y="14" width="7" height="7" rx="1.5" />
+              <rect x="14" y="14" width="7" height="7" rx="1.5" />
+            </svg>
+            Overview</a
+          ><a
+            href="./customers.html"
+            class="flex min-h-11 items-center gap-3 rounded-xl px-3 py-3 text-sm font-medium transition-colors text-stone-600 hover:bg-emerald-50 hover:text-emerald-900"
+            ><svg
+              class="size-4 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="9" cy="8" r="3" />
+              <path
+                d="M3 21v-3a6 6 0 0 1 12 0v3M16 5a3 3 0 0 1 0 6M21 21v-3a6 6 0 0 0-3-5"
+              />
+            </svg>
+            Customers</a
+          ><a
+            href="./products.html"
+            class="flex min-h-11 items-center gap-3 rounded-xl px-3 py-3 text-sm font-medium transition-colors text-stone-600 hover:bg-emerald-50 hover:text-emerald-900"
+            ><svg
+              class="size-4 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="m12 3 9 5-9 5-9-5 9-5Zm-9 5v10l9 5 9-5V8M12 13v10M7.5 5.5l9 5"
+              />
+            </svg>
+            Products</a
+          ><a
+            href="./analytics.html"
+            class="flex min-h-11 items-center gap-3 rounded-xl px-3 py-3 text-sm font-medium transition-colors text-stone-600 hover:bg-emerald-50 hover:text-emerald-900"
+            ><svg
+              class="size-4 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M4 4v16h16M8 15l4-5 4 2 4-6" />
+            </svg>
+            Analytics</a
+          ><a
+            href="./reports.html"
+            class="flex min-h-11 items-center gap-3 rounded-xl px-3 py-3 text-sm font-medium transition-colors text-stone-600 hover:bg-emerald-50 hover:text-emerald-900"
+            ><svg
+              class="size-4 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M6 3h9l4 4v14H6V3Zm9 0v5h4M9 12h7M9 16h7" />
+            </svg>
+            Reports</a
+          ><a
+            href="./settings.html"
+            class="flex min-h-11 items-center gap-3 rounded-xl px-3 py-3 text-sm font-medium transition-colors text-stone-600 hover:bg-emerald-50 hover:text-emerald-900"
+            ><svg
+              class="size-4 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="3" />
+              <path
+                d="M12 2v3m0 14v3M2 12h3m14 0h3M5 5l2 2m10 10 2 2M5 19l2-2M17 7l2-2"
+              />
+            </svg>
+            Settings</a
+          ><a
+            href="./profile.html"
+            class="flex min-h-11 items-center gap-3 rounded-xl px-3 py-3 text-sm font-medium transition-colors text-stone-600 hover:bg-emerald-50 hover:text-emerald-900"
+            ><svg
+              class="size-4 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="8" r="4" />
+              <path d="M4 22v-2a8 8 0 0 1 16 0v2" />
+            </svg>
+            Profile</a
+          >
+        </nav>
+        <div class="mt-auto hidden p-5 lg:block">
+          <div class="rounded-2xl bg-lime-100 p-4">
+            <svg
+              class="size-6 text-emerald-800 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M20 4C9 2 3 8 5 15s14 6 15-11ZM4 21 16 9" />
+            </svg>
+            <p class="mt-3 text-sm font-semibold text-emerald-950">
+              A little room to grow.
+            </p>
+            <p class="mt-2 text-xs leading-relaxed text-emerald-900">
+              Explore tools for your team's next chapter.
+            </p>
+            <a
+              href="./index.html#products"
+              class="mt-2 inline-flex min-h-11 items-center gap-2 rounded-lg text-xs font-semibold text-emerald-950 underline underline-offset-4"
+              >Meet the products
+              <svg
+                class="size-4 shrink-0"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M5 12h14m-6-6 6 6-6 6" /></svg
+            ></a>
+          </div>
+          <a
+            href="./index.html"
+            class="mt-3 inline-flex min-h-11 items-center rounded-lg text-xs text-stone-600 hover:text-emerald-800"
+            >← Back to Forma home</a
+          >
+        </div>
+      </aside>
+      <div class="min-w-0 flex-1">
+        <header
+          class="flex flex-wrap items-center justify-between gap-3 border-b border-stone-200 bg-white px-5 py-4 sm:px-8"
+        >
+          <p class="text-sm text-stone-600">
+            Workspace <span aria-hidden="true" class="mx-2">/</span
+            ><span class="font-medium text-stone-900">Overview</span>
+          </p>
+          <div class="flex items-center gap-3">
+            <span
+              class="inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold bg-emerald-50 text-emerald-800"
+              >Demo mode</span
+            ><a
+              href="./auth.html"
+              class="inline-flex min-h-11 items-center rounded-lg text-xs font-medium text-stone-600 underline underline-offset-4 hover:text-emerald-800"
+              >Auth demo</a
+            ><a
+              href="./profile.html"
+              aria-label="View Alex Lee’s profile"
+              class="grid size-11 place-items-center rounded-full bg-orange-100 text-xs font-bold text-orange-900 transition-colors hover:bg-orange-200"
+              >AL</a
+            >
+          </div>
+        </header>
+        <main
+          id="main-content"
+          tabindex="-1"
+          class="mx-auto max-w-7xl p-5 sm:p-8 xl:p-10"
+        >
+          <section id="overview" aria-labelledby="overview-heading">
+            <div
+              class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between"
+            >
+              <div>
+                <p
+                  class="text-xs font-semibold tracking-widest text-emerald-700 uppercase"
+                >
+                  Your workspace at a glance
+                </p>
+                <h1
+                  id="overview-heading"
+                  class="mt-2 text-3xl font-semibold tracking-tight text-emerald-950 sm:text-4xl"
+                >
+                  Looking good, Alex.
+                </h1>
+                <p class="mt-3 text-sm leading-relaxed text-stone-600">
+                  Here's how your business is moving this month.
+                </p>
+              </div>
+              <p
+                class="inline-flex items-center gap-2 self-start rounded-xl border border-stone-200 bg-white px-4 py-3 text-xs font-medium text-stone-600"
+              >
+                <svg
+                  class="size-4 shrink-0"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 7v5l3 2" />
+                </svg>
+                Oct 1–22, 2026
+              </p>
+            </div>
+            <p class="mt-5 text-xs leading-relaxed text-stone-500">
+              Static learning demo · All names, orders, and metrics on this page
+              are illustrative.
+            </p>
+            <div
+              id="kpi-grid"
+              class="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4"
+            >
+              <article class="rounded-2xl border border-stone-200 bg-white p-5">
+                <div class="flex items-center justify-between gap-2">
+                  <h2 class="text-sm font-medium text-stone-600">
+                    Monthly revenue
+                  </h2>
+                  <span class="text-emerald-700"
+                    ><svg
+                      class="size-4 shrink-0"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M4 4v16h16M8 15l4-5 4 2 4-6" /></svg
+                  ></span>
+                </div>
+                <p
+                  class="mt-4 text-3xl font-semibold tracking-tight tabular-nums"
+                >
+                  $24,860
+                </p>
+                <p class="mt-3 text-xs text-stone-500">
+                  <span class="mr-1 font-semibold text-emerald-700"
+                    >↑ 12.8%</span
+                  >
+                  vs. prior month
+                </p>
+              </article>
+              <article class="rounded-2xl border border-stone-200 bg-white p-5">
+                <div class="flex items-center justify-between gap-2">
+                  <h2 class="text-sm font-medium text-stone-600">
+                    Active customers
+                  </h2>
+                  <span class="text-emerald-700"
+                    ><svg
+                      class="size-4 shrink-0"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <circle cx="9" cy="8" r="3" />
+                      <path
+                        d="M3 21v-3a6 6 0 0 1 12 0v3M16 5a3 3 0 0 1 0 6M21 21v-3a6 6 0 0 0-3-5"
+                      /></svg
+                  ></span>
+                </div>
+                <p
+                  class="mt-4 text-3xl font-semibold tracking-tight tabular-nums"
+                >
+                  1,284
+                </p>
+                <p class="mt-3 text-xs text-stone-500">
+                  <span class="mr-1 font-semibold text-emerald-700"
+                    >↑ 8.2%</span
+                  >
+                  vs. prior month
+                </p>
+              </article>
+              <article class="rounded-2xl border border-stone-200 bg-white p-5">
+                <div class="flex items-center justify-between gap-2">
+                  <h2 class="text-sm font-medium text-stone-600">Orders</h2>
+                  <span class="text-emerald-700"
+                    ><svg
+                      class="size-4 shrink-0"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="m12 3 9 5-9 5-9-5 9-5Zm-9 5v10l9 5 9-5V8M12 13v10M7.5 5.5l9 5"
+                      /></svg
+                  ></span>
+                </div>
+                <p
+                  class="mt-4 text-3xl font-semibold tracking-tight tabular-nums"
+                >
+                  342
+                </p>
+                <p class="mt-3 text-xs text-stone-500">
+                  <span class="mr-1 font-semibold text-emerald-700"
+                    >↑ 6.4%</span
+                  >
+                  vs. prior month
+                </p>
+              </article>
+              <article class="rounded-2xl border border-stone-200 bg-white p-5">
+                <div class="flex items-center justify-between gap-2">
+                  <h2 class="text-sm font-medium text-stone-600">
+                    Conversion rate
+                  </h2>
+                  <span class="text-emerald-700"
+                    ><svg
+                      class="size-4 shrink-0"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <rect x="3" y="3" width="7" height="7" rx="1.5" />
+                      <rect x="14" y="3" width="7" height="7" rx="1.5" />
+                      <rect x="3" y="14" width="7" height="7" rx="1.5" />
+                      <rect x="14" y="14" width="7" height="7" rx="1.5" /></svg
+                  ></span>
+                </div>
+                <p
+                  class="mt-4 text-3xl font-semibold tracking-tight tabular-nums"
+                >
+                  3.62%
+                </p>
+                <p class="mt-3 text-xs text-stone-500">
+                  <span class="mr-1 font-semibold text-emerald-700"
+                    >↑ 0.4 pp</span
+                  >
+                  vs. prior month
+                </p>
+              </article>
+            </div>
+          </section>
+          <div class="mt-6 grid min-w-0 grid-cols-1 gap-6 xl:grid-cols-3">
+            <section
+              id="analytics"
+              aria-labelledby="analytics-heading"
+              class="min-w-0 rounded-2xl border border-stone-200 bg-white p-5 sm:p-6 xl:col-span-2"
+            >
+              <div class="flex flex-wrap items-start justify-between gap-3">
+                <div>
+                  <h2
+                    id="analytics-heading"
+                    class="text-lg font-semibold tracking-tight"
+                  >
+                    Steady progress
+                  </h2>
+                  <p class="mt-1 text-xs text-stone-500">
+                    Revenue over the last six months
+                  </p>
+                </div>
+                <span
+                  class="rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-800"
+                  >↑ 12.8% this month</span
+                >
+              </div>
+              <figure class="mt-7">
+                <div
+                  aria-hidden="true"
+                  class="flex h-52 items-end gap-3 border-b border-stone-200 px-1 sm:gap-6 sm:px-4"
+                >
+                  <div class="flex min-w-0 flex-1 flex-col items-center gap-2">
+                    <span
+                      class="hidden text-xs font-medium text-stone-500 sm:block"
+                      >$9.2k</span
+                    >
+                    <div class="h-20 w-full rounded-t-lg bg-emerald-200"></div>
+                  </div>
+                  <div class="flex min-w-0 flex-1 flex-col items-center gap-2">
+                    <span
+                      class="hidden text-xs font-medium text-stone-500 sm:block"
+                      >$12.8k</span
+                    >
+                    <div class="h-28 w-full rounded-t-lg bg-emerald-200"></div>
+                  </div>
+                  <div class="flex min-w-0 flex-1 flex-col items-center gap-2">
+                    <span
+                      class="hidden text-xs font-medium text-stone-500 sm:block"
+                      >$11.3k</span
+                    >
+                    <div class="h-24 w-full rounded-t-lg bg-emerald-200"></div>
+                  </div>
+                  <div class="flex min-w-0 flex-1 flex-col items-center gap-2">
+                    <span
+                      class="hidden text-xs font-medium text-stone-500 sm:block"
+                      >$16.5k</span
+                    >
+                    <div class="h-36 w-full rounded-t-lg bg-emerald-200"></div>
+                  </div>
+                  <div class="flex min-w-0 flex-1 flex-col items-center gap-2">
+                    <span
+                      class="hidden text-xs font-medium text-stone-500 sm:block"
+                      >$22.0k</span
+                    >
+                    <div class="h-44 w-full rounded-t-lg bg-emerald-200"></div>
+                  </div>
+                  <div class="flex min-w-0 flex-1 flex-col items-center gap-2">
+                    <span
+                      class="hidden text-xs font-medium text-stone-500 sm:block"
+                      >$24.9k</span
+                    >
+                    <div class="h-48 w-full rounded-t-lg bg-emerald-800"></div>
+                  </div>
+                </div>
+                <div
+                  aria-hidden="true"
+                  class="mt-3 flex justify-around text-xs text-stone-500"
+                >
+                  <span>May</span><span>Jun</span><span>Jul</span
+                  ><span>Aug</span><span>Sep</span><span>Oct</span>
+                </div>
+                <figcaption class="mt-5 text-xs leading-relaxed text-stone-600">
+                  Sample revenue: May $9,200; June $12,800; July $11,300; August
+                  $16,500; September $22,040; October $24,860 (through Oct 22).
+                  Bars show relative revenue.
+                </figcaption>
+              </figure>
+            </section>
+            <section
+              id="activity"
+              aria-labelledby="activity-heading"
+              class="rounded-2xl border border-stone-200 bg-white p-5 sm:p-6"
+            >
+              <h2
+                id="activity-heading"
+                class="text-lg font-semibold tracking-tight"
+              >
+                Around the workspace
+              </h2>
+              <p class="mt-1 text-xs text-stone-500">
+                Recent activity · October 22
+              </p>
+              <ol class="mt-6 space-y-6">
+                <li class="flex gap-3">
+                  <span
+                    class="grid size-9 shrink-0 place-items-center rounded-full bg-emerald-100 text-emerald-800"
+                    aria-hidden="true"
+                    ><svg
+                      class="size-4 shrink-0"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="m5 12 4 4L19 6" /></svg
+                  ></span>
+                  <div class="min-w-0">
+                    <p class="text-sm font-medium">Payment received</p>
+                    <p class="mt-1 text-xs leading-relaxed text-stone-500">
+                      Lena Morgan · Order #FM-1048
+                    </p>
+                    <time
+                      datetime="2026-10-22T10:42:00+03:00"
+                      class="mt-1 block text-xs text-stone-500"
+                      >10:42 AM</time
+                    >
+                  </div>
+                </li>
+                <li class="flex gap-3">
+                  <span
+                    class="grid size-9 shrink-0 place-items-center rounded-full bg-violet-100 text-violet-800"
+                    aria-hidden="true"
+                    ><svg
+                      class="size-4 shrink-0"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <circle cx="9" cy="8" r="3" />
+                      <path
+                        d="M3 21v-3a6 6 0 0 1 12 0v3M16 5a3 3 0 0 1 0 6M21 21v-3a6 6 0 0 0-3-5"
+                      /></svg
+                  ></span>
+                  <div class="min-w-0">
+                    <p class="text-sm font-medium">A new face in the team</p>
+                    <p class="mt-1 text-xs leading-relaxed text-stone-500">
+                      Omar Hassan joined Studio North
+                    </p>
+                    <time
+                      datetime="2026-10-22T10:18:00+03:00"
+                      class="mt-1 block text-xs text-stone-500"
+                      >10:18 AM</time
+                    >
+                  </div>
+                </li>
+                <li class="flex gap-3">
+                  <span
+                    class="grid size-9 shrink-0 place-items-center rounded-full bg-orange-100 text-orange-800"
+                    aria-hidden="true"
+                    ><svg
+                      class="size-4 shrink-0"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="m12 3 9 5-9 5-9-5 9-5Zm-9 5v10l9 5 9-5V8M12 13v10M7.5 5.5l9 5"
+                      /></svg
+                  ></span>
+                  <div class="min-w-0">
+                    <p class="text-sm font-medium">
+                      Ready for the next chapter
+                    </p>
+                    <p class="mt-1 text-xs leading-relaxed text-stone-500">
+                      Oak &amp; Field upgraded to Insights
+                    </p>
+                    <time
+                      datetime="2026-10-22T09:56:00+03:00"
+                      class="mt-1 block text-xs text-stone-500"
+                      >9:56 AM</time
+                    >
+                  </div>
+                </li>
+                <li class="flex gap-3">
+                  <span
+                    class="grid size-9 shrink-0 place-items-center rounded-full bg-stone-100 text-stone-700"
+                    aria-hidden="true"
+                    ><svg
+                      class="size-4 shrink-0"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <rect x="3" y="3" width="7" height="7" rx="1.5" />
+                      <rect x="14" y="3" width="7" height="7" rx="1.5" />
+                      <rect x="3" y="14" width="7" height="7" rx="1.5" />
+                      <rect x="14" y="14" width="7" height="7" rx="1.5" /></svg
+                  ></span>
+                  <div class="min-w-0">
+                    <p class="text-sm font-medium">One more milestone</p>
+                    <p class="mt-1 text-xs leading-relaxed text-stone-500">
+                      Brand refresh moved to review
+                    </p>
+                    <time
+                      datetime="2026-10-22T09:15:00+03:00"
+                      class="mt-1 block text-xs text-stone-500"
+                      >9:15 AM</time
+                    >
+                  </div>
+                </li>
+              </ol>
+            </section>
+          </div>
+          <section
+            id="orders"
+            aria-labelledby="orders-heading"
+            class="mt-6 min-w-0 rounded-2xl border border-stone-200 bg-white"
+          >
+            <div
+              class="flex flex-wrap items-center justify-between gap-3 p-5 sm:p-6"
+            >
+              <div>
+                <h2
+                  id="orders-heading"
+                  class="text-lg font-semibold tracking-tight"
+                >
+                  The latest orders
+                </h2>
+                <p
+                  id="table-help"
+                  class="mt-1 text-xs leading-relaxed text-stone-500"
+                >
+                  Five recent orders. On narrow screens, scroll the table
+                  sideways to see every column.
+                </p>
+              </div>
+              <span
+                class="rounded-full bg-stone-100 px-3 py-1 text-xs font-medium text-stone-600"
+                >October 2026</span
+              >
+            </div>
+            <div
+              id="orders-scroll"
+              role="region"
+              aria-label="Recent orders table, horizontally scrollable"
+              aria-describedby="table-help"
+              tabindex="0"
+              class="overflow-x-auto rounded-b-2xl focus-visible:-outline-offset-4"
+            >
+              <table class="w-full min-w-2xl border-collapse text-left text-sm">
+                <caption class="sr-only">
+                  Five recent Forma product orders, October 22, 2026. All values
+                  are sample data.
+                </caption>
+                <thead
+                  class="border-y border-stone-200 bg-stone-50 text-xs text-stone-500"
+                >
+                  <tr>
+                    <th scope="col" class="px-6 py-3 font-medium">Order</th>
+                    <th scope="col" class="px-6 py-3 font-medium">Customer</th>
+                    <th scope="col" class="px-6 py-3 font-medium">Product</th>
+                    <th scope="col" class="px-6 py-3 font-medium">Status</th>
+                    <th scope="col" class="px-6 py-3 text-right font-medium">
+                      Amount
+                    </th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-stone-100">
+                  <tr class="hover:bg-stone-50">
+                    <th
+                      scope="row"
+                      class="px-6 py-4 font-medium text-stone-600"
+                    >
+                      #FM-1048
+                    </th>
+                    <td class="px-6 py-4">
+                      <span class="font-medium">Lena Morgan</span
+                      ><span class="mt-1 block text-xs text-stone-500"
+                        >lena@example.com</span
+                      >
+                    </td>
+                    <td class="whitespace-nowrap px-6 py-4 text-stone-600">
+                      Forma Projects
+                    </td>
+                    <td class="px-6 py-4">
+                      <span
+                        class="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold bg-emerald-50 text-emerald-800"
+                        >Paid</span
+                      >
+                    </td>
+                    <td class="px-6 py-4 text-right font-medium tabular-nums">
+                      $144.00
+                    </td>
+                  </tr>
+                  <tr class="hover:bg-stone-50">
+                    <th
+                      scope="row"
+                      class="px-6 py-4 font-medium text-stone-600"
+                    >
+                      #FM-1047
+                    </th>
+                    <td class="px-6 py-4">
+                      <span class="font-medium">Omar Hassan</span
+                      ><span class="mt-1 block text-xs text-stone-500"
+                        >omar@example.com</span
+                      >
+                    </td>
+                    <td class="whitespace-nowrap px-6 py-4 text-stone-600">
+                      Forma Teamspace
+                    </td>
+                    <td class="px-6 py-4">
+                      <span
+                        class="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold bg-emerald-50 text-emerald-800"
+                        >Paid</span
+                      >
+                    </td>
+                    <td class="px-6 py-4 text-right font-medium tabular-nums">
+                      $108.00
+                    </td>
+                  </tr>
+                  <tr class="hover:bg-stone-50">
+                    <th
+                      scope="row"
+                      class="px-6 py-4 font-medium text-stone-600"
+                    >
+                      #FM-1046
+                    </th>
+                    <td class="px-6 py-4">
+                      <span class="font-medium">Eva Chen</span
+                      ><span class="mt-1 block text-xs text-stone-500"
+                        >eva@example.com</span
+                      >
+                    </td>
+                    <td class="whitespace-nowrap px-6 py-4 text-stone-600">
+                      Forma Insights
+                    </td>
+                    <td class="px-6 py-4">
+                      <span
+                        class="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold bg-amber-50 text-amber-800"
+                        >Pending</span
+                      >
+                    </td>
+                    <td class="px-6 py-4 text-right font-medium tabular-nums">
+                      $216.00
+                    </td>
+                  </tr>
+                  <tr class="hover:bg-stone-50">
+                    <th
+                      scope="row"
+                      class="px-6 py-4 font-medium text-stone-600"
+                    >
+                      #FM-1045
+                    </th>
+                    <td class="px-6 py-4">
+                      <span class="font-medium">Noah Williams</span
+                      ><span class="mt-1 block text-xs text-stone-500"
+                        >noah@example.com</span
+                      >
+                    </td>
+                    <td class="whitespace-nowrap px-6 py-4 text-stone-600">
+                      Forma Projects
+                    </td>
+                    <td class="px-6 py-4">
+                      <span
+                        class="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold bg-emerald-50 text-emerald-800"
+                        >Paid</span
+                      >
+                    </td>
+                    <td class="px-6 py-4 text-right font-medium tabular-nums">
+                      $72.00
+                    </td>
+                  </tr>
+                  <tr class="hover:bg-stone-50">
+                    <th
+                      scope="row"
+                      class="px-6 py-4 font-medium text-stone-600"
+                    >
+                      #FM-1044
+                    </th>
+                    <td class="px-6 py-4">
+                      <span class="font-medium">Maya Patel</span
+                      ><span class="mt-1 block text-xs text-stone-500"
+                        >maya@example.com</span
+                      >
+                    </td>
+                    <td class="whitespace-nowrap px-6 py-4 text-stone-600">
+                      Forma Insights
+                    </td>
+                    <td class="px-6 py-4">
+                      <span
+                        class="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold bg-stone-100 text-stone-600"
+                        >Refunded</span
+                      >
+                    </td>
+                    <td class="px-6 py-4 text-right font-medium tabular-nums">
+                      $90.00
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <footer
+            class="mt-8 flex flex-col gap-3 text-xs text-stone-500 sm:flex-row sm:justify-between"
+          >
+            <p>Forma workspace · Day 11 training demo</p>
+            <a
+              href="./index.html"
+              class="rounded-lg transition-colors hover:text-emerald-800 focus-visible:outline-emerald-700 inline-flex min-h-11 items-center self-start underline underline-offset-4"
+              >Back to Forma home</a
+            >
+          </footer>
+        </main>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+FORMA — CUSTOMER HEALTH
+Period: October 2026
+Prepared: October 22, 2026
+
+There are 1,284 active customers with 96.8% monthly retention.
+
+Twelve accounts are flagged for attention. Start with relationship context rather than assuming why activity changed.
+
+Fictional training data. Static sample report, not a live export.

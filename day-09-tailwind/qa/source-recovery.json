@@ -1,0 +1,17 @@
+{
+  "reason": "Only dist/ and node_modules/ existed at the start of Day 11. Source recovered from compiled HTML without rewriting its content.",
+  "pages": {
+    "index": {
+      "artifactSha256": "a7bbb8de92a41113f24bdf8086f21d0345f1f238054bf9b37ce029d433fd014b",
+      "title": "A calmer way to work | Forma"
+    },
+    "dashboard": {
+      "artifactSha256": "4f8efb6e837ffa3965399df4f899acfc65dd55cb9909c25ae5a5c8cf06e1da44",
+      "title": "Workspace overview | Forma"
+    },
+    "auth": {
+      "artifactSha256": "e7ef0fcfd6f9a4f388bb95b041aade4b7d9d981888e65eb829885cf00d21f0cb",
+      "title": "Your next chapter starts here | Forma"
+    }
+  }
+}

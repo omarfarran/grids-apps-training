@@ -1,0 +1,14 @@
+{
+  "index:aria-labelledby=\"hero-heading\"": {
+    "identical": true,
+    "sha256": "3de848883fe792a8e8c1ff69551c49c62bc12ff721d556eae5d4f5f696c82fcc"
+  },
+  "index:id=\"products\"": {
+    "identical": true,
+    "sha256": "8d91a98ed38464c2cc0a41b82dc9bb5611be7dc72aa6efa240aa450719396242"
+  },
+  "auth:id=\"main-content\"": {
+    "identical": true,
+    "sha256": "0433055f45288450b4237f7e1d83ad12a85c71601d09e631508ed974a8cb0d50"
+  }
+}
