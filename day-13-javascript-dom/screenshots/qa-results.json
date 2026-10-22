@@ -1,0 +1,112 @@
+{
+  "runAt": "2026-10-22T20:35:06.442Z",
+  "browser": "155.0.8059.86",
+  "results": [
+    {
+      "name": "Initial empty state",
+      "status": "PASS",
+      "detail": "Missing key gives an empty list without writing seed data."
+    },
+    {
+      "name": "Reject empty create",
+      "status": "PASS",
+      "detail": "Whitespace rejected with inline error, invalid state, and focus."
+    },
+    {
+      "name": "Create multiple tasks",
+      "status": "PASS",
+      "detail": "Three trimmed tasks; form reset, focus returned, no navigation."
+    },
+    {
+      "name": "Storage JSON and stable IDs",
+      "status": "PASS",
+      "detail": "Parsed day13Tasks value contains only four expected serializable fields and unique IDs."
+    },
+    {
+      "name": "Read / create persistence",
+      "status": "PASS",
+      "detail": "All three saved titles render after refresh."
+    },
+    {
+      "name": "Toggle and refresh persistence",
+      "status": "PASS",
+      "detail": "Active to completed to active; each state verified after refresh."
+    },
+    {
+      "name": "Edit, validation, cancel and persistence",
+      "status": "PASS",
+      "detail": "Blank rejected; Enter trims/saves; refresh restores title; Escape and Cancel discard draft and return focus."
+    },
+    {
+      "name": "Live search and empty results",
+      "status": "PASS",
+      "detail": "Exact, partial, case-insensitive, padded, blank, no-results, and clearing tested."
+    },
+    {
+      "name": "All / Active / Completed and combined search",
+      "status": "PASS",
+      "detail": "Status counts 3/2/1; matching and excluded searches tested in both filtered views."
+    },
+    {
+      "name": "Delete correct item and persistence",
+      "status": "PASS",
+      "detail": "Target ID removed after refresh; other tasks retained; focus reaches next delete control."
+    },
+    {
+      "name": "Safe user-text rendering",
+      "status": "PASS",
+      "detail": "HTML-like task title appears literally; no image node or event execution."
+    },
+    {
+      "name": "Responsive 320px",
+      "status": "PASS",
+      "detail": "No document/body overflow with 160-character unbroken title; edit form fits; controls at least 44px tall; actual full-page capture."
+    },
+    {
+      "name": "Responsive 390px",
+      "status": "PASS",
+      "detail": "No document/body overflow with 160-character unbroken title; edit form fits; controls at least 44px tall; actual full-page capture."
+    },
+    {
+      "name": "Responsive 768px",
+      "status": "PASS",
+      "detail": "No document/body overflow with 160-character unbroken title; edit form fits; controls at least 44px tall; actual full-page capture."
+    },
+    {
+      "name": "Responsive 1366px",
+      "status": "PASS",
+      "detail": "No document/body overflow with 160-character unbroken title; edit form fits; controls at least 44px tall; actual full-page capture."
+    },
+    {
+      "name": "Keyboard, focus and accessible controls",
+      "status": "PASS",
+      "detail": "Enter adds, Tab follows form/search/filters, Space toggles, Enter edits, Escape cancels; visible focus outline and all input labels verified."
+    },
+    {
+      "name": "Malformed storage recovery",
+      "status": "PASS",
+      "detail": "Eight malformed JSON/schema/duplicate-ID cases render safely, retain raw value until next change, and recover on successful save."
+    },
+    {
+      "name": "Empty storage",
+      "status": "PASS",
+      "detail": "Empty string, whitespace and empty array load without warnings or crashes."
+    },
+    {
+      "name": "Storage access failures",
+      "status": "PASS",
+      "detail": "Simulated quota failure keeps task usable in memory with warning; blocked read returns an empty list and warning."
+    },
+    {
+      "name": "Console and asset loading",
+      "status": "PASS",
+      "detail": "Page errors, console.error, failed requests and HTTP errors monitored throughout the run: zero."
+    },
+    {
+      "name": "No reload for core actions",
+      "status": "PASS",
+      "detail": "Navigation count unchanged through toggle/search/filter/edit/delete."
+    }
+  ],
+  "errors": []
+}
