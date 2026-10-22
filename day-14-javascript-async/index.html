@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#20594d">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="module" src="js/main.js"></script>
+  <title>Atlas | Country Explorer</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to explorer</a>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="./index.html" aria-label="Atlas home">
+        <svg class="brand-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="16" cy="16" r="13"/><ellipse cx="16" cy="16" rx="6" ry="13"/><path d="M3 16h26M6 8h20M6 24h20"/></svg>
+        atlas<span class="brand-dot">.</span>
+      </a>
+      <span class="course-label">GRIDS APPS <span aria-hidden="true">/</span> DAY 14</span>
+    </header>
+
+    <main id="main">
+      <section class="intro" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">A FIELD GUIDE TO OUR WORLD</p>
+          <h1 id="page-title">The world,<br>a little closer.</h1>
+          <p class="intro-copy">From familiar places to somewhere new. Explore countries, discover their capitals, and follow your curiosity.</p>
+        </div>
+        <div class="intro-note"><span aria-hidden="true">↗</span><p>One world.<br>So much to discover.</p></div>
+      </section>
+
+      <form id="explorer-controls" class="explorer-controls" role="search" aria-label="Find countries">
+        <div class="search-control">
+          <label for="country-search">Search countries</label>
+          <input id="country-search" name="search" type="search" placeholder="Try Japan, Canada, or somewhere new…" autocomplete="off" disabled>
+        </div>
+        <div class="region-control">
+          <label for="region-filter">Region</label>
+          <select id="region-filter" name="region" disabled><option value="all">All regions</option></select>
+        </div>
+        <button id="reset-filters" class="button secondary" type="button" disabled>Reset filters</button>
+      </form>
+
+      <section id="results-section" class="results-section" aria-labelledby="results-heading" aria-busy="true">
+        <div class="results-heading"><h2 id="results-heading">Explore countries</h2><p id="result-count">Waiting for data</p></div>
+        <div id="state-panel" class="state-panel">
+          <span id="state-icon" class="state-icon" aria-hidden="true">◌</span>
+          <h3 id="state-title">Loading countries…</h3>
+          <p id="state-description">Fetching a fresh list of places to explore.</p>
+          <button id="retry-button" class="button primary" type="button" hidden>Try again</button>
+        </div>
+        <ul id="country-list" class="country-grid" aria-label="Countries"></ul>
+      </section>
+      <p id="live-status" class="live-status" role="status" aria-atomic="true">Loading countries…</p>
+      <noscript><p class="notice">Enable JavaScript to fetch countries and use the explorer.</p></noscript>
+    </main>
+
+    <footer class="site-footer">
+      <p>Country data: <a href="https://countries.dev/">Countries.dev</a> · Flags: <a href="https://flagpedia.net/">Flagpedia</a></p>
+      <p>A JavaScript learning project <span aria-hidden="true">↗</span> <a href="debug-lab/">Async debug lab</a></p>
+    </footer>
+  </div>
+</body>
+</html>
