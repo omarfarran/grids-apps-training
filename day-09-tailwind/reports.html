@@ -1,0 +1,647 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Forma sample report library, report register, summaries, and downloadable text reports."
+    />
+    <meta name="theme-color" content="#064e3b" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <title>Reports | Forma</title>
+  </head>
+  <body
+    class="min-h-screen bg-stone-50 font-sans text-stone-900 antialiased selection:bg-lime-200"
+  >
+    <a
+      href="#main-content"
+      class="sr-only z-50 rounded-lg bg-emerald-950 p-4 text-white focus:not-sr-only focus:fixed focus:top-3 focus:left-3"
+      >Skip to main content</a
+    >
+    <div class="min-h-screen lg:flex">
+      <aside
+        aria-label="Workspace navigation"
+        class="border-b border-stone-200 bg-white lg:sticky lg:top-0 lg:flex lg:h-screen lg:w-60 lg:shrink-0 lg:flex-col lg:overflow-y-auto lg:border-r lg:border-b-0"
+      >
+        <div
+          class="flex flex-wrap items-center justify-between gap-3 px-5 py-5 lg:px-6"
+        >
+          <a
+            href="./index.html"
+            aria-label="Forma home"
+            class="inline-flex min-h-11 items-center gap-2 rounded-lg text-2xl font-bold tracking-tight"
+            ><span
+              aria-hidden="true"
+              class="grid size-9 place-items-center rounded-xl bg-emerald-950 text-xl text-lime-200"
+              >f.</span
+            >forma<span aria-hidden="true" class="text-emerald-700">.</span></a
+          ><span
+            class="rounded-full bg-stone-100 px-3 py-1 text-xs text-stone-600 lg:hidden"
+            >Demo workspace</span
+          >
+        </div>
+        <div
+          class="mx-5 hidden rounded-xl border border-stone-200 p-3 lg:block"
+        >
+          <p class="text-sm font-semibold">Studio workspace</p>
+          <p class="mt-1 text-xs text-stone-600">Studio plan · Sample data</p>
+        </div>
+        <nav
+          aria-label="Workspace"
+          class="grid grid-cols-2 gap-1 px-4 pb-4 sm:flex sm:flex-wrap lg:mt-6 lg:flex-col lg:gap-1"
+        >
+          <a
+            href="./dashboard.html"
+            class="flex min-h-11 items-center gap-3 rounded-xl px-3 py-3 text-sm font-medium transition-colors text-stone-600 hover:bg-emerald-50 hover:text-emerald-900"
+            ><svg
+              class="size-4 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <rect x="3" y="3" width="7" height="7" rx="1.5" />
+              <rect x="14" y="3" width="7" height="7" rx="1.5" />
+              <rect x="3" y="14" width="7" height="7" rx="1.5" />
+              <rect x="14" y="14" width="7" height="7" rx="1.5" />
+            </svg>
+            Overview</a
+          ><a
+            href="./customers.html"
+            class="flex min-h-11 items-center gap-3 rounded-xl px-3 py-3 text-sm font-medium transition-colors text-stone-600 hover:bg-emerald-50 hover:text-emerald-900"
+            ><svg
+              class="size-4 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="9" cy="8" r="3" />
+              <path
+                d="M3 21v-3a6 6 0 0 1 12 0v3M16 5a3 3 0 0 1 0 6M21 21v-3a6 6 0 0 0-3-5"
+              />
+            </svg>
+            Customers</a
+          ><a
+            href="./products.html"
+            class="flex min-h-11 items-center gap-3 rounded-xl px-3 py-3 text-sm font-medium transition-colors text-stone-600 hover:bg-emerald-50 hover:text-emerald-900"
+            ><svg
+              class="size-4 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="m12 3 9 5-9 5-9-5 9-5Zm-9 5v10l9 5 9-5V8M12 13v10M7.5 5.5l9 5"
+              />
+            </svg>
+            Products</a
+          ><a
+            href="./analytics.html"
+            class="flex min-h-11 items-center gap-3 rounded-xl px-3 py-3 text-sm font-medium transition-colors text-stone-600 hover:bg-emerald-50 hover:text-emerald-900"
+            ><svg
+              class="size-4 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M4 4v16h16M8 15l4-5 4 2 4-6" />
+            </svg>
+            Analytics</a
+          ><a
+            href="./reports.html"
+            aria-current="page"
+            class="flex min-h-11 items-center gap-3 rounded-xl px-3 py-3 text-sm font-medium transition-colors bg-emerald-950 text-white hover:bg-emerald-800"
+            ><svg
+              class="size-4 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M6 3h9l4 4v14H6V3Zm9 0v5h4M9 12h7M9 16h7" />
+            </svg>
+            Reports</a
+          ><a
+            href="./settings.html"
+            class="flex min-h-11 items-center gap-3 rounded-xl px-3 py-3 text-sm font-medium transition-colors text-stone-600 hover:bg-emerald-50 hover:text-emerald-900"
+            ><svg
+              class="size-4 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="3" />
+              <path
+                d="M12 2v3m0 14v3M2 12h3m14 0h3M5 5l2 2m10 10 2 2M5 19l2-2M17 7l2-2"
+              />
+            </svg>
+            Settings</a
+          ><a
+            href="./profile.html"
+            class="flex min-h-11 items-center gap-3 rounded-xl px-3 py-3 text-sm font-medium transition-colors text-stone-600 hover:bg-emerald-50 hover:text-emerald-900"
+            ><svg
+              class="size-4 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="8" r="4" />
+              <path d="M4 22v-2a8 8 0 0 1 16 0v2" />
+            </svg>
+            Profile</a
+          >
+        </nav>
+        <div class="mt-auto hidden p-5 lg:block">
+          <div class="rounded-2xl bg-lime-100 p-4">
+            <svg
+              class="size-6 text-emerald-800 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M20 4C9 2 3 8 5 15s14 6 15-11ZM4 21 16 9" />
+            </svg>
+            <p class="mt-3 text-sm font-semibold text-emerald-950">
+              A little room to grow.
+            </p>
+            <p class="mt-2 text-xs leading-relaxed text-emerald-900">
+              Explore tools for your team's next chapter.
+            </p>
+            <a
+              href="./index.html#products"
+              class="mt-2 inline-flex min-h-11 items-center gap-2 rounded-lg text-xs font-semibold text-emerald-950 underline underline-offset-4"
+              >Meet the products
+              <svg
+                class="size-4 shrink-0"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M5 12h14m-6-6 6 6-6 6" /></svg
+            ></a>
+          </div>
+          <a
+            href="./index.html"
+            class="mt-3 inline-flex min-h-11 items-center rounded-lg text-xs text-stone-600 hover:text-emerald-800"
+            >← Back to Forma home</a
+          >
+        </div>
+      </aside>
+      <div class="min-w-0 flex-1">
+        <header
+          class="flex flex-wrap items-center justify-between gap-3 border-b border-stone-200 bg-white px-5 py-4 sm:px-8"
+        >
+          <p class="text-sm text-stone-600">
+            Workspace <span aria-hidden="true" class="mx-2">/</span
+            ><span class="font-medium text-stone-900">Reports</span>
+          </p>
+          <div class="flex items-center gap-3">
+            <span
+              class="inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold bg-emerald-50 text-emerald-800"
+              >Demo mode</span
+            ><a
+              href="./auth.html"
+              class="inline-flex min-h-11 items-center rounded-lg text-xs font-medium text-stone-600 underline underline-offset-4 hover:text-emerald-800"
+              >Auth demo</a
+            ><a
+              href="./profile.html"
+              aria-label="View Alex Lee’s profile"
+              class="grid size-11 place-items-center rounded-full bg-orange-100 text-xs font-bold text-orange-900 transition-colors hover:bg-orange-200"
+              >AL</a
+            >
+          </div>
+        </header>
+        <main
+          id="main-content"
+          tabindex="-1"
+          class="mx-auto max-w-7xl p-5 sm:p-8 xl:p-10"
+        >
+          <div
+            class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between"
+          >
+            <div>
+              <p
+                class="text-xs font-semibold tracking-widest text-emerald-700 uppercase"
+              >
+                Less assembling. More understanding.
+              </p>
+              <h1
+                class="mt-2 text-3xl font-semibold tracking-tight text-emerald-950 sm:text-4xl"
+              >
+                The story behind the numbers.
+              </h1>
+              <p class="mt-3 max-w-2xl text-sm leading-relaxed text-stone-600">
+                Three prepared sample reports for your next team conversation.
+              </p>
+            </div>
+          </div>
+          <p class="mt-5 text-xs leading-relaxed text-stone-600">
+            Static learning demo · All people, metrics, and business records are
+            illustrative.
+          </p>
+          <section aria-labelledby="report-library-heading" class="mt-6">
+            <h2 id="report-library-heading" class="text-lg font-semibold">
+              Your report library
+            </h2>
+            <div class="mt-4 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+              <article
+                class="min-w-0 rounded-2xl border border-stone-200 bg-white p-5 sm:p-6 flex flex-col"
+              >
+                <div class="flex items-center justify-between gap-3">
+                  <span
+                    class="grid size-11 place-items-center rounded-xl bg-emerald-100 text-emerald-800"
+                    ><svg
+                      class="size-5 shrink-0"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M6 3h9l4 4v14H6V3Zm9 0v5h4M9 12h7M9 16h7"
+                      /></svg></span
+                  ><span
+                    class="inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold bg-emerald-50 text-emerald-800"
+                    >Ready</span
+                  >
+                </div>
+                <h3 class="mt-5 text-lg font-semibold">Monthly revenue</h3>
+                <p class="mt-2 text-xs text-stone-600">Oct 1–22, 2026</p>
+                <p class="mt-4 flex-1 text-sm leading-relaxed text-stone-600">
+                  Revenue is $24,860, up 12.8% against the prior-month
+                  comparison.
+                </p>
+                <a
+                  href="#revenue-report"
+                  class="inline-flex min-h-11 items-center gap-2 rounded-lg text-sm font-semibold text-emerald-800 underline underline-offset-4 transition-colors hover:text-emerald-950 focus-visible:outline-emerald-700 mt-3"
+                  >Read monthly revenue summary
+                  <svg
+                    class="size-4 shrink-0"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M5 12h14m-6-6 6 6-6 6" /></svg
+                ></a>
+              </article>
+              <article
+                class="min-w-0 rounded-2xl border border-stone-200 bg-white p-5 sm:p-6 flex flex-col"
+              >
+                <div class="flex items-center justify-between gap-3">
+                  <span
+                    class="grid size-11 place-items-center rounded-xl bg-emerald-100 text-emerald-800"
+                    ><svg
+                      class="size-5 shrink-0"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M6 3h9l4 4v14H6V3Zm9 0v5h4M9 12h7M9 16h7"
+                      /></svg></span
+                  ><span
+                    class="inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold bg-emerald-50 text-emerald-800"
+                    >Ready</span
+                  >
+                </div>
+                <h3 class="mt-5 text-lg font-semibold">Customer health</h3>
+                <p class="mt-2 text-xs text-stone-600">October 2026</p>
+                <p class="mt-4 flex-1 text-sm leading-relaxed text-stone-600">
+                  There are 1,284 active customers with 96.8% monthly retention.
+                </p>
+                <a
+                  href="#customer-report"
+                  class="inline-flex min-h-11 items-center gap-2 rounded-lg text-sm font-semibold text-emerald-800 underline underline-offset-4 transition-colors hover:text-emerald-950 focus-visible:outline-emerald-700 mt-3"
+                  >Read customer health summary
+                  <svg
+                    class="size-4 shrink-0"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M5 12h14m-6-6 6 6-6 6" /></svg
+                ></a>
+              </article>
+              <article
+                class="min-w-0 rounded-2xl border border-stone-200 bg-white p-5 sm:p-6 flex flex-col"
+              >
+                <div class="flex items-center justify-between gap-3">
+                  <span
+                    class="grid size-11 place-items-center rounded-xl bg-emerald-100 text-emerald-800"
+                    ><svg
+                      class="size-5 shrink-0"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M6 3h9l4 4v14H6V3Zm9 0v5h4M9 12h7M9 16h7"
+                      /></svg></span
+                  ><span
+                    class="inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold bg-emerald-50 text-emerald-800"
+                    >Ready</span
+                  >
+                </div>
+                <h3 class="mt-5 text-lg font-semibold">Order operations</h3>
+                <p class="mt-2 text-xs text-stone-600">Latest six orders</p>
+                <p class="mt-4 flex-1 text-sm leading-relaxed text-stone-600">
+                  Four orders are paid, one is pending, and one has been
+                  refunded.
+                </p>
+                <a
+                  href="#operations-report"
+                  class="inline-flex min-h-11 items-center gap-2 rounded-lg text-sm font-semibold text-emerald-800 underline underline-offset-4 transition-colors hover:text-emerald-950 focus-visible:outline-emerald-700 mt-3"
+                  >Read order operations summary
+                  <svg
+                    class="size-4 shrink-0"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M5 12h14m-6-6 6 6-6 6" /></svg
+                ></a>
+              </article>
+            </div>
+          </section>
+          <section
+            id="report-register"
+            aria-labelledby="report-register-heading"
+            class="mt-6 min-w-0 rounded-2xl border border-stone-200 bg-white"
+          >
+            <div class="p-5 sm:p-6">
+              <h2
+                id="report-register-heading"
+                class="text-lg font-semibold tracking-tight"
+              >
+                Report register
+              </h2>
+              <p
+                id="report-register-help"
+                class="mt-2 text-xs leading-relaxed text-stone-600"
+              >
+                Static reports prepared for the sample Studio workspace. On
+                narrow screens, scroll sideways to see every column.
+              </p>
+            </div>
+            <div
+              role="region"
+              aria-label="Report register, horizontally scrollable"
+              aria-describedby="report-register-help"
+              tabindex="0"
+              class="overflow-x-auto rounded-b-2xl focus-visible:-outline-offset-4"
+            >
+              <table class="w-full min-w-2xl border-collapse text-left text-sm">
+                <caption class="sr-only">
+                  Three prepared sample reports, with reporting period, owner,
+                  and readiness status.
+                </caption>
+                <thead class="border-y border-stone-200 bg-stone-50">
+                  <tr>
+                    <th
+                      scope="col"
+                      class="whitespace-nowrap px-5 py-3 text-xs font-medium text-stone-600"
+                    >
+                      Report
+                    </th>
+                    <th
+                      scope="col"
+                      class="whitespace-nowrap px-5 py-3 text-xs font-medium text-stone-600"
+                    >
+                      Period
+                    </th>
+                    <th
+                      scope="col"
+                      class="whitespace-nowrap px-5 py-3 text-xs font-medium text-stone-600"
+                    >
+                      Owner
+                    </th>
+                    <th
+                      scope="col"
+                      class="whitespace-nowrap px-5 py-3 text-xs font-medium text-stone-600"
+                    >
+                      Status
+                    </th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-stone-100">
+                  <tr class="hover:bg-stone-50">
+                    <th scope="row" class="px-5 py-4 font-medium">
+                      Monthly revenue
+                    </th>
+                    <td class="px-5 py-4 font-normal text-stone-600">
+                      Oct 1–22, 2026
+                    </td>
+                    <td class="px-5 py-4 font-normal text-stone-600">
+                      Alex Lee
+                    </td>
+                    <td class="px-5 py-4 font-normal text-stone-600">
+                      <span
+                        class="inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold bg-emerald-50 text-emerald-800"
+                        >Ready</span
+                      >
+                    </td>
+                  </tr>
+                  <tr class="hover:bg-stone-50">
+                    <th scope="row" class="px-5 py-4 font-medium">
+                      Customer health
+                    </th>
+                    <td class="px-5 py-4 font-normal text-stone-600">
+                      October 2026
+                    </td>
+                    <td class="px-5 py-4 font-normal text-stone-600">
+                      Maya Kim
+                    </td>
+                    <td class="px-5 py-4 font-normal text-stone-600">
+                      <span
+                        class="inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold bg-emerald-50 text-emerald-800"
+                        >Ready</span
+                      >
+                    </td>
+                  </tr>
+                  <tr class="hover:bg-stone-50">
+                    <th scope="row" class="px-5 py-4 font-medium">
+                      Order operations
+                    </th>
+                    <td class="px-5 py-4 font-normal text-stone-600">
+                      Latest six orders
+                    </td>
+                    <td class="px-5 py-4 font-normal text-stone-600">
+                      Jordan Silva
+                    </td>
+                    <td class="px-5 py-4 font-normal text-stone-600">
+                      <span
+                        class="inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold bg-emerald-50 text-emerald-800"
+                        >Ready</span
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <div class="mt-6 space-y-6">
+            <section
+              id="revenue-report"
+              aria-labelledby="revenue-report-heading"
+              class="min-w-0 rounded-2xl border border-stone-200 bg-white p-5 sm:p-6"
+            >
+              <p
+                class="text-xs font-semibold tracking-widest text-emerald-700 uppercase"
+              >
+                Oct 1–22, 2026
+              </p>
+              <h2
+                id="revenue-report-heading"
+                class="mt-2 text-xl font-semibold"
+              >
+                Monthly revenue summary
+              </h2>
+              <p class="mt-4 max-w-3xl text-sm leading-relaxed text-stone-700">
+                Revenue is $24,860, up 12.8% against the prior-month comparison.
+              </p>
+              <p class="mt-3 max-w-3xl text-sm leading-relaxed text-stone-600">
+                Revenue is growing; review trial activation alongside
+                acquisition before expanding spend.
+              </p>
+              <a
+                href="./reports/revenue-sample.txt"
+                download
+                class="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl border border-stone-300 bg-white px-5 py-3 text-sm font-semibold text-stone-800 transition-colors hover:border-emerald-700 hover:bg-emerald-50 focus-visible:outline-emerald-700 mt-5"
+                >Download monthly revenue sample (.txt)</a
+              >
+            </section>
+            <section
+              id="customer-report"
+              aria-labelledby="customer-report-heading"
+              class="min-w-0 rounded-2xl border border-stone-200 bg-white p-5 sm:p-6"
+            >
+              <p
+                class="text-xs font-semibold tracking-widest text-emerald-700 uppercase"
+              >
+                October 2026
+              </p>
+              <h2
+                id="customer-report-heading"
+                class="mt-2 text-xl font-semibold"
+              >
+                Customer health summary
+              </h2>
+              <p class="mt-4 max-w-3xl text-sm leading-relaxed text-stone-700">
+                There are 1,284 active customers with 96.8% monthly retention.
+              </p>
+              <p class="mt-3 max-w-3xl text-sm leading-relaxed text-stone-600">
+                Twelve accounts are flagged for attention. Start with
+                relationship context rather than assuming why activity changed.
+              </p>
+              <a
+                href="./reports/customer-sample.txt"
+                download
+                class="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl border border-stone-300 bg-white px-5 py-3 text-sm font-semibold text-stone-800 transition-colors hover:border-emerald-700 hover:bg-emerald-50 focus-visible:outline-emerald-700 mt-5"
+                >Download customer health sample (.txt)</a
+              >
+            </section>
+            <section
+              id="operations-report"
+              aria-labelledby="operations-report-heading"
+              class="min-w-0 rounded-2xl border border-stone-200 bg-white p-5 sm:p-6"
+            >
+              <p
+                class="text-xs font-semibold tracking-widest text-emerald-700 uppercase"
+              >
+                Latest six orders
+              </p>
+              <h2
+                id="operations-report-heading"
+                class="mt-2 text-xl font-semibold"
+              >
+                Order operations summary
+              </h2>
+              <p class="mt-4 max-w-3xl text-sm leading-relaxed text-stone-700">
+                Four orders are paid, one is pending, and one has been refunded.
+              </p>
+              <p class="mt-3 max-w-3xl text-sm leading-relaxed text-stone-600">
+                The six listed amounts total $684.00, including pending and
+                refunded orders; this is not recognized revenue.
+              </p>
+              <a
+                href="./reports/operations-sample.txt"
+                download
+                class="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl border border-stone-300 bg-white px-5 py-3 text-sm font-semibold text-stone-800 transition-colors hover:border-emerald-700 hover:bg-emerald-50 focus-visible:outline-emerald-700 mt-5"
+                >Download order operations sample (.txt)</a
+              >
+            </section>
+          </div>
+          <footer
+            class="mt-8 flex flex-col gap-3 border-t border-stone-200 pt-5 text-xs text-stone-600 sm:flex-row sm:items-center sm:justify-between"
+          >
+            <p>Forma workspace · Day 11 training demo</p>
+            <a
+              href="./index.html"
+              class="inline-flex min-h-11 items-center rounded-lg underline underline-offset-4 hover:text-emerald-800"
+              >Back to Forma home</a
+            >
+          </footer>
+        </main>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

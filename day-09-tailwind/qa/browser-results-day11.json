@@ -1,0 +1,4488 @@
+{
+  "browser": "155.0.8059.86",
+  "base": "http://127.0.0.1:5173",
+  "screenCount": 9,
+  "viewportCount": 5,
+  "localTargetsChecked": 12,
+  "results": [
+    {
+      "page": "index.html",
+      "width": 320,
+      "title": "A calmer way to work | Forma",
+      "viewport": 320,
+      "documentWidth": 320,
+      "productColumns": 1,
+      "kpiColumns": null,
+      "sidebarPosition": null,
+      "tables": [],
+      "keyboardControls": 23,
+      "contrastPairs": [
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 5.36,
+          "required": 3
+        },
+        {
+          "ratio": 13.36,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.64,
+          "required": 4.5
+        },
+        {
+          "ratio": 9.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 14.53,
+          "required": 3
+        },
+        {
+          "ratio": 5.14,
+          "required": 3
+        },
+        {
+          "ratio": 7.31,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.17,
+          "required": 4.5
+        },
+        {
+          "ratio": 11.51,
+          "required": 4.5
+        },
+        {
+          "ratio": 11.87,
+          "required": 4.5
+        },
+        {
+          "ratio": 10.98,
+          "required": 4.5
+        },
+        {
+          "ratio": 16.74,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.87,
+          "required": 4.5
+        },
+        {
+          "ratio": 4.79,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 4.5
+        },
+        {
+          "ratio": 7,
+          "required": 4.5
+        },
+        {
+          "ratio": 16.03,
+          "required": 3
+        },
+        {
+          "ratio": 4.92,
+          "required": 4.5
+        },
+        {
+          "ratio": 13.36,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.18,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.47,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 9.63,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.36,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.61,
+          "required": 4.5
+        },
+        {
+          "ratio": 9.29,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.9,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.24,
+          "required": 4.5
+        },
+        {
+          "ratio": 4.58,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.18,
+          "required": 3
+        },
+        {
+          "ratio": 16.6,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.23,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.25,
+          "required": 4.5
+        },
+        {
+          "ratio": 16.6,
+          "required": 3
+        },
+        {
+          "ratio": 14.53,
+          "required": 4.5
+        },
+        {
+          "ratio": 12.96,
+          "required": 4.5
+        }
+      ],
+      "passed": true
+    },
+    {
+      "page": "dashboard.html",
+      "width": 320,
+      "title": "Workspace overview | Forma",
+      "viewport": 320,
+      "documentWidth": 320,
+      "productColumns": null,
+      "kpiColumns": 1,
+      "sidebarPosition": "static",
+      "tables": [
+        {
+          "content": 672,
+          "container": 278,
+          "columns": 5,
+          "rows": 5
+        }
+      ],
+      "keyboardControls": 15,
+      "contrastPairs": [
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 5.36,
+          "required": 3
+        },
+        {
+          "ratio": 7,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.64,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.23,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.24,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 14.53,
+          "required": 3
+        },
+        {
+          "ratio": 7.31,
+          "required": 4.5
+        },
+        {
+          "ratio": 4.58,
+          "required": 4.5
+        },
+        {
+          "ratio": 4.79,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.36,
+          "required": 4.5
+        },
+        {
+          "ratio": 6.84,
+          "required": 4.5
+        }
+      ],
+      "passed": true
+    },
+    {
+      "page": "customers.html",
+      "width": 320,
+      "title": "Customer directory | Forma",
+      "viewport": 320,
+      "documentWidth": 320,
+      "productColumns": null,
+      "kpiColumns": null,
+      "sidebarPosition": "static",
+      "tables": [
+        {
+          "content": 672,
+          "container": 278,
+          "columns": 5,
+          "rows": 6
+        }
+      ],
+      "keyboardControls": 16,
+      "contrastPairs": [
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 5.36,
+          "required": 3
+        },
+        {
+          "ratio": 7,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.64,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.23,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.24,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 14.53,
+          "required": 3
+        },
+        {
+          "ratio": 7.31,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.17,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.36,
+          "required": 4.5
+        },
+        {
+          "ratio": 6.84,
+          "required": 4.5
+        },
+        {
+          "ratio": 16.74,
+          "required": 4.5
+        }
+      ],
+      "passed": true
+    },
+    {
+      "page": "products.html",
+      "width": 320,
+      "title": "Products and orders | Forma",
+      "viewport": 320,
+      "documentWidth": 320,
+      "productColumns": null,
+      "kpiColumns": null,
+      "sidebarPosition": "static",
+      "tables": [
+        {
+          "content": 672,
+          "container": 278,
+          "columns": 5,
+          "rows": 6
+        }
+      ],
+      "keyboardControls": 21,
+      "contrastPairs": [
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 5.36,
+          "required": 3
+        },
+        {
+          "ratio": 7,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.64,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.23,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.24,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 14.53,
+          "required": 3
+        },
+        {
+          "ratio": 7.31,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.17,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.29,
+          "required": 4.5
+        },
+        {
+          "ratio": 16.74,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.61,
+          "required": 4.5
+        },
+        {
+          "ratio": 6.84,
+          "required": 4.5
+        }
+      ],
+      "passed": true
+    },
+    {
+      "page": "analytics.html",
+      "width": 320,
+      "title": "Analytics | Forma",
+      "viewport": 320,
+      "documentWidth": 320,
+      "productColumns": null,
+      "kpiColumns": null,
+      "sidebarPosition": "static",
+      "tables": [
+        {
+          "content": 672,
+          "container": 278,
+          "columns": 5,
+          "rows": 4
+        }
+      ],
+      "keyboardControls": 18,
+      "contrastPairs": [
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 5.36,
+          "required": 3
+        },
+        {
+          "ratio": 7,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.64,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.23,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.24,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 14.53,
+          "required": 3
+        },
+        {
+          "ratio": 7.31,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.17,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.61,
+          "required": 4.5
+        },
+        {
+          "ratio": 13.98,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.87,
+          "required": 4.5
+        }
+      ],
+      "passed": true
+    },
+    {
+      "page": "reports.html",
+      "width": 320,
+      "title": "Reports | Forma",
+      "viewport": 320,
+      "documentWidth": 320,
+      "productColumns": null,
+      "kpiColumns": null,
+      "sidebarPosition": "static",
+      "tables": [
+        {
+          "content": 672,
+          "container": 278,
+          "columns": 4,
+          "rows": 3
+        }
+      ],
+      "keyboardControls": 21,
+      "contrastPairs": [
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 5.36,
+          "required": 3
+        },
+        {
+          "ratio": 7,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.64,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.23,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.24,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 14.53,
+          "required": 3
+        },
+        {
+          "ratio": 7.31,
+          "required": 4.5
+        },
+        {
+          "ratio": 16.74,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.61,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.36,
+          "required": 4.5
+        },
+        {
+          "ratio": 10.28,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.17,
+          "required": 4.5
+        }
+      ],
+      "passed": true
+    },
+    {
+      "page": "settings.html",
+      "width": 320,
+      "title": "Workspace settings | Forma",
+      "viewport": 320,
+      "documentWidth": 320,
+      "productColumns": null,
+      "kpiColumns": null,
+      "sidebarPosition": "static",
+      "tables": [],
+      "keyboardControls": 22,
+      "contrastPairs": [
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 5.36,
+          "required": 3
+        },
+        {
+          "ratio": 7,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.64,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.23,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.24,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 14.53,
+          "required": 3
+        },
+        {
+          "ratio": 7.31,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.17,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.61,
+          "required": 4.5
+        }
+      ],
+      "passed": true
+    },
+    {
+      "page": "profile.html",
+      "width": 320,
+      "title": "Alex Lee’s profile | Forma",
+      "viewport": 320,
+      "documentWidth": 320,
+      "productColumns": null,
+      "kpiColumns": null,
+      "sidebarPosition": "static",
+      "tables": [],
+      "keyboardControls": 17,
+      "contrastPairs": [
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 5.36,
+          "required": 3
+        },
+        {
+          "ratio": 7,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.64,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.23,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.24,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 14.53,
+          "required": 3
+        },
+        {
+          "ratio": 7.31,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.17,
+          "required": 4.5
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 15.18,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 4.5
+        },
+        {
+          "ratio": 13.36,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.61,
+          "required": 4.5
+        }
+      ],
+      "passed": true
+    },
+    {
+      "page": "auth.html",
+      "width": 320,
+      "title": "Your next chapter starts here | Forma",
+      "viewport": 320,
+      "documentWidth": 320,
+      "productColumns": null,
+      "kpiColumns": null,
+      "sidebarPosition": null,
+      "tables": [],
+      "keyboardControls": 22,
+      "contrastPairs": [
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 5.36,
+          "required": 3
+        },
+        {
+          "ratio": 7.64,
+          "required": 4.5
+        },
+        {
+          "ratio": 13.36,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 14.53,
+          "required": 3
+        },
+        {
+          "ratio": 7.31,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 4.5
+        },
+        {
+          "ratio": 4.79,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.61,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.87,
+          "required": 4.5
+        },
+        {
+          "ratio": 4.92,
+          "required": 4.5
+        },
+        {
+          "ratio": 16.03,
+          "required": 4.5
+        },
+        {
+          "ratio": 7,
+          "required": 4.5
+        },
+        {
+          "ratio": 9.61,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.92,
+          "required": 4.5
+        },
+        {
+          "ratio": 9.85,
+          "required": 4.5
+        },
+        {
+          "ratio": 4.58,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.29,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        }
+      ],
+      "passed": true
+    },
+    {
+      "page": "index.html",
+      "width": 390,
+      "title": "A calmer way to work | Forma",
+      "viewport": 390,
+      "documentWidth": 390,
+      "productColumns": 1,
+      "kpiColumns": null,
+      "sidebarPosition": null,
+      "tables": [],
+      "keyboardControls": 24,
+      "contrastPairs": [
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 5.36,
+          "required": 3
+        },
+        {
+          "ratio": 13.36,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.64,
+          "required": 4.5
+        },
+        {
+          "ratio": 9.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 14.53,
+          "required": 3
+        },
+        {
+          "ratio": 5.14,
+          "required": 3
+        },
+        {
+          "ratio": 7.31,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.17,
+          "required": 4.5
+        },
+        {
+          "ratio": 11.51,
+          "required": 4.5
+        },
+        {
+          "ratio": 11.87,
+          "required": 4.5
+        },
+        {
+          "ratio": 10.98,
+          "required": 4.5
+        },
+        {
+          "ratio": 16.74,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.87,
+          "required": 4.5
+        },
+        {
+          "ratio": 4.79,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 4.5
+        },
+        {
+          "ratio": 7,
+          "required": 4.5
+        },
+        {
+          "ratio": 16.03,
+          "required": 3
+        },
+        {
+          "ratio": 4.92,
+          "required": 4.5
+        },
+        {
+          "ratio": 13.36,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.18,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.47,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 9.63,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.36,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.61,
+          "required": 4.5
+        },
+        {
+          "ratio": 9.29,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.9,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.24,
+          "required": 4.5
+        },
+        {
+          "ratio": 4.58,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.18,
+          "required": 3
+        },
+        {
+          "ratio": 16.6,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.23,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.25,
+          "required": 4.5
+        },
+        {
+          "ratio": 16.6,
+          "required": 3
+        },
+        {
+          "ratio": 14.53,
+          "required": 4.5
+        },
+        {
+          "ratio": 12.96,
+          "required": 4.5
+        }
+      ],
+      "passed": true
+    },
+    {
+      "page": "dashboard.html",
+      "width": 390,
+      "title": "Workspace overview | Forma",
+      "viewport": 390,
+      "documentWidth": 390,
+      "productColumns": null,
+      "kpiColumns": 1,
+      "sidebarPosition": "static",
+      "tables": [
+        {
+          "content": 672,
+          "container": 348,
+          "columns": 5,
+          "rows": 5
+        }
+      ],
+      "keyboardControls": 15,
+      "contrastPairs": [
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 5.36,
+          "required": 3
+        },
+        {
+          "ratio": 7,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.64,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.23,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.24,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 14.53,
+          "required": 3
+        },
+        {
+          "ratio": 7.31,
+          "required": 4.5
+        },
+        {
+          "ratio": 4.58,
+          "required": 4.5
+        },
+        {
+          "ratio": 4.79,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.36,
+          "required": 4.5
+        },
+        {
+          "ratio": 6.84,
+          "required": 4.5
+        }
+      ],
+      "passed": true
+    },
+    {
+      "page": "customers.html",
+      "width": 390,
+      "title": "Customer directory | Forma",
+      "viewport": 390,
+      "documentWidth": 390,
+      "productColumns": null,
+      "kpiColumns": null,
+      "sidebarPosition": "static",
+      "tables": [
+        {
+          "content": 672,
+          "container": 348,
+          "columns": 5,
+          "rows": 6
+        }
+      ],
+      "keyboardControls": 16,
+      "contrastPairs": [
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 5.36,
+          "required": 3
+        },
+        {
+          "ratio": 7,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.64,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.23,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.24,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 14.53,
+          "required": 3
+        },
+        {
+          "ratio": 7.31,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.17,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.36,
+          "required": 4.5
+        },
+        {
+          "ratio": 6.84,
+          "required": 4.5
+        },
+        {
+          "ratio": 16.74,
+          "required": 4.5
+        }
+      ],
+      "passed": true
+    },
+    {
+      "page": "products.html",
+      "width": 390,
+      "title": "Products and orders | Forma",
+      "viewport": 390,
+      "documentWidth": 390,
+      "productColumns": null,
+      "kpiColumns": null,
+      "sidebarPosition": "static",
+      "tables": [
+        {
+          "content": 672,
+          "container": 348,
+          "columns": 5,
+          "rows": 6
+        }
+      ],
+      "keyboardControls": 21,
+      "contrastPairs": [
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 5.36,
+          "required": 3
+        },
+        {
+          "ratio": 7,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.64,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.23,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.24,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 14.53,
+          "required": 3
+        },
+        {
+          "ratio": 7.31,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.17,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.29,
+          "required": 4.5
+        },
+        {
+          "ratio": 16.74,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.61,
+          "required": 4.5
+        },
+        {
+          "ratio": 6.84,
+          "required": 4.5
+        }
+      ],
+      "passed": true
+    },
+    {
+      "page": "analytics.html",
+      "width": 390,
+      "title": "Analytics | Forma",
+      "viewport": 390,
+      "documentWidth": 390,
+      "productColumns": null,
+      "kpiColumns": null,
+      "sidebarPosition": "static",
+      "tables": [
+        {
+          "content": 672,
+          "container": 348,
+          "columns": 5,
+          "rows": 4
+        }
+      ],
+      "keyboardControls": 17,
+      "contrastPairs": [
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 5.36,
+          "required": 3
+        },
+        {
+          "ratio": 7,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.64,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.23,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.24,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 14.53,
+          "required": 3
+        },
+        {
+          "ratio": 7.31,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.17,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.61,
+          "required": 4.5
+        },
+        {
+          "ratio": 13.98,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.87,
+          "required": 4.5
+        }
+      ],
+      "passed": true
+    },
+    {
+      "page": "reports.html",
+      "width": 390,
+      "title": "Reports | Forma",
+      "viewport": 390,
+      "documentWidth": 390,
+      "productColumns": null,
+      "kpiColumns": null,
+      "sidebarPosition": "static",
+      "tables": [
+        {
+          "content": 672,
+          "container": 348,
+          "columns": 4,
+          "rows": 3
+        }
+      ],
+      "keyboardControls": 22,
+      "contrastPairs": [
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 5.36,
+          "required": 3
+        },
+        {
+          "ratio": 7,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.64,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.23,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.24,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 14.53,
+          "required": 3
+        },
+        {
+          "ratio": 7.31,
+          "required": 4.5
+        },
+        {
+          "ratio": 16.74,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.61,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.36,
+          "required": 4.5
+        },
+        {
+          "ratio": 10.28,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.17,
+          "required": 4.5
+        }
+      ],
+      "passed": true
+    },
+    {
+      "page": "settings.html",
+      "width": 390,
+      "title": "Workspace settings | Forma",
+      "viewport": 390,
+      "documentWidth": 390,
+      "productColumns": null,
+      "kpiColumns": null,
+      "sidebarPosition": "static",
+      "tables": [],
+      "keyboardControls": 22,
+      "contrastPairs": [
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 5.36,
+          "required": 3
+        },
+        {
+          "ratio": 7,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.64,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.23,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.24,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 14.53,
+          "required": 3
+        },
+        {
+          "ratio": 7.31,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.17,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.61,
+          "required": 4.5
+        }
+      ],
+      "passed": true
+    },
+    {
+      "page": "profile.html",
+      "width": 390,
+      "title": "Alex Lee’s profile | Forma",
+      "viewport": 390,
+      "documentWidth": 390,
+      "productColumns": null,
+      "kpiColumns": null,
+      "sidebarPosition": "static",
+      "tables": [],
+      "keyboardControls": 17,
+      "contrastPairs": [
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 5.36,
+          "required": 3
+        },
+        {
+          "ratio": 7,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.64,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.23,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.24,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 14.53,
+          "required": 3
+        },
+        {
+          "ratio": 7.31,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.17,
+          "required": 4.5
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 15.18,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 4.5
+        },
+        {
+          "ratio": 13.36,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.61,
+          "required": 4.5
+        }
+      ],
+      "passed": true
+    },
+    {
+      "page": "auth.html",
+      "width": 390,
+      "title": "Your next chapter starts here | Forma",
+      "viewport": 390,
+      "documentWidth": 390,
+      "productColumns": null,
+      "kpiColumns": null,
+      "sidebarPosition": null,
+      "tables": [],
+      "keyboardControls": 22,
+      "contrastPairs": [
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 5.36,
+          "required": 3
+        },
+        {
+          "ratio": 7.64,
+          "required": 4.5
+        },
+        {
+          "ratio": 13.36,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 14.53,
+          "required": 3
+        },
+        {
+          "ratio": 7.31,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 4.5
+        },
+        {
+          "ratio": 4.79,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.61,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.87,
+          "required": 4.5
+        },
+        {
+          "ratio": 4.92,
+          "required": 4.5
+        },
+        {
+          "ratio": 16.03,
+          "required": 4.5
+        },
+        {
+          "ratio": 7,
+          "required": 4.5
+        },
+        {
+          "ratio": 9.61,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.92,
+          "required": 4.5
+        },
+        {
+          "ratio": 9.85,
+          "required": 4.5
+        },
+        {
+          "ratio": 4.58,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.29,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        }
+      ],
+      "passed": true
+    },
+    {
+      "page": "index.html",
+      "width": 768,
+      "title": "A calmer way to work | Forma",
+      "viewport": 768,
+      "documentWidth": 768,
+      "productColumns": 2,
+      "kpiColumns": null,
+      "sidebarPosition": null,
+      "tables": [],
+      "keyboardControls": 23,
+      "contrastPairs": [
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 5.36,
+          "required": 3
+        },
+        {
+          "ratio": 13.36,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.64,
+          "required": 4.5
+        },
+        {
+          "ratio": 9.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 14.53,
+          "required": 3
+        },
+        {
+          "ratio": 5.14,
+          "required": 3
+        },
+        {
+          "ratio": 7.31,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.17,
+          "required": 4.5
+        },
+        {
+          "ratio": 11.51,
+          "required": 4.5
+        },
+        {
+          "ratio": 11.87,
+          "required": 4.5
+        },
+        {
+          "ratio": 10.98,
+          "required": 4.5
+        },
+        {
+          "ratio": 16.74,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.87,
+          "required": 4.5
+        },
+        {
+          "ratio": 4.79,
+          "required": 4.5
+        },
+        {
+          "ratio": 7,
+          "required": 4.5
+        },
+        {
+          "ratio": 16.03,
+          "required": 3
+        },
+        {
+          "ratio": 4.92,
+          "required": 4.5
+        },
+        {
+          "ratio": 13.36,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.18,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.47,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.64,
+          "required": 3
+        },
+        {
+          "ratio": 5.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 9.63,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.36,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.61,
+          "required": 4.5
+        },
+        {
+          "ratio": 9.29,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.9,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.24,
+          "required": 4.5
+        },
+        {
+          "ratio": 4.58,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.18,
+          "required": 3
+        },
+        {
+          "ratio": 16.6,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.23,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.25,
+          "required": 4.5
+        },
+        {
+          "ratio": 16.6,
+          "required": 3
+        },
+        {
+          "ratio": 14.53,
+          "required": 4.5
+        },
+        {
+          "ratio": 12.96,
+          "required": 4.5
+        }
+      ],
+      "passed": true
+    },
+    {
+      "page": "dashboard.html",
+      "width": 768,
+      "title": "Workspace overview | Forma",
+      "viewport": 768,
+      "documentWidth": 768,
+      "productColumns": null,
+      "kpiColumns": 2,
+      "sidebarPosition": "static",
+      "tables": [
+        {
+          "content": 702,
+          "container": 702,
+          "columns": 5,
+          "rows": 5
+        }
+      ],
+      "keyboardControls": 15,
+      "contrastPairs": [
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 5.36,
+          "required": 3
+        },
+        {
+          "ratio": 7,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.64,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.23,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.24,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 14.53,
+          "required": 3
+        },
+        {
+          "ratio": 7.31,
+          "required": 4.5
+        },
+        {
+          "ratio": 4.58,
+          "required": 4.5
+        },
+        {
+          "ratio": 4.79,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.36,
+          "required": 4.5
+        },
+        {
+          "ratio": 6.84,
+          "required": 4.5
+        }
+      ],
+      "passed": true
+    },
+    {
+      "page": "customers.html",
+      "width": 768,
+      "title": "Customer directory | Forma",
+      "viewport": 768,
+      "documentWidth": 768,
+      "productColumns": null,
+      "kpiColumns": null,
+      "sidebarPosition": "static",
+      "tables": [
+        {
+          "content": 702,
+          "container": 702,
+          "columns": 5,
+          "rows": 6
+        }
+      ],
+      "keyboardControls": 16,
+      "contrastPairs": [
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 5.36,
+          "required": 3
+        },
+        {
+          "ratio": 7,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.64,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.23,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.24,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 14.53,
+          "required": 3
+        },
+        {
+          "ratio": 7.31,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.17,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.36,
+          "required": 4.5
+        },
+        {
+          "ratio": 6.84,
+          "required": 4.5
+        },
+        {
+          "ratio": 16.74,
+          "required": 4.5
+        }
+      ],
+      "passed": true
+    },
+    {
+      "page": "products.html",
+      "width": 768,
+      "title": "Products and orders | Forma",
+      "viewport": 768,
+      "documentWidth": 768,
+      "productColumns": null,
+      "kpiColumns": null,
+      "sidebarPosition": "static",
+      "tables": [
+        {
+          "content": 702,
+          "container": 702,
+          "columns": 5,
+          "rows": 6
+        }
+      ],
+      "keyboardControls": 21,
+      "contrastPairs": [
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 5.36,
+          "required": 3
+        },
+        {
+          "ratio": 7,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.64,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.23,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.24,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 14.53,
+          "required": 3
+        },
+        {
+          "ratio": 7.31,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.17,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.29,
+          "required": 4.5
+        },
+        {
+          "ratio": 16.74,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.61,
+          "required": 4.5
+        },
+        {
+          "ratio": 6.84,
+          "required": 4.5
+        }
+      ],
+      "passed": true
+    },
+    {
+      "page": "analytics.html",
+      "width": 768,
+      "title": "Analytics | Forma",
+      "viewport": 768,
+      "documentWidth": 768,
+      "productColumns": null,
+      "kpiColumns": null,
+      "sidebarPosition": "static",
+      "tables": [
+        {
+          "content": 702,
+          "container": 702,
+          "columns": 5,
+          "rows": 4
+        }
+      ],
+      "keyboardControls": 17,
+      "contrastPairs": [
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 5.36,
+          "required": 3
+        },
+        {
+          "ratio": 7,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.64,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.23,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.24,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 14.53,
+          "required": 3
+        },
+        {
+          "ratio": 7.31,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.17,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.61,
+          "required": 4.5
+        },
+        {
+          "ratio": 13.98,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.87,
+          "required": 4.5
+        }
+      ],
+      "passed": true
+    },
+    {
+      "page": "reports.html",
+      "width": 768,
+      "title": "Reports | Forma",
+      "viewport": 768,
+      "documentWidth": 768,
+      "productColumns": null,
+      "kpiColumns": null,
+      "sidebarPosition": "static",
+      "tables": [
+        {
+          "content": 702,
+          "container": 702,
+          "columns": 4,
+          "rows": 3
+        }
+      ],
+      "keyboardControls": 22,
+      "contrastPairs": [
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 5.36,
+          "required": 3
+        },
+        {
+          "ratio": 7,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.64,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.23,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.24,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 14.53,
+          "required": 3
+        },
+        {
+          "ratio": 7.31,
+          "required": 4.5
+        },
+        {
+          "ratio": 16.74,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.61,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.36,
+          "required": 4.5
+        },
+        {
+          "ratio": 10.28,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.17,
+          "required": 4.5
+        }
+      ],
+      "passed": true
+    },
+    {
+      "page": "settings.html",
+      "width": 768,
+      "title": "Workspace settings | Forma",
+      "viewport": 768,
+      "documentWidth": 768,
+      "productColumns": null,
+      "kpiColumns": null,
+      "sidebarPosition": "static",
+      "tables": [],
+      "keyboardControls": 22,
+      "contrastPairs": [
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 5.36,
+          "required": 3
+        },
+        {
+          "ratio": 7,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.64,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.23,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.24,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 14.53,
+          "required": 3
+        },
+        {
+          "ratio": 7.31,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.17,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.61,
+          "required": 4.5
+        }
+      ],
+      "passed": true
+    },
+    {
+      "page": "profile.html",
+      "width": 768,
+      "title": "Alex Lee’s profile | Forma",
+      "viewport": 768,
+      "documentWidth": 768,
+      "productColumns": null,
+      "kpiColumns": null,
+      "sidebarPosition": "static",
+      "tables": [],
+      "keyboardControls": 17,
+      "contrastPairs": [
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 5.36,
+          "required": 3
+        },
+        {
+          "ratio": 7,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.64,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.23,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.24,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 14.53,
+          "required": 3
+        },
+        {
+          "ratio": 7.31,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.17,
+          "required": 4.5
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 15.18,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 4.5
+        },
+        {
+          "ratio": 13.36,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.61,
+          "required": 4.5
+        }
+      ],
+      "passed": true
+    },
+    {
+      "page": "auth.html",
+      "width": 768,
+      "title": "Your next chapter starts here | Forma",
+      "viewport": 768,
+      "documentWidth": 768,
+      "productColumns": null,
+      "kpiColumns": null,
+      "sidebarPosition": null,
+      "tables": [],
+      "keyboardControls": 22,
+      "contrastPairs": [
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 5.36,
+          "required": 3
+        },
+        {
+          "ratio": 7.64,
+          "required": 4.5
+        },
+        {
+          "ratio": 13.36,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 14.53,
+          "required": 3
+        },
+        {
+          "ratio": 7.31,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 4.5
+        },
+        {
+          "ratio": 4.79,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.61,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.87,
+          "required": 4.5
+        },
+        {
+          "ratio": 4.92,
+          "required": 4.5
+        },
+        {
+          "ratio": 16.03,
+          "required": 4.5
+        },
+        {
+          "ratio": 7,
+          "required": 4.5
+        },
+        {
+          "ratio": 9.61,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.92,
+          "required": 4.5
+        },
+        {
+          "ratio": 9.85,
+          "required": 4.5
+        },
+        {
+          "ratio": 4.58,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.29,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        }
+      ],
+      "passed": true
+    },
+    {
+      "page": "index.html",
+      "width": 1024,
+      "title": "A calmer way to work | Forma",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "productColumns": 3,
+      "kpiColumns": null,
+      "sidebarPosition": null,
+      "tables": [],
+      "keyboardControls": 23,
+      "contrastPairs": [
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 5.36,
+          "required": 3
+        },
+        {
+          "ratio": 13.36,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.64,
+          "required": 4.5
+        },
+        {
+          "ratio": 9.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 14.53,
+          "required": 3
+        },
+        {
+          "ratio": 5.14,
+          "required": 3
+        },
+        {
+          "ratio": 7.31,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.17,
+          "required": 4.5
+        },
+        {
+          "ratio": 11.51,
+          "required": 4.5
+        },
+        {
+          "ratio": 11.87,
+          "required": 4.5
+        },
+        {
+          "ratio": 10.98,
+          "required": 4.5
+        },
+        {
+          "ratio": 16.74,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.87,
+          "required": 4.5
+        },
+        {
+          "ratio": 4.79,
+          "required": 4.5
+        },
+        {
+          "ratio": 7,
+          "required": 4.5
+        },
+        {
+          "ratio": 16.03,
+          "required": 3
+        },
+        {
+          "ratio": 4.92,
+          "required": 4.5
+        },
+        {
+          "ratio": 13.36,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.18,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.47,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.64,
+          "required": 3
+        },
+        {
+          "ratio": 5.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 9.63,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.36,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.61,
+          "required": 4.5
+        },
+        {
+          "ratio": 9.29,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.9,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.24,
+          "required": 4.5
+        },
+        {
+          "ratio": 4.58,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.18,
+          "required": 3
+        },
+        {
+          "ratio": 16.6,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.23,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.25,
+          "required": 4.5
+        },
+        {
+          "ratio": 16.6,
+          "required": 3
+        },
+        {
+          "ratio": 14.53,
+          "required": 4.5
+        },
+        {
+          "ratio": 12.96,
+          "required": 4.5
+        }
+      ],
+      "passed": true
+    },
+    {
+      "page": "dashboard.html",
+      "width": 1024,
+      "title": "Workspace overview | Forma",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "productColumns": null,
+      "kpiColumns": 2,
+      "sidebarPosition": "sticky",
+      "tables": [
+        {
+          "content": 718,
+          "container": 718,
+          "columns": 5,
+          "rows": 5
+        }
+      ],
+      "keyboardControls": 16,
+      "contrastPairs": [
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 5.36,
+          "required": 3
+        },
+        {
+          "ratio": 17.49,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.64,
+          "required": 4.5
+        },
+        {
+          "ratio": 13.98,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.87,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.23,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.24,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 14.53,
+          "required": 3
+        },
+        {
+          "ratio": 7.31,
+          "required": 4.5
+        },
+        {
+          "ratio": 4.58,
+          "required": 4.5
+        },
+        {
+          "ratio": 4.79,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.36,
+          "required": 4.5
+        },
+        {
+          "ratio": 7,
+          "required": 4.5
+        },
+        {
+          "ratio": 6.84,
+          "required": 4.5
+        }
+      ],
+      "passed": true
+    },
+    {
+      "page": "customers.html",
+      "width": 1024,
+      "title": "Customer directory | Forma",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "productColumns": null,
+      "kpiColumns": null,
+      "sidebarPosition": "sticky",
+      "tables": [
+        {
+          "content": 718,
+          "container": 718,
+          "columns": 5,
+          "rows": 6
+        }
+      ],
+      "keyboardControls": 16,
+      "contrastPairs": [
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 5.36,
+          "required": 3
+        },
+        {
+          "ratio": 17.49,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.64,
+          "required": 4.5
+        },
+        {
+          "ratio": 13.98,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.87,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.23,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.24,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 14.53,
+          "required": 3
+        },
+        {
+          "ratio": 7.31,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.17,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.36,
+          "required": 4.5
+        },
+        {
+          "ratio": 6.84,
+          "required": 4.5
+        },
+        {
+          "ratio": 16.74,
+          "required": 4.5
+        }
+      ],
+      "passed": true
+    },
+    {
+      "page": "products.html",
+      "width": 1024,
+      "title": "Products and orders | Forma",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "productColumns": null,
+      "kpiColumns": null,
+      "sidebarPosition": "sticky",
+      "tables": [
+        {
+          "content": 718,
+          "container": 718,
+          "columns": 5,
+          "rows": 6
+        }
+      ],
+      "keyboardControls": 21,
+      "contrastPairs": [
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 5.36,
+          "required": 3
+        },
+        {
+          "ratio": 17.49,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.64,
+          "required": 4.5
+        },
+        {
+          "ratio": 13.98,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.87,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.23,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.24,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 14.53,
+          "required": 3
+        },
+        {
+          "ratio": 7.31,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.17,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.29,
+          "required": 4.5
+        },
+        {
+          "ratio": 16.74,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.61,
+          "required": 4.5
+        },
+        {
+          "ratio": 6.84,
+          "required": 4.5
+        },
+        {
+          "ratio": 7,
+          "required": 4.5
+        }
+      ],
+      "passed": true
+    },
+    {
+      "page": "analytics.html",
+      "width": 1024,
+      "title": "Analytics | Forma",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "productColumns": null,
+      "kpiColumns": null,
+      "sidebarPosition": "sticky",
+      "tables": [
+        {
+          "content": 718,
+          "container": 718,
+          "columns": 5,
+          "rows": 4
+        }
+      ],
+      "keyboardControls": 17,
+      "contrastPairs": [
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 5.36,
+          "required": 3
+        },
+        {
+          "ratio": 17.49,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.64,
+          "required": 4.5
+        },
+        {
+          "ratio": 13.98,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.87,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.23,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.24,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 14.53,
+          "required": 3
+        },
+        {
+          "ratio": 7.31,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.17,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.61,
+          "required": 4.5
+        }
+      ],
+      "passed": true
+    },
+    {
+      "page": "reports.html",
+      "width": 1024,
+      "title": "Reports | Forma",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "productColumns": null,
+      "kpiColumns": null,
+      "sidebarPosition": "sticky",
+      "tables": [
+        {
+          "content": 718,
+          "container": 718,
+          "columns": 4,
+          "rows": 3
+        }
+      ],
+      "keyboardControls": 21,
+      "contrastPairs": [
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 5.36,
+          "required": 3
+        },
+        {
+          "ratio": 17.49,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.64,
+          "required": 4.5
+        },
+        {
+          "ratio": 13.98,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.87,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.23,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.24,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 14.53,
+          "required": 3
+        },
+        {
+          "ratio": 7.31,
+          "required": 4.5
+        },
+        {
+          "ratio": 16.74,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.61,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.36,
+          "required": 4.5
+        },
+        {
+          "ratio": 10.28,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.17,
+          "required": 4.5
+        }
+      ],
+      "passed": true
+    },
+    {
+      "page": "settings.html",
+      "width": 1024,
+      "title": "Workspace settings | Forma",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "productColumns": null,
+      "kpiColumns": null,
+      "sidebarPosition": "sticky",
+      "tables": [],
+      "keyboardControls": 23,
+      "contrastPairs": [
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 5.36,
+          "required": 3
+        },
+        {
+          "ratio": 17.49,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.64,
+          "required": 4.5
+        },
+        {
+          "ratio": 13.98,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.87,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.23,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.24,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 14.53,
+          "required": 3
+        },
+        {
+          "ratio": 7.31,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.17,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.61,
+          "required": 4.5
+        }
+      ],
+      "passed": true
+    },
+    {
+      "page": "profile.html",
+      "width": 1024,
+      "title": "Alex Lee’s profile | Forma",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "productColumns": null,
+      "kpiColumns": null,
+      "sidebarPosition": "sticky",
+      "tables": [],
+      "keyboardControls": 17,
+      "contrastPairs": [
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 5.36,
+          "required": 3
+        },
+        {
+          "ratio": 17.49,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.64,
+          "required": 4.5
+        },
+        {
+          "ratio": 13.98,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.87,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.23,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.24,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 14.53,
+          "required": 3
+        },
+        {
+          "ratio": 7.31,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.17,
+          "required": 4.5
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 15.18,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 4.5
+        },
+        {
+          "ratio": 13.36,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.61,
+          "required": 4.5
+        }
+      ],
+      "passed": true
+    },
+    {
+      "page": "auth.html",
+      "width": 1024,
+      "title": "Your next chapter starts here | Forma",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "productColumns": null,
+      "kpiColumns": null,
+      "sidebarPosition": null,
+      "tables": [],
+      "keyboardControls": 22,
+      "contrastPairs": [
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 5.36,
+          "required": 3
+        },
+        {
+          "ratio": 7.64,
+          "required": 4.5
+        },
+        {
+          "ratio": 13.36,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 14.53,
+          "required": 3
+        },
+        {
+          "ratio": 7.31,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 4.5
+        },
+        {
+          "ratio": 4.79,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.61,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.87,
+          "required": 4.5
+        },
+        {
+          "ratio": 4.92,
+          "required": 4.5
+        },
+        {
+          "ratio": 16.03,
+          "required": 4.5
+        },
+        {
+          "ratio": 7,
+          "required": 4.5
+        },
+        {
+          "ratio": 9.61,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.92,
+          "required": 4.5
+        },
+        {
+          "ratio": 9.85,
+          "required": 4.5
+        },
+        {
+          "ratio": 4.58,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.29,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        }
+      ],
+      "passed": true
+    },
+    {
+      "page": "index.html",
+      "width": 1366,
+      "title": "A calmer way to work | Forma",
+      "viewport": 1366,
+      "documentWidth": 1366,
+      "productColumns": 3,
+      "kpiColumns": null,
+      "sidebarPosition": null,
+      "tables": [],
+      "keyboardControls": 23,
+      "contrastPairs": [
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 5.36,
+          "required": 3
+        },
+        {
+          "ratio": 13.36,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.64,
+          "required": 4.5
+        },
+        {
+          "ratio": 9.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 14.53,
+          "required": 3
+        },
+        {
+          "ratio": 5.14,
+          "required": 3
+        },
+        {
+          "ratio": 7.31,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.17,
+          "required": 4.5
+        },
+        {
+          "ratio": 11.51,
+          "required": 4.5
+        },
+        {
+          "ratio": 11.87,
+          "required": 4.5
+        },
+        {
+          "ratio": 10.98,
+          "required": 4.5
+        },
+        {
+          "ratio": 16.74,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.87,
+          "required": 4.5
+        },
+        {
+          "ratio": 4.79,
+          "required": 4.5
+        },
+        {
+          "ratio": 7,
+          "required": 4.5
+        },
+        {
+          "ratio": 16.03,
+          "required": 3
+        },
+        {
+          "ratio": 4.92,
+          "required": 4.5
+        },
+        {
+          "ratio": 13.36,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.18,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.47,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.64,
+          "required": 3
+        },
+        {
+          "ratio": 5.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 9.63,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.36,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.61,
+          "required": 4.5
+        },
+        {
+          "ratio": 9.29,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.9,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.24,
+          "required": 4.5
+        },
+        {
+          "ratio": 4.58,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.18,
+          "required": 3
+        },
+        {
+          "ratio": 16.6,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.23,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.25,
+          "required": 4.5
+        },
+        {
+          "ratio": 16.6,
+          "required": 3
+        },
+        {
+          "ratio": 14.53,
+          "required": 4.5
+        },
+        {
+          "ratio": 12.96,
+          "required": 4.5
+        }
+      ],
+      "passed": true
+    },
+    {
+      "page": "dashboard.html",
+      "width": 1366,
+      "title": "Workspace overview | Forma",
+      "viewport": 1366,
+      "documentWidth": 1366,
+      "productColumns": null,
+      "kpiColumns": 4,
+      "sidebarPosition": "sticky",
+      "tables": [
+        {
+          "content": 1044,
+          "container": 1044,
+          "columns": 5,
+          "rows": 5
+        }
+      ],
+      "keyboardControls": 15,
+      "contrastPairs": [
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 5.36,
+          "required": 3
+        },
+        {
+          "ratio": 17.49,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.64,
+          "required": 4.5
+        },
+        {
+          "ratio": 13.98,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.87,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.23,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.24,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 14.53,
+          "required": 3
+        },
+        {
+          "ratio": 7.31,
+          "required": 4.5
+        },
+        {
+          "ratio": 4.58,
+          "required": 4.5
+        },
+        {
+          "ratio": 4.79,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.36,
+          "required": 4.5
+        },
+        {
+          "ratio": 7,
+          "required": 4.5
+        },
+        {
+          "ratio": 6.84,
+          "required": 4.5
+        }
+      ],
+      "passed": true
+    },
+    {
+      "page": "customers.html",
+      "width": 1366,
+      "title": "Customer directory | Forma",
+      "viewport": 1366,
+      "documentWidth": 1366,
+      "productColumns": null,
+      "kpiColumns": null,
+      "sidebarPosition": "sticky",
+      "tables": [
+        {
+          "content": 1044,
+          "container": 1044,
+          "columns": 5,
+          "rows": 6
+        }
+      ],
+      "keyboardControls": 17,
+      "contrastPairs": [
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 5.36,
+          "required": 3
+        },
+        {
+          "ratio": 17.49,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.64,
+          "required": 4.5
+        },
+        {
+          "ratio": 13.98,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.87,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.23,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.24,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 14.53,
+          "required": 3
+        },
+        {
+          "ratio": 7.31,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.17,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.36,
+          "required": 4.5
+        },
+        {
+          "ratio": 6.84,
+          "required": 4.5
+        },
+        {
+          "ratio": 16.74,
+          "required": 4.5
+        }
+      ],
+      "passed": true
+    },
+    {
+      "page": "products.html",
+      "width": 1366,
+      "title": "Products and orders | Forma",
+      "viewport": 1366,
+      "documentWidth": 1366,
+      "productColumns": null,
+      "kpiColumns": null,
+      "sidebarPosition": "sticky",
+      "tables": [
+        {
+          "content": 1044,
+          "container": 1044,
+          "columns": 5,
+          "rows": 6
+        }
+      ],
+      "keyboardControls": 21,
+      "contrastPairs": [
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 5.36,
+          "required": 3
+        },
+        {
+          "ratio": 17.49,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.64,
+          "required": 4.5
+        },
+        {
+          "ratio": 13.98,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.87,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.23,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.24,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 14.53,
+          "required": 3
+        },
+        {
+          "ratio": 7.31,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.17,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.29,
+          "required": 4.5
+        },
+        {
+          "ratio": 16.74,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.61,
+          "required": 4.5
+        },
+        {
+          "ratio": 6.84,
+          "required": 4.5
+        },
+        {
+          "ratio": 7,
+          "required": 4.5
+        }
+      ],
+      "passed": true
+    },
+    {
+      "page": "analytics.html",
+      "width": 1366,
+      "title": "Analytics | Forma",
+      "viewport": 1366,
+      "documentWidth": 1366,
+      "productColumns": null,
+      "kpiColumns": null,
+      "sidebarPosition": "sticky",
+      "tables": [
+        {
+          "content": 1044,
+          "container": 1044,
+          "columns": 5,
+          "rows": 4
+        }
+      ],
+      "keyboardControls": 17,
+      "contrastPairs": [
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 5.36,
+          "required": 3
+        },
+        {
+          "ratio": 17.49,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.64,
+          "required": 4.5
+        },
+        {
+          "ratio": 13.98,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.87,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.23,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.24,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 14.53,
+          "required": 3
+        },
+        {
+          "ratio": 7.31,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.17,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.61,
+          "required": 4.5
+        }
+      ],
+      "passed": true
+    },
+    {
+      "page": "reports.html",
+      "width": 1366,
+      "title": "Reports | Forma",
+      "viewport": 1366,
+      "documentWidth": 1366,
+      "productColumns": null,
+      "kpiColumns": null,
+      "sidebarPosition": "sticky",
+      "tables": [
+        {
+          "content": 1044,
+          "container": 1044,
+          "columns": 4,
+          "rows": 3
+        }
+      ],
+      "keyboardControls": 21,
+      "contrastPairs": [
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 5.36,
+          "required": 3
+        },
+        {
+          "ratio": 17.49,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.64,
+          "required": 4.5
+        },
+        {
+          "ratio": 13.98,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.87,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.23,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.24,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 14.53,
+          "required": 3
+        },
+        {
+          "ratio": 7.31,
+          "required": 4.5
+        },
+        {
+          "ratio": 16.74,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.61,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.36,
+          "required": 4.5
+        },
+        {
+          "ratio": 10.28,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.17,
+          "required": 4.5
+        }
+      ],
+      "passed": true
+    },
+    {
+      "page": "settings.html",
+      "width": 1366,
+      "title": "Workspace settings | Forma",
+      "viewport": 1366,
+      "documentWidth": 1366,
+      "productColumns": null,
+      "kpiColumns": null,
+      "sidebarPosition": "sticky",
+      "tables": [],
+      "keyboardControls": 22,
+      "contrastPairs": [
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 5.36,
+          "required": 3
+        },
+        {
+          "ratio": 17.49,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.64,
+          "required": 4.5
+        },
+        {
+          "ratio": 13.98,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.87,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.23,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.24,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 14.53,
+          "required": 3
+        },
+        {
+          "ratio": 7.31,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.17,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.61,
+          "required": 4.5
+        }
+      ],
+      "passed": true
+    },
+    {
+      "page": "profile.html",
+      "width": 1366,
+      "title": "Alex Lee’s profile | Forma",
+      "viewport": 1366,
+      "documentWidth": 1366,
+      "productColumns": null,
+      "kpiColumns": null,
+      "sidebarPosition": "sticky",
+      "tables": [],
+      "keyboardControls": 18,
+      "contrastPairs": [
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 5.36,
+          "required": 3
+        },
+        {
+          "ratio": 17.49,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.64,
+          "required": 4.5
+        },
+        {
+          "ratio": 13.98,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.87,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.23,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.24,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 14.53,
+          "required": 3
+        },
+        {
+          "ratio": 7.31,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.17,
+          "required": 4.5
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 15.18,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 4.5
+        },
+        {
+          "ratio": 13.36,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.61,
+          "required": 4.5
+        }
+      ],
+      "passed": true
+    },
+    {
+      "page": "auth.html",
+      "width": 1366,
+      "title": "Your next chapter starts here | Forma",
+      "viewport": 1366,
+      "documentWidth": 1366,
+      "productColumns": null,
+      "kpiColumns": null,
+      "sidebarPosition": null,
+      "tables": [],
+      "keyboardControls": 22,
+      "contrastPairs": [
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 3
+        },
+        {
+          "ratio": 12.96,
+          "required": 3
+        },
+        {
+          "ratio": 5.36,
+          "required": 3
+        },
+        {
+          "ratio": 7.64,
+          "required": 4.5
+        },
+        {
+          "ratio": 13.36,
+          "required": 4.5
+        },
+        {
+          "ratio": 5.14,
+          "required": 4.5
+        },
+        {
+          "ratio": 14.53,
+          "required": 3
+        },
+        {
+          "ratio": 7.31,
+          "required": 4.5
+        },
+        {
+          "ratio": 17.49,
+          "required": 4.5
+        },
+        {
+          "ratio": 4.79,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.61,
+          "required": 4.5
+        },
+        {
+          "ratio": 8.87,
+          "required": 4.5
+        },
+        {
+          "ratio": 4.92,
+          "required": 4.5
+        },
+        {
+          "ratio": 16.03,
+          "required": 4.5
+        },
+        {
+          "ratio": 7,
+          "required": 4.5
+        },
+        {
+          "ratio": 9.61,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.92,
+          "required": 4.5
+        },
+        {
+          "ratio": 9.85,
+          "required": 4.5
+        },
+        {
+          "ratio": 4.58,
+          "required": 4.5
+        },
+        {
+          "ratio": 7.29,
+          "required": 4.5
+        },
+        {
+          "ratio": 15.18,
+          "required": 4.5
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "errors": []
+}

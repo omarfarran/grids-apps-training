@@ -1,0 +1,1214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Meet Forma, a fictional workspace SaaS for focused teams. Tailwind Days 9–11 learning project."
+    />
+    <meta name="theme-color" content="#064e3b" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <title>A calmer way to work | Forma</title>
+  </head>
+  <body
+    class="min-h-screen bg-stone-50 font-sans text-stone-900 antialiased selection:bg-lime-200"
+  >
+    <a
+      href="#main-content"
+      class="sr-only z-50 rounded-lg bg-emerald-950 p-4 text-white focus:not-sr-only focus:fixed focus:top-3 focus:left-3"
+      >Skip to main content</a
+    >
+    <header class="border-b border-stone-200 bg-white">
+      <div
+        class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-5 py-4 sm:px-8 lg:px-12"
+      >
+        <a
+          href="./index.html"
+          aria-label="Forma home"
+          class="inline-flex min-h-11 items-center gap-2 rounded-lg text-2xl font-bold tracking-tight"
+          ><span
+            aria-hidden="true"
+            class="grid size-9 place-items-center rounded-xl bg-emerald-950 text-xl text-lime-200"
+            >f.</span
+          >forma<span aria-hidden="true" class="text-emerald-700">.</span></a
+        >
+        <nav aria-label="Primary" class="flex flex-wrap gap-1">
+          <a
+            href="./index.html"
+            aria-current="page"
+            class="inline-flex min-h-11 items-center rounded-lg px-3 text-sm font-medium transition-colors hover:bg-emerald-50 hover:text-emerald-900 bg-emerald-100 text-emerald-950"
+            >Home</a
+          ><a
+            href="./index.html#products"
+            class="inline-flex min-h-11 items-center rounded-lg px-3 text-sm font-medium transition-colors hover:bg-emerald-50 hover:text-emerald-900 text-stone-600"
+            >Products</a
+          ><a
+            href="./index.html#pricing"
+            class="inline-flex min-h-11 items-center rounded-lg px-3 text-sm font-medium transition-colors hover:bg-emerald-50 hover:text-emerald-900 text-stone-600"
+            >Pricing</a
+          ><a
+            href="./index.html#faq"
+            class="inline-flex min-h-11 items-center rounded-lg px-3 text-sm font-medium transition-colors hover:bg-emerald-50 hover:text-emerald-900 text-stone-600"
+            >FAQ</a
+          ><a
+            href="./dashboard.html"
+            class="inline-flex min-h-11 items-center rounded-lg px-3 text-sm font-medium transition-colors hover:bg-emerald-50 hover:text-emerald-900 text-stone-600"
+            >Workspace</a
+          ><a
+            href="./auth.html"
+            class="inline-flex min-h-11 items-center rounded-lg px-3 text-sm font-medium transition-colors hover:bg-emerald-50 hover:text-emerald-900 text-stone-600"
+            >Account</a
+          >
+        </nav>
+      </div>
+    </header>
+    <main id="main-content" tabindex="-1">
+      <section
+        aria-labelledby="hero-heading"
+        class="mx-auto grid max-w-7xl items-center gap-12 px-5 pt-12 pb-16 sm:px-8 sm:pt-16 lg:grid-cols-2 lg:gap-14 lg:px-12 lg:py-24"
+      >
+        <div>
+          <p
+            class="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold border border-emerald-200 bg-emerald-50 text-emerald-900"
+          >
+            <span
+              class="size-2 rounded-full bg-emerald-600"
+              aria-hidden="true"
+            ></span>
+            A fresh perspective on teamwork
+          </p>
+          <h1
+            id="hero-heading"
+            class="mt-6 max-w-xl text-5xl leading-tight font-semibold tracking-tight text-emerald-950 sm:text-6xl lg:text-7xl"
+          >
+            Less busywork.<br />More
+            <span class="text-emerald-700">good work.</span>
+          </h1>
+          <p
+            class="mt-6 max-w-lg text-base leading-relaxed text-stone-600 sm:text-lg"
+          >
+            Give your projects, people, and progress a place to come together.
+            Forma brings a little clarity to every working day.
+          </p>
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a
+              class="inline-flex min-h-11 items-center justify-center gap-3 rounded-xl bg-emerald-950 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-emerald-800 focus-visible:outline-emerald-700"
+              href="./auth.html#register"
+              >Explore your workspace
+              <svg
+                class="size-5 shrink-0"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M5 12h14m-6-6 6 6-6 6" /></svg
+            ></a>
+            <a
+              class="inline-flex min-h-11 items-center justify-center gap-3 rounded-xl border border-stone-300 bg-white px-5 py-3 text-sm font-semibold text-stone-800 transition-colors hover:border-emerald-700 hover:bg-emerald-50 focus-visible:outline-emerald-700"
+              href="./dashboard.html"
+              >View the demo
+              <svg
+                class="size-5 shrink-0"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <rect x="3" y="3" width="7" height="7" rx="1.5" />
+                <rect x="14" y="3" width="7" height="7" rx="1.5" />
+                <rect x="3" y="14" width="7" height="7" rx="1.5" />
+                <rect x="14" y="14" width="7" height="7" rx="1.5" /></svg
+            ></a>
+          </div>
+          <p class="mt-4 flex items-center gap-2 text-sm text-stone-600">
+            <svg
+              class="size-4 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="m5 12 4 4L19 6" />
+            </svg>
+            Frontend preview. No account or card needed.
+          </p>
+          <div
+            class="mt-9 flex items-center gap-3 border-t border-stone-200 pt-6"
+          >
+            <div class="flex -space-x-2" aria-hidden="true">
+              <span
+                class="grid size-10 place-items-center rounded-full border-2 border-stone-50 bg-orange-200 text-xs font-bold text-orange-950"
+                >AL</span
+              ><span
+                class="grid size-10 place-items-center rounded-full border-2 border-stone-50 bg-emerald-200 text-xs font-bold text-emerald-950"
+                >MK</span
+              ><span
+                class="grid size-10 place-items-center rounded-full border-2 border-stone-50 bg-violet-200 text-xs font-bold text-violet-950"
+                >JS</span
+              >
+            </div>
+            <p class="text-sm leading-relaxed text-stone-600">
+              <span class="block font-semibold text-stone-900"
+                >Built around real team needs</span
+              >Projects, handoffs, and a shared sense of progress.
+            </p>
+          </div>
+        </div>
+        <figure
+          class="min-w-0 rounded-3xl bg-emerald-100 p-4 sm:p-7 lg:p-6 xl:p-8"
+        >
+          <div
+            class="rounded-2xl border border-white bg-white shadow-xl shadow-emerald-950/10"
+          >
+            <div
+              class="flex items-center justify-between gap-2 border-b border-stone-100 p-4"
+            >
+              <span class="text-sm font-semibold text-emerald-950"
+                ><svg
+                  class="mr-1 inline size-4 shrink-0"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M20 4C9 2 3 8 5 15s14 6 15-11ZM4 21 16 9" />
+                </svg>
+                Studio workspace</span
+              ><span
+                class="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold bg-lime-100 text-emerald-900"
+                >All systems calm</span
+              >
+            </div>
+            <div class="p-4 sm:p-6">
+              <p class="text-xs font-medium text-stone-500">
+                MONDAY, OCTOBER 19
+              </p>
+              <p class="mt-2 text-xl font-semibold tracking-tight sm:text-2xl">
+                Room for your best work.
+              </p>
+              <div class="mt-5 grid grid-cols-2 gap-3">
+                <div class="rounded-xl bg-stone-100 p-4">
+                  <p class="text-xs text-stone-600">Projects in motion</p>
+                  <p class="mt-1 text-3xl font-semibold">
+                    12<span class="ml-2 text-xs font-medium text-emerald-700"
+                      >+2</span
+                    >
+                  </p>
+                </div>
+                <div class="rounded-xl bg-emerald-950 p-4 text-white">
+                  <p class="text-xs text-emerald-100">Weekly goal</p>
+                  <p class="mt-1 text-3xl font-semibold">
+                    84<span class="text-lg text-lime-200">%</span>
+                  </p>
+                </div>
+              </div>
+              <div class="mt-5 flex items-center justify-between">
+                <p class="text-sm font-semibold">This week's focus</p>
+                <span class="text-xs text-stone-500">3 projects</span>
+              </div>
+              <ul class="mt-3 space-y-3 text-sm">
+                <li
+                  class="flex items-center gap-3 rounded-xl border border-stone-200 p-3"
+                >
+                  <span
+                    class="grid size-9 shrink-0 place-items-center rounded-lg bg-violet-100 text-violet-800"
+                    ><svg
+                      class="size-4 shrink-0"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <rect x="3" y="3" width="7" height="7" rx="1.5" />
+                      <rect x="14" y="3" width="7" height="7" rx="1.5" />
+                      <rect x="3" y="14" width="7" height="7" rx="1.5" />
+                      <rect
+                        x="14"
+                        y="14"
+                        width="7"
+                        height="7"
+                        rx="1.5"
+                      /></svg></span
+                  ><span class="min-w-0 flex-1 font-medium"
+                    >Website refresh<span
+                      class="block text-xs font-normal text-stone-500"
+                      >Design team · Due Oct 23</span
+                    ></span
+                  ><span
+                    role="img"
+                    aria-label="In progress"
+                    class="size-2 shrink-0 rounded-full bg-amber-500"
+                  ></span>
+                </li>
+                <li
+                  class="flex items-center gap-3 rounded-xl border border-stone-200 p-3"
+                >
+                  <span
+                    class="grid size-9 shrink-0 place-items-center rounded-lg bg-orange-100 text-orange-800"
+                    ><svg
+                      class="size-4 shrink-0"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="m12 3 9 5-9 5-9-5 9-5Zm-9 5v10l9 5 9-5V8M12 13v10M7.5 5.5l9 5"
+                      /></svg></span
+                  ><span class="min-w-0 flex-1 font-medium"
+                    >Autumn launch<span
+                      class="block text-xs font-normal text-stone-500"
+                      >Marketing · Due Oct 26</span
+                    ></span
+                  ><span
+                    role="img"
+                    aria-label="On track"
+                    class="size-2 shrink-0 rounded-full bg-emerald-600"
+                  ></span>
+                </li>
+                <li
+                  class="flex items-center gap-3 rounded-xl border border-stone-200 p-3"
+                >
+                  <span
+                    class="grid size-9 shrink-0 place-items-center rounded-lg bg-emerald-100 text-emerald-800"
+                    ><svg
+                      class="size-4 shrink-0"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="m5 12 4 4L19 6" /></svg></span
+                  ><span class="min-w-0 flex-1 font-medium"
+                    >Customer interviews<span
+                      class="block text-xs font-normal text-stone-500"
+                      >Research · Completed</span
+                    ></span
+                  ><span
+                    role="img"
+                    aria-label="Complete"
+                    class="text-emerald-700"
+                    ><svg
+                      class="size-4 shrink-0"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="m5 12 4 4L19 6" /></svg
+                  ></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <figcaption
+            class="mt-4 flex items-center gap-2 text-xs leading-relaxed text-emerald-900"
+          >
+            <svg
+              class="size-4 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <rect x="3" y="3" width="7" height="7" rx="1.5" />
+              <rect x="14" y="3" width="7" height="7" rx="1.5" />
+              <rect x="3" y="14" width="7" height="7" rx="1.5" />
+              <rect x="14" y="14" width="7" height="7" rx="1.5" />
+            </svg>
+            A preview of a quieter workspace. Illustrative data.
+          </figcaption>
+        </figure>
+      </section>
+      <section
+        aria-labelledby="trust-heading"
+        class="border-y border-stone-200 bg-white"
+      >
+        <div class="mx-auto max-w-7xl px-5 py-8 sm:px-8 lg:px-12">
+          <h2
+            id="trust-heading"
+            class="text-center text-xs font-semibold tracking-widest text-stone-500 uppercase"
+          >
+            In good company
+          </h2>
+          <ul
+            class="mt-6 grid grid-cols-2 items-center gap-6 text-center text-xl font-semibold tracking-tight text-stone-600 sm:grid-cols-4 sm:text-2xl"
+          >
+            <li>Layers®</li>
+            <li class="font-serif italic">Quotient</li>
+            <li>◈ Circooles</li>
+            <li class="tracking-widest">NIETZSCHE</li>
+          </ul>
+          <p class="mt-5 text-center text-xs text-stone-500">
+            Sample customer marks for this fictional SaaS concept; no
+            endorsements claimed.
+          </p>
+        </div>
+      </section>
+      <section
+        id="features"
+        aria-labelledby="features-heading"
+        class="mx-auto max-w-7xl px-5 py-12 sm:px-8 md:py-16 lg:px-12"
+      >
+        <p
+          class="text-xs font-semibold tracking-widest text-emerald-700 uppercase"
+        >
+          A clearer kind of workday
+        </p>
+        <h2
+          id="features-heading"
+          class="mt-3 text-3xl font-semibold tracking-tight text-emerald-950 sm:text-4xl"
+        >
+          Everything has its place.
+        </h2>
+        <div class="mt-8 grid gap-6 md:grid-cols-3">
+          <article
+            class="min-w-0 rounded-2xl border border-stone-200 bg-white p-5 sm:p-6"
+          >
+            <span
+              class="grid size-11 place-items-center rounded-xl bg-emerald-100 text-emerald-800"
+              ><svg
+                class="size-5 shrink-0"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <rect x="3" y="3" width="7" height="7" rx="1.5" />
+                <rect x="14" y="3" width="7" height="7" rx="1.5" />
+                <rect x="3" y="14" width="7" height="7" rx="1.5" />
+                <rect x="14" y="14" width="7" height="7" rx="1.5" /></svg
+            ></span>
+            <h3 class="mt-5 text-lg font-semibold">
+              Turn ideas into next steps
+            </h3>
+            <p class="mt-3 text-sm leading-relaxed text-stone-600">
+              Keep milestones, owners, and decisions together so everyone knows
+              what comes next.
+            </p>
+          </article>
+          <article
+            class="min-w-0 rounded-2xl border border-stone-200 bg-white p-5 sm:p-6"
+          >
+            <span
+              class="grid size-11 place-items-center rounded-xl bg-emerald-100 text-emerald-800"
+              ><svg
+                class="size-5 shrink-0"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <circle cx="9" cy="8" r="3" />
+                <path
+                  d="M3 21v-3a6 6 0 0 1 12 0v3M16 5a3 3 0 0 1 0 6M21 21v-3a6 6 0 0 0-3-5"
+                /></svg
+            ></span>
+            <h3 class="mt-5 text-lg font-semibold">
+              Keep your team in the loop
+            </h3>
+            <p class="mt-3 text-sm leading-relaxed text-stone-600">
+              Make handoffs easier with one shared home for your people and
+              their work.
+            </p>
+          </article>
+          <article
+            class="min-w-0 rounded-2xl border border-stone-200 bg-white p-5 sm:p-6"
+          >
+            <span
+              class="grid size-11 place-items-center rounded-xl bg-emerald-100 text-emerald-800"
+              ><svg
+                class="size-5 shrink-0"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M4 4v16h16M8 15l4-5 4 2 4-6" /></svg
+            ></span>
+            <h3 class="mt-5 text-lg font-semibold">
+              See progress with perspective
+            </h3>
+            <p class="mt-3 text-sm leading-relaxed text-stone-600">
+              Read revenue, customer activity, and project health without
+              piecing together five different views.
+            </p>
+          </article>
+        </div>
+      </section>
+      <!-- T03 + responsive variant drill: one column, md two, lg three. -->
+      <section
+        id="products"
+        aria-labelledby="products-heading"
+        class="mx-auto max-w-7xl px-5 py-14 sm:px-8 md:py-20 lg:px-12"
+      >
+        <div
+          class="flex flex-col gap-4 text-center md:flex-row md:items-end md:justify-between md:text-left"
+        >
+          <div>
+            <p
+              class="text-xs font-semibold tracking-widest text-emerald-700 uppercase"
+            >
+              Your toolkit, thoughtfully connected
+            </p>
+            <h2
+              id="products-heading"
+              class="mt-3 text-3xl font-semibold tracking-tight text-emerald-950 sm:text-4xl"
+            >
+              Make space for what matters.
+            </h2>
+          </div>
+          <p
+            class="mx-auto max-w-xs text-sm leading-relaxed text-stone-600 md:mx-0"
+          >
+            Start with the tools you need.<br class="hidden md:block" />
+            Grow at your own pace.
+          </p>
+        </div>
+        <p
+          id="responsive-note"
+          class="mt-6 rounded-xl border border-stone-200 bg-white px-4 py-3 text-xs leading-relaxed text-stone-600"
+        >
+          <span class="font-semibold text-emerald-900"
+            >Responsive layout study</span
+          >
+          · These product cards stack on mobile, form two columns from 768px,
+          and three from 1024px.
+        </p>
+        <div
+          id="product-grid"
+          aria-describedby="responsive-note"
+          class="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
+        >
+          <article
+            class="group flex min-w-0 flex-col rounded-2xl border border-stone-200 bg-white p-3 transition-shadow hover:shadow-md focus-within:ring-2 focus-within:ring-emerald-700"
+          >
+            <div
+              aria-hidden="true"
+              class="flex h-52 items-center justify-center rounded-xl bg-emerald-50 p-5"
+            >
+              <div
+                class="w-full max-w-64 rotate-2 rounded-xl border border-stone-200 bg-white p-4 shadow-sm"
+              >
+                <div
+                  class="mb-3 flex items-center justify-between text-xs font-semibold"
+                >
+                  <span>Brand refresh</span
+                  ><span class="text-emerald-700">8 / 12</span>
+                </div>
+                <div class="h-1.5 rounded-full bg-stone-100">
+                  <div class="h-1.5 w-2/3 rounded-full bg-emerald-600"></div>
+                </div>
+                <div class="mt-4 space-y-2 text-xs">
+                  <p class="flex gap-2 text-stone-500">
+                    <span class="text-emerald-700">✓</span> Define the direction
+                  </p>
+                  <p class="flex gap-2 text-stone-800">
+                    <span class="text-emerald-700">○</span> Make something great
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-1 flex-col p-3 pt-5 sm:p-5">
+              <div class="flex items-center justify-between gap-2">
+                <span class="text-xs font-medium text-stone-500"
+                  >FORMA / 01</span
+                ><span
+                  class="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold bg-emerald-100 text-emerald-900"
+                  >Most popular</span
+                >
+              </div>
+              <h3 class="mt-4 text-2xl font-semibold tracking-tight">
+                Forma Projects
+              </h3>
+              <p class="mt-2 text-sm font-medium text-emerald-800">
+                Your next great idea, organized.
+              </p>
+              <p class="mt-3 flex-1 text-sm leading-relaxed text-stone-600">
+                Plan the milestones, share the next steps, and keep every
+                project moving in the right direction.
+              </p>
+              <p class="mt-6 border-t border-stone-100 pt-5">
+                <span class="text-3xl font-semibold tracking-tight">$12</span>
+                <span class="text-xs text-stone-500">/ person / month</span>
+              </p>
+              <a
+                href="./auth.html#register"
+                aria-label="Explore Forma Projects"
+                class="inline-flex min-h-11 items-center justify-center gap-3 rounded-xl border border-stone-300 bg-white px-5 py-3 text-sm font-semibold text-stone-800 transition-colors hover:border-emerald-700 hover:bg-emerald-50 focus-visible:outline-emerald-700 mt-5 w-full justify-between"
+                >Explore Projects
+                <svg
+                  class="size-4 shrink-0"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14m-6-6 6 6-6 6" /></svg
+              ></a>
+            </div>
+          </article>
+          <article
+            class="group flex min-w-0 flex-col rounded-2xl border border-stone-200 bg-white p-3 transition-shadow hover:shadow-md focus-within:ring-2 focus-within:ring-emerald-700"
+          >
+            <div
+              aria-hidden="true"
+              class="flex h-52 items-center justify-center rounded-xl bg-violet-50 p-5"
+            >
+              <div
+                class="w-full max-w-64 -rotate-2 rounded-xl border border-stone-200 bg-white p-4 shadow-sm"
+              >
+                <p class="text-xs text-stone-500">Revenue overview</p>
+                <p class="mt-1 text-xl font-semibold text-stone-900">
+                  $24,860 <span class="text-xs text-emerald-700">↗ 12.8%</span>
+                </p>
+                <div class="mt-3 flex h-16 items-end gap-2">
+                  <span class="h-5 flex-1 rounded-t bg-violet-200"></span
+                  ><span class="h-8 flex-1 rounded-t bg-violet-300"></span
+                  ><span class="h-7 flex-1 rounded-t bg-violet-300"></span
+                  ><span class="h-11 flex-1 rounded-t bg-violet-400"></span
+                  ><span class="h-9 flex-1 rounded-t bg-violet-400"></span
+                  ><span class="h-16 flex-1 rounded-t bg-violet-600"></span>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-1 flex-col p-3 pt-5 sm:p-5">
+              <div class="flex items-center justify-between gap-2">
+                <span class="text-xs font-medium text-stone-500"
+                  >FORMA / 02</span
+                ><span
+                  class="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold bg-violet-100 text-violet-900"
+                  >New release</span
+                >
+              </div>
+              <h3 class="mt-4 text-2xl font-semibold tracking-tight">
+                Forma Insights
+              </h3>
+              <p class="mt-2 text-sm font-medium text-emerald-800">
+                A clearer view of your business.
+              </p>
+              <p class="mt-3 flex-1 text-sm leading-relaxed text-stone-600">
+                Bring revenue, customers, and team activity together in one
+                easy-to-read overview.
+              </p>
+              <p class="mt-6 border-t border-stone-100 pt-5">
+                <span class="text-3xl font-semibold tracking-tight">$18</span>
+                <span class="text-xs text-stone-500">/ person / month</span>
+              </p>
+              <a
+                href="./auth.html#register"
+                aria-label="Explore Forma Insights"
+                class="inline-flex min-h-11 items-center justify-center gap-3 rounded-xl border border-stone-300 bg-white px-5 py-3 text-sm font-semibold text-stone-800 transition-colors hover:border-emerald-700 hover:bg-emerald-50 focus-visible:outline-emerald-700 mt-5 w-full justify-between"
+                >Explore Insights
+                <svg
+                  class="size-4 shrink-0"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14m-6-6 6 6-6 6" /></svg
+              ></a>
+            </div>
+          </article>
+          <article
+            class="group flex min-w-0 flex-col rounded-2xl border border-stone-200 bg-white p-3 transition-shadow hover:shadow-md focus-within:ring-2 focus-within:ring-emerald-700"
+          >
+            <div
+              aria-hidden="true"
+              class="flex h-52 items-center justify-center rounded-xl bg-orange-50 p-5"
+            >
+              <div
+                class="w-full max-w-64 rotate-2 rounded-xl border border-stone-200 bg-white p-4 shadow-sm"
+              >
+                <p class="text-xs font-semibold text-stone-800">
+                  Made for your people
+                </p>
+                <div class="mt-3 flex -space-x-2">
+                  <span
+                    class="grid size-10 place-items-center rounded-full border-2 border-white bg-orange-200 text-xs font-bold text-orange-950"
+                    >AL</span
+                  ><span
+                    class="grid size-10 place-items-center rounded-full border-2 border-white bg-violet-200 text-xs font-bold text-violet-950"
+                    >MK</span
+                  ><span
+                    class="grid size-10 place-items-center rounded-full border-2 border-white bg-emerald-200 text-xs font-bold text-emerald-950"
+                    >JS</span
+                  ><span
+                    class="grid size-10 place-items-center rounded-full border-2 border-white bg-stone-100 text-xs font-bold text-stone-600"
+                    >+5</span
+                  >
+                </div>
+                <p
+                  class="mt-3 rounded-lg bg-orange-50 p-2 text-xs text-orange-900"
+                >
+                  One team. A shared direction.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-1 flex-col p-3 pt-5 sm:p-5">
+              <div class="flex items-center justify-between gap-2">
+                <span class="text-xs font-medium text-stone-500"
+                  >FORMA / 03</span
+                ><span
+                  class="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold bg-orange-100 text-orange-900"
+                  >Team favorite</span
+                >
+              </div>
+              <h3 class="mt-4 text-2xl font-semibold tracking-tight">
+                Forma Teamspace
+              </h3>
+              <p class="mt-2 text-sm font-medium text-emerald-800">
+                Good work is a team sport.
+              </p>
+              <p class="mt-3 flex-1 text-sm leading-relaxed text-stone-600">
+                Keep decisions, handoffs, and shared resources close to the
+                people who need them.
+              </p>
+              <p class="mt-6 border-t border-stone-100 pt-5">
+                <span class="text-3xl font-semibold tracking-tight">$9</span>
+                <span class="text-xs text-stone-500">/ person / month</span>
+              </p>
+              <a
+                href="./auth.html#register"
+                aria-label="Explore Forma Teamspace"
+                class="inline-flex min-h-11 items-center justify-center gap-3 rounded-xl border border-stone-300 bg-white px-5 py-3 text-sm font-semibold text-stone-800 transition-colors hover:border-emerald-700 hover:bg-emerald-50 focus-visible:outline-emerald-700 mt-5 w-full justify-between"
+                >Explore Teamspace
+                <svg
+                  class="size-4 shrink-0"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14m-6-6 6 6-6 6" /></svg
+              ></a>
+            </div>
+          </article>
+        </div>
+        <p class="mt-5 text-sm text-stone-500">
+          Illustrative product pricing. No purchases or subscriptions are
+          available in this demo.
+        </p>
+      </section>
+      <section
+        id="workflow"
+        aria-labelledby="workflow-heading"
+        class="border-y border-stone-200 bg-white"
+      >
+        <div class="mx-auto max-w-7xl px-5 py-12 sm:px-8 md:py-16 lg:px-12">
+          <p
+            class="text-xs font-semibold tracking-widest text-emerald-700 uppercase"
+          >
+            From scattered to in sync
+          </p>
+          <h2
+            id="workflow-heading"
+            class="mt-3 text-3xl font-semibold tracking-tight text-emerald-950 sm:text-4xl"
+          >
+            Small steps. A shared direction.
+          </h2>
+          <ol class="mt-8 grid gap-8 md:grid-cols-3">
+            <li>
+              <span class="font-mono text-3xl text-emerald-700">01</span>
+              <h3 class="mt-4 text-lg font-semibold">Give the work a home</h3>
+              <p class="mt-3 text-sm leading-relaxed text-stone-600">
+                Choose a toolkit, bring in your team, and put the next milestone
+                on the map.
+              </p>
+            </li>
+            <li>
+              <span class="font-mono text-3xl text-emerald-700">02</span>
+              <h3 class="mt-4 text-lg font-semibold">Move forward together</h3>
+              <p class="mt-3 text-sm leading-relaxed text-stone-600">
+                Keep ownership clear and make space for the decisions that move
+                your projects along.
+              </p>
+            </li>
+            <li>
+              <span class="font-mono text-3xl text-emerald-700">03</span>
+              <h3 class="mt-4 text-lg font-semibold">
+                Learn from the bigger picture
+              </h3>
+              <p class="mt-3 text-sm leading-relaxed text-stone-600">
+                Review what is working, spot the bottlenecks, and begin the next
+                week with a little more clarity.
+              </p>
+            </li>
+          </ol>
+          <a
+            href="./dashboard.html"
+            class="inline-flex min-h-11 items-center gap-2 rounded-lg text-sm font-semibold text-emerald-800 underline underline-offset-4 transition-colors hover:text-emerald-950 focus-visible:outline-emerald-700 mt-7"
+            >Walk through the sample workspace
+            <svg
+              class="size-4 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M5 12h14m-6-6 6 6-6 6" /></svg
+          ></a>
+        </div>
+      </section>
+      <section
+        id="pricing"
+        aria-labelledby="pricing-heading"
+        class="mx-auto max-w-7xl px-5 py-12 sm:px-8 md:py-16 lg:px-12"
+      >
+        <div class="text-center">
+          <p
+            class="text-xs font-semibold tracking-widest text-emerald-700 uppercase"
+          >
+            Room to grow, at your pace
+          </p>
+          <h2
+            id="pricing-heading"
+            class="mt-3 text-3xl font-semibold tracking-tight text-emerald-950 sm:text-4xl"
+          >
+            Choose your kind of focus.
+          </h2>
+          <p
+            class="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-stone-600"
+          >
+            Start with a single module or bring the whole toolkit together.
+            Sample monthly pricing per person; no billing or purchases in this
+            demo.
+          </p>
+        </div>
+        <div class="mt-8 grid gap-6 md:grid-cols-3">
+          <article
+            class="flex flex-col rounded-2xl border border-stone-200 bg-white p-6"
+          >
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <h3 class="text-xl font-semibold">Focus</h3>
+            </div>
+            <p class="mt-3 text-sm leading-relaxed text-stone-600">
+              A home for your next great project.
+            </p>
+            <p class="mt-6">
+              <span class="text-4xl font-semibold tracking-tight">$12</span
+              ><span class="text-xs text-stone-600"> / person / month</span>
+            </p>
+            <ul class="my-6 flex-1 space-y-3 text-sm">
+              <li class="flex gap-2">
+                <svg
+                  class="size-4 text-emerald-700 shrink-0"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="m5 12 4 4L19 6" />
+                </svg>
+                Forma Projects
+              </li>
+              <li class="flex gap-2">
+                <svg
+                  class="size-4 text-emerald-700 shrink-0"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="m5 12 4 4L19 6" />
+                </svg>
+                Milestones and project ownership
+              </li>
+              <li class="flex gap-2">
+                <svg
+                  class="size-4 text-emerald-700 shrink-0"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="m5 12 4 4L19 6" />
+                </svg>
+                Shared project overview
+              </li>
+            </ul>
+            <a
+              class="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl border border-stone-300 bg-white px-5 py-3 text-sm font-semibold text-stone-800 transition-colors hover:border-emerald-700 hover:bg-emerald-50 focus-visible:outline-emerald-700"
+              href="./auth.html#register"
+              >Explore Focus</a
+            >
+          </article>
+          <article
+            class="flex flex-col rounded-2xl border border-emerald-700 bg-emerald-50 p-6"
+          >
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <h3 class="text-xl font-semibold">Studio</h3>
+              <span
+                class="inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold bg-emerald-50 text-emerald-800"
+                >Team favorite</span
+              >
+            </div>
+            <p class="mt-3 text-sm leading-relaxed text-stone-600">
+              Keep your projects and people connected.
+            </p>
+            <p class="mt-6">
+              <span class="text-4xl font-semibold tracking-tight">$21</span
+              ><span class="text-xs text-stone-600"> / person / month</span>
+            </p>
+            <ul class="my-6 flex-1 space-y-3 text-sm">
+              <li class="flex gap-2">
+                <svg
+                  class="size-4 text-emerald-700 shrink-0"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="m5 12 4 4L19 6" />
+                </svg>
+                Everything in Focus
+              </li>
+              <li class="flex gap-2">
+                <svg
+                  class="size-4 text-emerald-700 shrink-0"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="m5 12 4 4L19 6" />
+                </svg>
+                Forma Teamspace
+              </li>
+              <li class="flex gap-2">
+                <svg
+                  class="size-4 text-emerald-700 shrink-0"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="m5 12 4 4L19 6" />
+                </svg>
+                Shared team resources
+              </li>
+            </ul>
+            <a
+              class="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-emerald-950 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-emerald-800 focus-visible:outline-emerald-700"
+              href="./auth.html#register"
+              >Explore Studio</a
+            >
+          </article>
+          <article
+            class="flex flex-col rounded-2xl border border-stone-200 bg-white p-6"
+          >
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <h3 class="text-xl font-semibold">Complete</h3>
+            </div>
+            <p class="mt-3 text-sm leading-relaxed text-stone-600">
+              A little more perspective, all in one place.
+            </p>
+            <p class="mt-6">
+              <span class="text-4xl font-semibold tracking-tight">$39</span
+              ><span class="text-xs text-stone-600"> / person / month</span>
+            </p>
+            <ul class="my-6 flex-1 space-y-3 text-sm">
+              <li class="flex gap-2">
+                <svg
+                  class="size-4 text-emerald-700 shrink-0"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="m5 12 4 4L19 6" />
+                </svg>
+                Everything in Studio
+              </li>
+              <li class="flex gap-2">
+                <svg
+                  class="size-4 text-emerald-700 shrink-0"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="m5 12 4 4L19 6" />
+                </svg>
+                Forma Insights
+              </li>
+              <li class="flex gap-2">
+                <svg
+                  class="size-4 text-emerald-700 shrink-0"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="m5 12 4 4L19 6" />
+                </svg>
+                Revenue and customer overview
+              </li>
+            </ul>
+            <a
+              class="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl border border-stone-300 bg-white px-5 py-3 text-sm font-semibold text-stone-800 transition-colors hover:border-emerald-700 hover:bg-emerald-50 focus-visible:outline-emerald-700"
+              href="./auth.html#register"
+              >Explore Complete</a
+            >
+          </article>
+        </div>
+      </section>
+      <section
+        id="testimonials"
+        aria-labelledby="testimonials-heading"
+        class="bg-emerald-950 text-white"
+      >
+        <div class="mx-auto max-w-7xl px-5 py-12 sm:px-8 md:py-16 lg:px-12">
+          <p
+            class="text-xs font-semibold tracking-widest text-lime-200 uppercase"
+          >
+            A workday with more room
+          </p>
+          <h2
+            id="testimonials-heading"
+            class="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl"
+          >
+            Good work feels better together.
+          </h2>
+          <p class="mt-4 text-sm text-emerald-100">
+            Illustrative testimonials from fictional customer scenarios, written
+            for this training project.
+          </p>
+          <div class="mt-8 grid gap-6 md:grid-cols-2">
+            <figure class="rounded-2xl border border-emerald-700 p-6 sm:p-8">
+              <blockquote class="text-lg leading-relaxed">
+                “The biggest change is how we start Monday. Everyone can see
+                what matters, and we spend our time doing the work instead of
+                finding it.”
+              </blockquote>
+              <figcaption class="mt-6 text-sm font-semibold text-lime-200">
+                Maya Kim<span
+                  class="mt-1 block text-xs font-normal text-emerald-100"
+                  >Studio lead · Fictional Fieldwork Studio</span
+                >
+              </figcaption>
+            </figure>
+            <figure class="rounded-2xl border border-emerald-700 p-6 sm:p-8">
+              <blockquote class="text-lg leading-relaxed">
+                “We have a place for the little details and a view of the bigger
+                picture. Our handoffs feel less like a guessing game.”
+              </blockquote>
+              <figcaption class="mt-6 text-sm font-semibold text-lime-200">
+                Jordan Silva<span
+                  class="mt-1 block text-xs font-normal text-emerald-100"
+                  >Operations lead · Fictional Northline</span
+                >
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+      <section
+        id="faq"
+        aria-labelledby="faq-heading"
+        class="mx-auto max-w-7xl px-5 py-12 sm:px-8 md:py-16 lg:px-12"
+      >
+        <div class="mx-auto max-w-3xl">
+          <p
+            class="text-xs font-semibold tracking-widest text-emerald-700 uppercase"
+          >
+            A few things you might be wondering
+          </p>
+          <h2
+            id="faq-heading"
+            class="mt-3 text-3xl font-semibold tracking-tight text-emerald-950 sm:text-4xl"
+          >
+            Clear answers. Less guesswork.
+          </h2>
+          <div class="mt-8 divide-y divide-stone-200 border-y border-stone-200">
+            <details class="group py-1">
+              <summary
+                class="min-h-11 cursor-pointer rounded-lg py-4 pr-3 text-sm font-semibold text-emerald-950 transition-colors hover:text-emerald-700 focus-visible:outline-emerald-700"
+              >
+                Can I explore Forma without an account?
+              </summary>
+              <p class="max-w-2xl pb-5 text-sm leading-relaxed text-stone-600">
+                Yes. The sample workspace is open to explore. Follow “Workspace”
+                in the navigation to see the dashboard and its related pages.
+              </p>
+            </details>
+            <details class="group py-1">
+              <summary
+                class="min-h-11 cursor-pointer rounded-lg py-4 pr-3 text-sm font-semibold text-emerald-950 transition-colors hover:text-emerald-700 focus-visible:outline-emerald-700"
+              >
+                How does the sample pricing work?
+              </summary>
+              <p class="max-w-2xl pb-5 text-sm leading-relaxed text-stone-600">
+                Focus includes Projects for $12 per person monthly. Studio adds
+                Teamspace for a total of $21. Complete adds Insights for a total
+                of $39. These prices are illustrative; checkout and
+                subscriptions are not available.
+              </p>
+            </details>
+            <details class="group py-1">
+              <summary
+                class="min-h-11 cursor-pointer rounded-lg py-4 pr-3 text-sm font-semibold text-emerald-950 transition-colors hover:text-emerald-700 focus-visible:outline-emerald-700"
+              >
+                Can I start with one tool?
+              </summary>
+              <p class="max-w-2xl pb-5 text-sm leading-relaxed text-stone-600">
+                That is the idea behind the product family: Projects for
+                planning, Teamspace for collaboration, and Insights for
+                reporting. Explore each module above.
+              </p>
+            </details>
+            <details class="group py-1">
+              <summary
+                class="min-h-11 cursor-pointer rounded-lg py-4 pr-3 text-sm font-semibold text-emerald-950 transition-colors hover:text-emerald-700 focus-visible:outline-emerald-700"
+              >
+                Does the workspace work on a small screen?
+              </summary>
+              <p class="max-w-2xl pb-5 text-sm leading-relaxed text-stone-600">
+                The navigation and cards adapt to your screen. Data tables keep
+                every column and can be scrolled sideways when space is limited.
+              </p>
+            </details>
+            <details class="group py-1">
+              <summary
+                class="min-h-11 cursor-pointer rounded-lg py-4 pr-3 text-sm font-semibold text-emerald-950 transition-colors hover:text-emerald-700 focus-visible:outline-emerald-700"
+              >
+                Will the demo save anything I type?
+              </summary>
+              <p class="max-w-2xl pb-5 text-sm leading-relaxed text-stone-600">
+                No. Forms demonstrate their appearance and native controls only.
+                Save and sign-in actions are disabled. Use sample information
+                rather than real account details.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+      <section
+        aria-labelledby="closing-heading"
+        class="mx-5 mb-14 rounded-3xl bg-emerald-950 px-6 py-10 text-center text-white sm:mx-8 sm:px-10 lg:mx-auto lg:max-w-6xl lg:py-14"
+      >
+        <p class="text-xs font-medium tracking-widest text-lime-200 uppercase">
+          Find your flow
+        </p>
+        <h2
+          id="closing-heading"
+          class="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl"
+        >
+          A fresh start for your working day.
+        </h2>
+        <p
+          class="mx-auto mt-4 max-w-lg text-sm leading-relaxed text-emerald-100"
+        >
+          Take a look around the workspace. A clearer picture of your team’s
+          progress is one small step away.
+        </p>
+        <a
+          href="./dashboard.html"
+          class="mt-7 inline-flex min-h-11 items-center justify-center gap-3 rounded-xl bg-lime-200 px-5 py-3 text-sm font-semibold text-emerald-950 transition-colors hover:bg-lime-300 focus-visible:outline-lime-200"
+          >Step inside the demo
+          <svg
+            class="size-5 shrink-0"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M5 12h14m-6-6 6 6-6 6" /></svg
+        ></a>
+      </section>
+    </main>
+    <footer class="border-t border-stone-200 bg-white">
+      <div
+        class="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-7 text-sm text-stone-600 sm:flex-row sm:items-center sm:justify-between sm:px-8 lg:px-12"
+      >
+        <p>
+          <span class="font-semibold text-emerald-950">Forma.</span> A little
+          structure. A lot more possibility.
+        </p>
+        <p>Fictional brand · Days 9–11 training demo</p>
+      </div>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

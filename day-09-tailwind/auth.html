@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Frontend-only Forma sign-in and registration cards, with accessible focus, disabled, and error-ready state examples."
+    />
+    <meta name="theme-color" content="#064e3b" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <title>Your next chapter starts here | Forma</title>
+  </head>
+  <body
+    class="min-h-screen bg-stone-50 font-sans text-stone-900 antialiased selection:bg-lime-200"
+  >
+    <a
+      href="#main-content"
+      class="sr-only z-50 rounded-lg bg-emerald-950 p-4 text-white focus:not-sr-only focus:fixed focus:top-3 focus:left-3"
+      >Skip to main content</a
+    >
+    <header class="border-b border-stone-200 bg-white">
+      <div
+        class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-5 py-4 sm:px-8 lg:px-12"
+      >
+        <a
+          href="./index.html"
+          aria-label="Forma home"
+          class="inline-flex min-h-11 items-center gap-2 rounded-lg text-2xl font-bold tracking-tight"
+          ><span
+            aria-hidden="true"
+            class="grid size-9 place-items-center rounded-xl bg-emerald-950 text-xl text-lime-200"
+            >f.</span
+          >forma<span aria-hidden="true" class="text-emerald-700">.</span></a
+        >
+        <nav aria-label="Primary" class="flex flex-wrap gap-1">
+          <a
+            href="./index.html"
+            class="inline-flex min-h-11 items-center rounded-lg px-3 text-sm font-medium transition-colors hover:bg-emerald-50 hover:text-emerald-900 text-stone-600"
+            >Home</a
+          ><a
+            href="./index.html#products"
+            class="inline-flex min-h-11 items-center rounded-lg px-3 text-sm font-medium transition-colors hover:bg-emerald-50 hover:text-emerald-900 text-stone-600"
+            >Products</a
+          ><a
+            href="./index.html#pricing"
+            class="inline-flex min-h-11 items-center rounded-lg px-3 text-sm font-medium transition-colors hover:bg-emerald-50 hover:text-emerald-900 text-stone-600"
+            >Pricing</a
+          ><a
+            href="./index.html#faq"
+            class="inline-flex min-h-11 items-center rounded-lg px-3 text-sm font-medium transition-colors hover:bg-emerald-50 hover:text-emerald-900 text-stone-600"
+            >FAQ</a
+          ><a
+            href="./dashboard.html"
+            class="inline-flex min-h-11 items-center rounded-lg px-3 text-sm font-medium transition-colors hover:bg-emerald-50 hover:text-emerald-900 text-stone-600"
+            >Workspace</a
+          ><a
+            href="./auth.html"
+            aria-current="page"
+            class="inline-flex min-h-11 items-center rounded-lg px-3 text-sm font-medium transition-colors hover:bg-emerald-50 hover:text-emerald-900 bg-emerald-100 text-emerald-950"
+            >Account</a
+          >
+        </nav>
+      </div>
+    </header>
+    <main
+      id="main-content"
+      tabindex="-1"
+      class="mx-auto max-w-6xl px-5 py-12 sm:px-8 sm:py-16"
+    >
+      <div class="text-center">
+        <p
+          class="text-xs font-semibold tracking-widest text-emerald-700 uppercase"
+        >
+          A little clarity starts here
+        </p>
+        <h1
+          class="mt-3 text-4xl font-semibold tracking-tight text-emerald-950 sm:text-5xl"
+        >
+          Make room for good work.
+        </h1>
+        <p
+          id="auth-demo-note"
+          class="mx-auto mt-5 max-w-2xl text-sm leading-relaxed text-stone-600"
+        >
+          These sign-in and registration cards demonstrate form appearance only.
+          Submissions are disabled; no account is created and no information is
+          sent or saved. Use sample details to explore the controls.
+        </p>
+      </div>
+      <div class="mt-10 grid items-start gap-6 md:grid-cols-2 lg:gap-8">
+        <section
+          id="login"
+          aria-labelledby="login-heading"
+          class="rounded-2xl border border-stone-200 bg-white p-5 shadow-sm sm:p-8"
+        >
+          <span
+            class="grid size-11 place-items-center rounded-xl bg-emerald-100 text-emerald-800"
+            ><svg
+              class="size-6 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M20 4C9 2 3 8 5 15s14 6 15-11ZM4 21 16 9" /></svg
+          ></span>
+          <h2
+            id="login-heading"
+            class="mt-5 text-2xl font-semibold tracking-tight"
+          >
+            Welcome back.
+          </h2>
+          <p class="mt-2 text-sm text-stone-600">
+            Find your focus. Pick up where you left off.
+          </p>
+          <form
+            aria-labelledby="login-heading"
+            aria-describedby="auth-demo-note login-submit-help"
+            class="mt-7 space-y-5"
+          >
+            <div>
+              <label for="login-email" class="text-sm font-medium"
+                >Email address</label
+              ><input
+                class="mt-2 block min-h-11 w-full rounded-xl border border-stone-300 bg-white px-3 py-3 text-base text-stone-900 transition-colors placeholder:text-stone-500 hover:border-stone-500 focus:border-emerald-700 focus:ring-2 focus:ring-emerald-100 focus-visible:outline-emerald-700 disabled:cursor-not-allowed disabled:bg-stone-100 disabled:text-stone-500"
+                id="login-email"
+                type="email"
+                autocomplete="username"
+                placeholder="alex@example.com"
+                required
+              />
+            </div>
+            <div>
+              <label for="login-password" class="text-sm font-medium"
+                >Password</label
+              ><input
+                class="mt-2 block min-h-11 w-full rounded-xl border border-stone-300 bg-white px-3 py-3 text-base text-stone-900 transition-colors placeholder:text-stone-500 hover:border-stone-500 focus:border-emerald-700 focus:ring-2 focus:ring-emerald-100 focus-visible:outline-emerald-700 disabled:cursor-not-allowed disabled:bg-stone-100 disabled:text-stone-500"
+                id="login-password"
+                type="password"
+                autocomplete="current-password"
+                placeholder="Your password"
+                required
+              />
+            </div>
+            <label
+              class="flex min-h-11 cursor-pointer items-center gap-3 text-sm text-stone-600"
+              ><input
+                id="remember"
+                type="checkbox"
+                class="size-4 shrink-0 rounded border-stone-300 accent-emerald-800 focus-visible:outline-emerald-700"
+              />Remember me
+              <span class="text-xs text-stone-500">(UI only)</span></label
+            >
+            <button
+              disabled
+              type="submit"
+              aria-describedby="login-submit-help"
+              class="w-full rounded-xl bg-emerald-950 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-emerald-800 focus-visible:outline-emerald-700 disabled:cursor-not-allowed disabled:bg-stone-200 disabled:text-stone-600"
+            >
+              Sign in · demo only
+            </button>
+            <p
+              id="login-submit-help"
+              class="text-xs leading-relaxed text-stone-500"
+            >
+              Disabled state: sign-in is unavailable in this frontend exercise.
+            </p>
+            <button
+              type="reset"
+              class="min-h-11 rounded-lg px-2 text-sm font-medium text-emerald-800 transition-colors hover:bg-emerald-50 hover:text-emerald-950 focus-visible:outline-emerald-700"
+            >
+              Clear sign-in fields
+            </button>
+          </form>
+          <p class="mt-6 border-t border-stone-100 pt-5 text-sm text-stone-600">
+            New around here?
+            <a
+              class="rounded-lg transition-colors hover:text-emerald-800 focus-visible:outline-emerald-700 font-semibold text-emerald-800 underline underline-offset-4"
+              href="#register"
+              >Explore registration</a
+            >
+          </p>
+        </section>
+        <section
+          id="register"
+          aria-labelledby="register-heading"
+          class="rounded-2xl border border-emerald-200 bg-white p-5 shadow-sm sm:p-8"
+        >
+          <div class="flex items-center justify-between gap-3">
+            <span
+              class="grid size-11 place-items-center rounded-xl bg-lime-100 text-emerald-800"
+              ><svg
+                class="size-6 shrink-0"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <circle cx="9" cy="8" r="3" />
+                <path
+                  d="M3 21v-3a6 6 0 0 1 12 0v3M16 5a3 3 0 0 1 0 6M21 21v-3a6 6 0 0 0-3-5"
+                /></svg></span
+            ><span
+              class="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold bg-lime-100 text-emerald-900"
+              >A fresh start</span
+            >
+          </div>
+          <h2
+            id="register-heading"
+            class="mt-5 text-2xl font-semibold tracking-tight"
+          >
+            Your next chapter.
+          </h2>
+          <p class="mt-2 text-sm text-stone-600">
+            A space for you and your team's best ideas.
+          </p>
+          <form
+            aria-labelledby="register-heading"
+            aria-describedby="auth-demo-note register-submit-help"
+            class="mt-7 space-y-5"
+          >
+            <div>
+              <label for="register-name" class="text-sm font-medium"
+                >Full name</label
+              ><input
+                class="mt-2 block min-h-11 w-full rounded-xl border border-stone-300 bg-white px-3 py-3 text-base text-stone-900 transition-colors placeholder:text-stone-500 hover:border-stone-500 focus:border-emerald-700 focus:ring-2 focus:ring-emerald-100 focus-visible:outline-emerald-700 disabled:cursor-not-allowed disabled:bg-stone-100 disabled:text-stone-500"
+                id="register-name"
+                type="text"
+                autocomplete="name"
+                placeholder="Alex Lee"
+                required
+              />
+            </div>
+            <div>
+              <label for="register-email" class="text-sm font-medium"
+                >Work email</label
+              ><input
+                class="mt-2 block min-h-11 w-full rounded-xl border border-stone-300 bg-white px-3 py-3 text-base text-stone-900 transition-colors placeholder:text-stone-500 hover:border-stone-500 focus:border-emerald-700 focus:ring-2 focus:ring-emerald-100 focus-visible:outline-emerald-700 disabled:cursor-not-allowed disabled:bg-stone-100 disabled:text-stone-500"
+                id="register-email"
+                type="email"
+                autocomplete="email"
+                placeholder="alex@example.com"
+                required
+              />
+            </div>
+            <div>
+              <label for="register-password" class="text-sm font-medium"
+                >Password</label
+              ><input
+                class="mt-2 block min-h-11 w-full rounded-xl border border-stone-300 bg-white px-3 py-3 text-base text-stone-900 transition-colors placeholder:text-stone-500 hover:border-stone-500 focus:border-emerald-700 focus:ring-2 focus:ring-emerald-100 focus-visible:outline-emerald-700 disabled:cursor-not-allowed disabled:bg-stone-100 disabled:text-stone-500"
+                id="register-password"
+                type="password"
+                autocomplete="new-password"
+                minlength="8"
+                aria-describedby="password-help"
+                placeholder="At least 8 characters"
+                required
+              />
+              <p
+                id="password-help"
+                class="mt-2 text-xs leading-relaxed text-stone-500"
+              >
+                Practice requirement: at least 8 characters. Do not enter a real
+                password.
+              </p>
+            </div>
+            <div>
+              <label for="register-confirm" class="text-sm font-medium"
+                >Confirm password</label
+              ><input
+                class="mt-2 block min-h-11 w-full rounded-xl border border-stone-300 bg-white px-3 py-3 text-base text-stone-900 transition-colors placeholder:text-stone-500 hover:border-stone-500 focus:border-emerald-700 focus:ring-2 focus:ring-emerald-100 focus-visible:outline-emerald-700 disabled:cursor-not-allowed disabled:bg-stone-100 disabled:text-stone-500"
+                id="register-confirm"
+                type="password"
+                autocomplete="new-password"
+                minlength="8"
+                aria-describedby="confirm-help"
+                placeholder="Repeat your sample password"
+                required
+              />
+              <p
+                id="confirm-help"
+                class="mt-2 text-xs leading-relaxed text-stone-500"
+              >
+                Matching is not checked in this static UI.
+              </p>
+            </div>
+            <div class="flex items-start gap-3">
+              <input
+                id="terms"
+                type="checkbox"
+                class="mt-1 size-4 shrink-0 rounded border-stone-300 accent-emerald-800 focus-visible:outline-emerald-700"
+                required
+              /><label
+                for="terms"
+                class="text-sm leading-relaxed text-stone-600"
+                >I understand the
+                <a
+                  href="#demo-terms"
+                  class="rounded-lg transition-colors hover:text-emerald-800 focus-visible:outline-emerald-700 text-emerald-800 underline underline-offset-4"
+                  >demo terms</a
+                >.</label
+              >
+            </div>
+            <button
+              disabled
+              type="submit"
+              aria-describedby="register-submit-help"
+              class="w-full rounded-xl bg-emerald-950 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-emerald-800 focus-visible:outline-emerald-700 disabled:cursor-not-allowed disabled:bg-stone-200 disabled:text-stone-600"
+            >
+              Create workspace · demo only
+            </button>
+            <p
+              id="register-submit-help"
+              class="text-xs leading-relaxed text-stone-500"
+            >
+              Disabled state: account creation is unavailable in this frontend
+              exercise.
+            </p>
+            <button
+              type="reset"
+              class="min-h-11 rounded-lg px-2 text-sm font-medium text-emerald-800 transition-colors hover:bg-emerald-50 hover:text-emerald-950 focus-visible:outline-emerald-700"
+            >
+              Clear registration fields
+            </button>
+          </form>
+        </section>
+      </div>
+      <section
+        aria-labelledby="states-heading"
+        class="mt-8 rounded-2xl border border-stone-200 bg-stone-100 p-5 sm:p-8"
+      >
+        <div class="grid items-start gap-6 md:grid-cols-2">
+          <div>
+            <p
+              class="text-xs font-semibold tracking-widest text-emerald-700 uppercase"
+            >
+              Form state study
+            </p>
+            <h2
+              id="states-heading"
+              class="mt-2 text-xl font-semibold tracking-tight"
+            >
+              Thoughtful feedback, at every step.
+            </h2>
+            <p class="mt-3 text-sm leading-relaxed text-stone-600">
+              Hover a field, then use Tab to explore its focus outline. Disabled
+              submit buttons show that this demo is unavailable. The field
+              alongside is a deliberately labeled error-ready example, separate
+              from the forms above.
+            </p>
+          </div>
+          <div class="rounded-xl border border-rose-200 bg-white p-4">
+            <label
+              for="example-email"
+              class="text-sm font-semibold text-rose-900"
+              >Email address · validation state example</label
+            ><input
+              id="example-email"
+              type="email"
+              value="alex.example.com"
+              aria-invalid="true"
+              aria-describedby="example-error"
+              class="mt-2 block min-h-11 w-full rounded-xl border border-rose-600 bg-white px-3 py-3 text-base text-rose-900 transition-colors hover:border-rose-800 focus:border-rose-700 focus:ring-2 focus:ring-rose-100 focus-visible:outline-rose-700"
+            />
+            <p
+              id="example-error"
+              class="mt-2 text-xs leading-relaxed text-rose-800"
+            >
+              <strong>Example feedback:</strong> Enter an email address with an
+              @ symbol. This is a static UI state, not a response to a sign-in
+              attempt.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        id="demo-terms"
+        aria-labelledby="terms-heading"
+        class="mx-auto mt-8 max-w-2xl text-center"
+      >
+        <h2 id="terms-heading" class="text-sm font-semibold text-stone-700">
+          Demo terms
+        </h2>
+        <p class="mt-2 text-xs leading-relaxed text-stone-500">
+          Forma is a fictional training brand. These forms demonstrate HTML
+          semantics and Tailwind states. There is no authentication service,
+          account storage, subscription, or password recovery. Fields have no
+          submission names and submission controls are disabled.
+        </p>
+        <a
+          href="./dashboard.html"
+          class="rounded-lg transition-colors hover:text-emerald-800 focus-visible:outline-emerald-700 mt-4 inline-flex min-h-11 items-center gap-2 text-sm font-medium text-emerald-800"
+          >Explore the dashboard instead
+          <svg
+            class="size-4 shrink-0"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M5 12h14m-6-6 6 6-6 6" /></svg
+        ></a>
+      </section>
+    </main>
+    <footer class="border-t border-stone-200 bg-white">
+      <div
+        class="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-7 text-sm text-stone-600 sm:flex-row sm:items-center sm:justify-between sm:px-8 lg:px-12"
+      >
+        <p>
+          <span class="font-semibold text-emerald-950">Forma.</span> A little
+          structure. A lot more possibility.
+        </p>
+        <p>Fictional brand · Days 9–11 training demo</p>
+      </div>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
