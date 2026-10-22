@@ -1,0 +1,141 @@
+{
+  "runAt": "2026-10-22T21:56:14.793Z",
+  "timezone": "Asia/Hebron",
+  "results": [
+    {
+      "name": "Vite development server",
+      "status": "PASS",
+      "detail": "npm run dev serves the app; create/refresh/delete passed at localhost:5173."
+    },
+    {
+      "name": "Truthful initialization",
+      "status": "PASS",
+      "detail": "Initial HTML has loading/busy and disabled fieldsets until the held JS module runs, loads and validates real storage; no application timer or fake request."
+    },
+    {
+      "name": "Initial empty state",
+      "status": "PASS",
+      "detail": "Empty workspace, zero derived counts, and no automatic seed/storage write."
+    },
+    {
+      "name": "Form validation",
+      "status": "PASS",
+      "detail": "Whitespace title, programmatic overlength title/description, and out-of-range date rejected; inline associated errors and invalid/focus state verified."
+    },
+    {
+      "name": "Create/read and persistence",
+      "status": "PASS",
+      "detail": "Three trimmed tasks with distinct fields created without navigation; form reset/focus, summaries, JSON and refresh restoration verified."
+    },
+    {
+      "name": "Edit all fields and cancel",
+      "status": "PASS",
+      "detail": "Title, description, priority, status and due date updated with stable ID/createdAt and new updatedAt; refresh persisted; blank edit rejected; Escape and Cancel discarded drafts and restored focus."
+    },
+    {
+      "name": "Status and calendar behavior",
+      "status": "PASS",
+      "detail": "Complete/reopen survived refresh; overdue incomplete task counted; completed past-due task excluded; clearing a due date supported."
+    },
+    {
+      "name": "Live search",
+      "status": "PASS",
+      "detail": "Title and description, partial/mixed-case/padded/blank queries, no results, and clearing tested."
+    },
+    {
+      "name": "Every filter and combinations",
+      "status": "PASS",
+      "detail": "All status/priority options; search+status, search+priority, status+priority and all three combined; filtered empty state and reset verified."
+    },
+    {
+      "name": "All sorting modes",
+      "status": "PASS",
+      "detail": "Oldest/newest creation order, earliest due date with undated last, and high-to-low priority verified without mutating stored order."
+    },
+    {
+      "name": "Safe DOM rendering",
+      "status": "PASS",
+      "detail": "HTML-like title/description displayed literally, without injected nodes or script execution."
+    },
+    {
+      "name": "Delete correct record and persist",
+      "status": "PASS",
+      "detail": "Requested ID removed while other records remained; focus moved to a remaining delete control; deletion survived refresh."
+    },
+    {
+      "name": "Unexpected stale action",
+      "status": "PASS",
+      "detail": "Simulated stale task ID produced user-facing recovery feedback and a refreshed list without changing saved data or throwing uncaught errors."
+    },
+    {
+      "name": "Keyboard, labels and focus",
+      "status": "PASS",
+      "detail": "Enter creates/changes status/opens edit; Escape cancels; Tab enters description; visible focus, all control labels, real named buttons and associated errors verified."
+    },
+    {
+      "name": "Storage JSON inspection",
+      "status": "PASS",
+      "detail": "day15TaskManager parsed directly in the browser; unique IDs, eight expected serializable fields, valid timestamps, no DOM/functions."
+    },
+    {
+      "name": "No core reloads and notifications",
+      "status": "PASS",
+      "detail": "Core actions/search/filter/sort operate without navigation; create/update/delete/validation/stale feedback observed in the live status region."
+    },
+    {
+      "name": "Core flows at 320px",
+      "status": "PASS",
+      "detail": "Create/read/edit all fields/status/search/combined filters/sort/reset/delete/refresh completed; long unbroken description, edit form, empty state fit; buttons/inputs/selects at least 44px high; no overflow."
+    },
+    {
+      "name": "Core flows at 390px",
+      "status": "PASS",
+      "detail": "Create/read/edit all fields/status/search/combined filters/sort/reset/delete/refresh completed; long unbroken description, edit form, empty state fit; buttons/inputs/selects at least 44px high; no overflow."
+    },
+    {
+      "name": "Core flows at 768px",
+      "status": "PASS",
+      "detail": "Create/read/edit all fields/status/search/combined filters/sort/reset/delete/refresh completed; long unbroken description, edit form, empty state fit; buttons/inputs/selects at least 44px high; no overflow."
+    },
+    {
+      "name": "Core flows at 1024px",
+      "status": "PASS",
+      "detail": "Create/read/edit all fields/status/search/combined filters/sort/reset/delete/refresh completed; long unbroken description, edit form, empty state fit; buttons/inputs/selects at least 44px high; no overflow."
+    },
+    {
+      "name": "Core flows at 1366px",
+      "status": "PASS",
+      "detail": "Create/read/edit all fields/status/search/combined filters/sort/reset/delete/refresh completed; long unbroken description, edit form, empty state fit; buttons/inputs/selects at least 44px high; no overflow."
+    },
+    {
+      "name": "Empty saved data",
+      "status": "PASS",
+      "detail": "Empty string, whitespace, and JSON empty array initialize safely without a warning."
+    },
+    {
+      "name": "Malformed/invalid storage recovery",
+      "status": "PASS",
+      "detail": "Nine bad JSON/schema/duplicate/enum/date/timestamp cases handled visibly without overwriting originals until a successful new change; recovery save cleared warning."
+    },
+    {
+      "name": "Storage getter/read failure",
+      "status": "PASS",
+      "detail": "SecurityError thrown by localStorage getter caught during initialization and saving; controls enabled, memory-only create/status/delete worked with persistent warning."
+    },
+    {
+      "name": "Storage quota/write failure",
+      "status": "PASS",
+      "detail": "Simulated quota error kept task usable in memory and showed refresh-loss warning; refreshing confirmed it was not persisted."
+    },
+    {
+      "name": "Console, imports and local assets",
+      "status": "PASS",
+      "detail": "Zero console errors, uncaught exceptions/rejections, failed requests or HTTP errors across development/production, normal flows and handled storage-failure scenarios."
+    }
+  ],
+  "consoleErrors": [],
+  "uncaught": [],
+  "failedRequests": [],
+  "browser": "155.0.8059.86",
+  "baseUrl": "http://127.0.0.1:4173/"
+}
