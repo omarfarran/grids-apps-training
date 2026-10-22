@@ -135,3 +135,71 @@ Suggested commits for the author's review:
 - `add Bootstrap modal contact form`
 - `add accessible Bootstrap FAQ accordion`
 - `update Day 7 interaction QA`
+
+## Day 8 — Bootstrap Final Website
+
+Verified on **22 October 2026** using real headless Microsoft Edge **155.0.4283.62**, the existing Playwright installation outside this repository, and axe-core **4.10.3** downloaded to temporary storage. The historical Day 6/7 sections above describe their original scope; this section supersedes them for final delivery.
+
+### Final scope
+
+The ten required pages are implemented: Home, About, Services, Service Detail, Products, Pricing, Blog, Blog Detail, FAQ, and Contact. Dashboard remains an additional eleventh page. Bootstrap 5.3.8, the teal/navy/mint branding, and the Day 7 offcanvas/modal/accordion are retained.
+
+Every page shares the same eight-link navbar and eleven-link footer. Service Detail and Blog Detail highlight their parent sections and have breadcrumbs. New journeys connect service cards to service details and Contact; products to plans and the dashboard; blog cards to complete article sections and back; and FAQ answers to relevant pages. Home includes two explicitly fictional testimonials. Contact has a standalone, labeled demo project-brief form.
+
+### Responsive results
+
+All **66 page/width combinations** passed: eleven pages at each width below. Document scroll width never exceeded the viewport; navigation stayed inside it. No overflow-hiding workaround was used.
+
+| Width | Navbar | Home feature columns | Pricing columns | Dashboard KPI columns | Project table |
+| ---: | --- | ---: | ---: | ---: | --- |
+| 320px | Offcanvas | 1 | 1 | 1 | Scrolls inside its region |
+| 390px | Offcanvas | 1 | 1 | 1 | Scrolls inside its region |
+| 768px | Offcanvas | 2 | 1 | 2 | Fits |
+| 992px | Horizontal | 3 | 3 | 2 | Fits |
+| 1024px | Horizontal | 3 | 3 | 2 | Fits |
+| 1366px | Horizontal | 3 | 3 | 4 | Fits |
+
+The standard viewport height was 900px. Additional modal interaction checks used **320×568**, and form/mobile navigation checks used **390×740**. The modal fit these screens and kept its controls reachable. The table scrolled using ArrowRight while the page remained within the viewport.
+
+Initial checks found excessive horizontal gutters on Contact/Service Detail and insufficient breadcrumb contrast. The rows now use `gx-4 gy-5`; Bootstrap link RGB variables match the teal brand. The corrected checks passed.
+
+### Functionality, navigation, and forms
+
+- **694 functional/structural assertions passed**, including HTTP responses, responsive fit, offcanvas behavior, focus, landmarks, ID/ARIA references, forms, accordion, and link targets.
+- **291 local link/fragment occurrences passed** file and destination-ID checks. Actual browser clicks additionally exercised all eight desktop navbar destinations, all eight mobile navbar destinations, and all eleven footer destinations.
+- All eleven pages have one H1, one main landmark, a top-level footer, unique titles, associated form labels, and no duplicate IDs or missing Bootstrap/ARIA targets. Source structural tags are balanced.
+- Offcanvas opened by keyboard on every page at 320/390/768px. All eight links fit, keyboard focus stayed inside the open panel, Escape dismissed it, and focus returned to the toggle. Mobile navigation clicks reached their destination pages.
+- The Home modal was exercised at 320/768/1366px: it fit the viewport; Tab did not reach background controls; close button, Cancel, backdrop, and Escape worked; dismissal returned focus to the trigger.
+- All five FAQ questions opened with Enter/Space at 320/768/1366px. Switching left one answer open; repeated activation closed it.
+- Both forms blocked empty fields, one-character names, malformed email, missing service, messages under 20 characters, and missing consent. Valid sample input passed while optional Company remained empty. Submission returned to the intended static section without form values in the URL.
+- Both forms remain frontend-only and intentionally omit control `name` attributes. No request delivery, account, storage, purchase, or success simulation was added.
+
+### Accessibility and focus
+
+- **39 axe-core page/component-state scans reported zero violations** for WCAG 2 A/AA and WCAG 2.1 A/AA tags. This covers each page at 320/768/1366px, an open offcanvas, both populated forms including the open modal, and expanded FAQ states.
+- Keyboard checks verified visible skip-link focus and movement into main on all eleven pages, offcanvas focus return, modal focus boundaries/return, FAQ operation, and table scrolling.
+- Axe's manual-review items were investigated. The hero gradient endpoints give at least **4.67:1** for teal text, **5.19:1** for secondary text, and **11.86:1** for navy text. Decorative arrows/checkmarks are hidden from assistive technology and accompanied by meaningful text.
+- Offcanvas wrappers use named semantic sections so their label remains meaningful in desktop navigation; Bootstrap assigns dialog semantics when open. FAQ answer panels use named regions. These changes address generic-container ARIA review items while preserving the original components.
+- Automated scans and selected keyboard/visual checks are not a full accessibility audit. No screen-reader, physical-device, Firefox, or Safari testing was performed.
+
+### Console and assets
+
+Final console/asset checks across all eleven pages reported **zero console errors, uncaught page errors, failed requests, HTTP errors, or missing paths**. A browser-generated favicon 404 found during the earlier run was fixed with the local branded SVG favicon. Its follow-up response was HTTP 200 with `image/svg+xml`; all pages reference it.
+
+Static setup checks confirmed matching official 5.3.8 CSS/bundle URLs and SRI/crossorigin attributes on all eleven pages, custom CSS afterward, exactly one Bootstrap script per page, identical footers, unique titles, and no inline source styles. No custom application JS, Tailwind, package setup, or JavaScript training module was introduced.
+
+### Screenshots and delivery
+
+Five actual full-page browser captures were saved and visually reviewed:
+
+- [Home mobile, 390px](screenshots/final-mobile.png)
+- [Home tablet, 768px](screenshots/final-tablet.png)
+- [Home desktop, 1366px](screenshots/final-desktop.png)
+- [Services desktop, 1366px](screenshots/final-services-desktop.png)
+- [Contact mobile, 390px](screenshots/final-contact-mobile.png)
+
+The finalized [README](README.md) includes setup, page map, components, responsive behavior, form limitations, and screenshots. [DAY8-DELIVERY.md](DAY8-DELIVERY.md) includes the rubric map, five-minute presentation script, blank peer checklist, and suggested commits.
+
+Real peer review and live presentation remain pending human work; neither is claimed complete. Course-required meaningful commits remain the author's responsibility because this task explicitly prohibited committing/pushing.
+
+All changes are inside `day-06-bootstrap/` on `day-08-bootstrap-final`. `day-01-html` is unchanged. No commit, push, dependency installation in the repository, or deployment occurred. Temporary test browsers and preview servers were closed; test scripts/results/dependencies remain outside the repository. No known unresolved implementation issue remains in the requested Day 8 scope.
