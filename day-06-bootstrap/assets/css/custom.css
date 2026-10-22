@@ -9,7 +9,9 @@
   --bs-secondary-rgb: 82, 100, 108;
   --bs-secondary-color: #52646c;
   --bs-link-color: var(--brand-primary);
+  --bs-link-color-rgb: 8, 117, 109;
   --bs-link-hover-color: #045a54;
+  --bs-link-hover-color-rgb: 4, 90, 84;
 }
 
 body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
@@ -83,3 +85,9 @@ body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
 .form-control:focus, .form-select:focus, .form-check-input:focus { border-color: var(--brand-primary); box-shadow: 0 0 0 .25rem rgb(8 117 109 / 25%); }
 .form-check-input:checked { background-color: var(--brand-primary); border-color: var(--brand-primary); }
 .navbar-toggler:focus-visible, .btn-close:focus-visible { outline: 3px solid var(--brand-primary); outline-offset: 3px; }
+
+/* Day 8: shared page rhythm and footer; Bootstrap still owns responsive layout. */
+.page-intro { max-width: 50rem; }
+.site-footer a { text-underline-offset: .2em; }
+.site-footer .brand { font-size: 1.5rem; }
+.blockquote { font-size: 1.1rem; line-height: 1.7; }
