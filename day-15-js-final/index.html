@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#315c50">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/src/style.css">
+  <script type="module" src="/src/main.js"></script>
+  <title>Stride | Task Management System</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to workspace</a>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="Stride home"><span class="brand-mark" aria-hidden="true">✓</span> stride<span class="brand-dot">.</span></a>
+      <span class="project-label">GRIDS APPS <span aria-hidden="true">/</span> FINAL PROJECT</span>
+    </header>
+    <main id="main">
+      <section class="intro" aria-labelledby="page-title">
+        <div><p class="eyebrow">YOUR EVERYDAY WORKSPACE</p><h1 id="page-title">Small steps. Real progress.</h1><p class="intro-copy">Give your ideas a plan. Keep your next move in focus.</p></div>
+        <span class="workspace-label"><span aria-hidden="true">◈</span> Your personal task board</span>
+      </section>
+
+      <section aria-labelledby="overview-heading">
+        <h2 id="overview-heading" class="visually-hidden">Task overview</h2>
+        <dl class="summary">
+          <div><dt>Total tasks</dt><dd id="summary-total">—</dd></div>
+          <div><dt>Todo</dt><dd id="summary-todo">—</dd></div>
+          <div><dt>In progress</dt><dd id="summary-progress">—</dd></div>
+          <div><dt>Completed</dt><dd id="summary-completed">—</dd></div>
+          <div><dt>Overdue</dt><dd id="summary-overdue">—</dd></div>
+        </dl>
+      </section>
+      <p id="storage-warning" class="storage-warning" role="status" aria-atomic="true"></p>
+      <p id="action-status" class="action-status" role="status" aria-atomic="true"></p>
+
+      <div class="workspace">
+        <section class="form-panel panel" aria-labelledby="form-heading">
+          <div class="panel-heading"><h2 id="form-heading">New task</h2><span aria-hidden="true">↗</span></div>
+          <p class="panel-copy" id="form-help">Start with one thing you want to move forward.</p>
+          <form id="task-form" novalidate aria-describedby="form-help">
+            <fieldset id="task-fields" disabled>
+              <legend class="visually-hidden">Task details</legend>
+              <div class="form-grid">
+                <div class="field full-width"><label for="task-title">Title <span class="required-label">(required)</span></label><input id="task-title" name="title" maxlength="100" required placeholder="What needs to happen?" aria-describedby="title-error"><p id="title-error" class="field-error" role="alert"></p></div>
+                <div class="field full-width"><label for="task-description">Description <span class="optional-label">(optional)</span></label><textarea id="task-description" name="description" rows="3" maxlength="1000" placeholder="A few details to make it clear…" aria-describedby="description-error"></textarea><p id="description-error" class="field-error" role="alert"></p></div>
+                <div class="field"><label for="task-status">Status</label><select id="task-status" name="status" aria-describedby="status-error"><option value="todo">Todo</option><option value="in-progress">In progress</option><option value="completed">Completed</option></select><p id="status-error" class="field-error" role="alert"></p></div>
+                <div class="field"><label for="task-priority">Priority</label><select id="task-priority" name="priority" aria-describedby="priority-error"><option value="low">Low</option><option value="medium" selected>Medium</option><option value="high">High</option></select><p id="priority-error" class="field-error" role="alert"></p></div>
+                <div class="field full-width"><label for="task-due-date">Due date <span class="optional-label">(optional)</span></label><input id="task-due-date" name="dueDate" type="date" min="1900-01-01" max="9999-12-31" aria-describedby="dueDate-error"><p id="dueDate-error" class="field-error" role="alert"></p></div>
+              </div>
+              <p class="form-hint">Title: up to 100 characters. Description: up to 1,000.</p>
+              <div class="form-actions"><button id="submit-task" type="submit" class="button primary">Add task</button><button id="cancel-edit" type="button" class="button secondary" hidden>Cancel edit</button></div>
+            </fieldset>
+          </form>
+        </section>
+
+        <section class="tasks-panel panel" aria-labelledby="tasks-heading" id="task-workspace" aria-busy="true">
+          <div class="panel-heading"><h2 id="tasks-heading">Your tasks</h2><span class="small-label">MAKE SPACE FOR FOCUS</span></div>
+          <form id="view-form" role="search" aria-label="Find and organize tasks">
+            <fieldset id="view-fields" disabled>
+              <legend class="visually-hidden">Search, filter, and sort tasks</legend>
+              <div class="field search-field"><label for="task-search">Search tasks</label><input id="task-search" type="search" placeholder="Search titles and descriptions…" autocomplete="off"></div>
+              <div class="view-grid">
+                <div class="field"><label for="status-filter">Status</label><select id="status-filter"><option value="all">All statuses</option><option value="todo">Todo</option><option value="in-progress">In progress</option><option value="completed">Completed</option></select></div>
+                <div class="field"><label for="priority-filter">Priority</label><select id="priority-filter"><option value="all">All priorities</option><option value="low">Low</option><option value="medium">Medium</option><option value="high">High</option></select></div>
+                <div class="field"><label for="task-sort">Sort by</label><select id="task-sort"><option value="newest">Newest first</option><option value="oldest">Oldest first</option><option value="due-date">Due date</option><option value="priority">Priority</option></select></div>
+              </div>
+              <div class="list-meta"><p id="result-count">Waiting for tasks</p><button id="reset-view" type="button" class="text-button">Reset view</button></div>
+            </fieldset>
+          </form>
+          <ul id="task-list" aria-label="Tasks"></ul>
+          <div id="empty-state" class="empty-state" data-state="loading"><span class="empty-icon" aria-hidden="true">◌</span><h3 id="empty-heading">Opening your workspace…</h3><p id="empty-copy">Reading and checking tasks saved in this browser.</p></div>
+        </section>
+      </div>
+      <noscript><p class="storage-warning">Enable JavaScript to use this task manager.</p></noscript>
+    </main>
+    <footer class="site-footer"><p><span aria-hidden="true">◈</span> A little structure for what comes next.</p><p>Stored in this browser · Built by Omar Farran</p></footer>
+  </div>
+</body>
+</html>

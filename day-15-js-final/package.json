@@ -1,0 +1,18 @@
+{
+  "name": "day-15-task-management-system",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --test qa/unit.test.js",
+    "test:browser": "node qa/browser-qa.js"
+  },
+  "engines": { "node": "^20.19.0 || >=22.12.0" },
+  "devDependencies": {
+    "playwright": "1.64.1",
+    "vite": "8.3.5"
+  }
+}
