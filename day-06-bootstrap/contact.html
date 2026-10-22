@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore a TechNova project brief with a labeled, accessible frontend demo contact form.">
+  <title>TechNova | Contact</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="assets/css/custom.css" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+</head>
+<body class="d-flex flex-column min-vh-100">
+  <a class="visually-hidden-focusable skip-link" href="#main-content">Skip to main content</a>
+  <header class="bg-white border-bottom">
+    <nav class="navbar navbar-expand-lg py-3" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand brand text-decoration-none d-flex align-items-center gap-2" href="index.html"><span class="brand-mark rounded" aria-hidden="true">T</span>TechNova<span class="brand-dot" aria-hidden="true">.</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#main-navigation" aria-controls="main-navigation" aria-label="Open main navigation">
+          <span class="navbar-toggler-icon" aria-hidden="true"></span>
+        </button>
+        <section class="offcanvas offcanvas-end brand-offcanvas" tabindex="-1" id="main-navigation" aria-labelledby="navigation-title">
+          <div class="offcanvas-header">
+            <h2 class="offcanvas-title h5" id="navigation-title">TechNova navigation</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close main navigation"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 gap-1">
+              <li class="nav-item"><a class="nav-link rounded px-2" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link rounded px-2" href="about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link rounded px-2" href="services.html">Services</a></li>
+              <li class="nav-item"><a class="nav-link rounded px-2" href="products.html">Products</a></li>
+              <li class="nav-item"><a class="nav-link rounded px-2" href="pricing.html">Pricing</a></li>
+              <li class="nav-item"><a class="nav-link rounded px-2" href="blog.html">Blog</a></li>
+              <li class="nav-item"><a class="nav-link rounded px-2" href="faq.html">FAQ</a></li>
+              <li class="nav-item"><a class="nav-link rounded px-2 active" href="contact.html" aria-current="page">Contact</a></li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </nav>
+  </header>
+  <main id="main-content" class="container py-5 flex-grow-1" tabindex="-1">
+<div class="page-intro mb-5"><p class="eyebrow mb-3">A useful first conversation</p><h1 class="display-5 fw-bold mb-3">What would you like to simplify?</h1><p class="lead text-secondary mb-0">Tell us about the workflow, the team, and the next useful step you have in mind.</p></div>
+<div class="row gx-4 gy-5"><div class="col-12 col-lg-7"><section aria-labelledby="contact-form-title"><h2 id="contact-form-title" class="h3 fw-bold mb-3">Your project brief</h2><div id="contact-notice" class="alert alert-info brand-alert">Practice form only. Nothing is sent or saved. A valid submission returns to this form. Use sample details.</div><p class="small text-secondary">All fields are required except Company.</p>
+<form action="contact.html#contact-form-title" method="get" aria-describedby="contact-notice"><!-- Controls omit name attributes so demo entries are not serialized. --><div class="row g-3">
+<div class="col-12 col-sm-6"><label class="form-label" for="brief-name">Full name</label><input class="form-control" id="brief-name" type="text" autocomplete="name" required minlength="2" maxlength="100"></div>
+<div class="col-12 col-sm-6"><label class="form-label" for="brief-email">Email</label><input class="form-control" id="brief-email" type="email" autocomplete="email" required maxlength="254"></div>
+<div class="col-12"><label class="form-label" for="brief-company">Company <span class="small text-secondary">(optional)</span></label><input class="form-control" id="brief-company" type="text" autocomplete="organization" maxlength="100"></div>
+<div class="col-12"><label class="form-label" for="brief-service">Service</label><select class="form-select" id="brief-service" required><option value="" selected>Choose a service</option><option value="planning">Project planning</option><option value="collaboration">Client collaboration</option><option value="reporting">Progress reporting</option><option value="integration">Workspace integration</option></select></div>
+<div class="col-12"><label class="form-label" for="brief-message">Project outline</label><textarea class="form-control" id="brief-message" rows="5" required minlength="20" maxlength="2000" aria-describedby="brief-help"></textarea><div class="form-text" id="brief-help">Describe your goals and current workflow in 20 to 2,000 characters.</div></div>
+<div class="col-12"><div class="form-check"><input class="form-check-input" type="checkbox" id="brief-consent" required><label class="form-check-label" for="brief-consent">I understand this is a demo and agree to use sample information.</label></div></div>
+<div class="col-12"><button class="btn btn-primary" type="submit">Submit demo brief</button></div></div></form></section></div>
+<aside class="col-12 col-lg-5" aria-labelledby="prepare-title"><div class="card report-card border-0 rounded-4"><div class="card-body p-4"><p class="eyebrow">Before you write</p><h2 id="prepare-title" class="h4 fw-bold">A few helpful details</h2><ul class="text-secondary ps-3"><li class="mb-2">The people who will use the workspace.</li><li class="mb-2">The tools and steps in your current workflow.</li><li class="mb-2">The biggest coordination problem to solve.</li><li>Any timing, access, or integration constraints.</li></ul><p class="text-secondary">For a real project, the next step would be a scope discussion before agreeing delivery dates or costs. This demo does not send a request.</p><a class="link-brand fw-semibold" href="faq.html">Read common questions <span aria-hidden="true">&rarr;</span></a></div></div><div class="mt-4"><h2 class="h5 fw-bold">Still comparing the fit?</h2><p class="text-secondary">Explore the scope and sample plans before drafting a brief.</p><a class="link-brand me-3" href="services.html">Services</a><a class="link-brand" href="pricing.html">Pricing</a></div></aside></div>
+  </main>
+  <footer class="site-footer bg-white border-top mt-auto">
+    <div class="container py-4 py-md-5">
+      <div class="row g-4">
+        <div class="col-12 col-md-4"><a class="brand text-decoration-none" href="index.html">TechNova<span class="brand-dot" aria-hidden="true">.</span></a><p class="text-secondary small mt-2 mb-0">A clearer way to plan, collaborate, and deliver.<br>Fictional software company and learning project.</p></div>
+        <div class="col-12 col-md-8"><nav aria-label="Footer navigation"><ul class="list-unstyled row gy-2 mb-0"><li class="col-6 col-sm-4"><a class="link-brand" href="index.html">Home</a></li><li class="col-6 col-sm-4"><a class="link-brand" href="about.html">About</a></li><li class="col-6 col-sm-4"><a class="link-brand" href="services.html">Services</a></li><li class="col-6 col-sm-4"><a class="link-brand" href="products.html">Products</a></li><li class="col-6 col-sm-4"><a class="link-brand" href="service-detail.html">Service detail</a></li><li class="col-6 col-sm-4"><a class="link-brand" href="pricing.html">Pricing</a></li><li class="col-6 col-sm-4"><a class="link-brand" href="blog.html">Blog</a></li><li class="col-6 col-sm-4"><a class="link-brand" href="faq.html">FAQ</a></li><li class="col-6 col-sm-4"><a class="link-brand" href="contact.html">Contact</a></li><li class="col-6 col-sm-4"><a class="link-brand" href="blog-detail.html">Blog detail</a></li><li class="col-6 col-sm-4"><a class="link-brand" href="dashboard.html">Demo dashboard</a></li></ul></nav></div>
+      </div>
+      <div class="border-top mt-4 pt-3 d-flex flex-column flex-sm-row justify-content-between gap-2 small text-secondary"><p class="m-0">&copy; 2026 TechNova &middot; Omar Farran</p><p class="m-0">Demo only &middot; No purchases or submissions</p></div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,14 +1,15 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Compare three fictional TechNova plans in the B01 responsive pricing challenge.">
-  <title>TechNova | Pricing &amp; B01</title>
+  <meta name="description" content="Compare Starter, Professional, and Business sample plans for the fictional TechNova workspace.">
+  <title>TechNova | Pricing</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link href="assets/css/custom.css" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
   <a class="visually-hidden-focusable skip-link" href="#main-content">Skip to main content</a>
   <header class="bg-white border-bottom">
     <nav class="navbar navbar-expand-lg py-3" aria-label="Main navigation">
@@ -17,24 +18,28 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#main-navigation" aria-controls="main-navigation" aria-label="Open main navigation">
           <span class="navbar-toggler-icon" aria-hidden="true"></span>
         </button>
-        <div class="offcanvas offcanvas-end brand-offcanvas" tabindex="-1" id="main-navigation" aria-labelledby="navigation-title">
+        <section class="offcanvas offcanvas-end brand-offcanvas" tabindex="-1" id="main-navigation" aria-labelledby="navigation-title">
           <div class="offcanvas-header">
             <h2 class="offcanvas-title h5" id="navigation-title">TechNova navigation</h2>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close main navigation"></button>
           </div>
           <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 gap-2">
-                <li class="nav-item"><a class="nav-link rounded px-3" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link rounded px-3 active" href="pricing.html" aria-current="page">Pricing</a></li>
-                <li class="nav-item"><a class="nav-link rounded px-3" href="dashboard.html">Dashboard</a></li>
-                <li class="nav-item"><a class="nav-link rounded px-3" href="faq.html">FAQ</a></li>
+            <ul class="navbar-nav justify-content-end flex-grow-1 gap-1">
+              <li class="nav-item"><a class="nav-link rounded px-2" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link rounded px-2" href="about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link rounded px-2" href="services.html">Services</a></li>
+              <li class="nav-item"><a class="nav-link rounded px-2" href="products.html">Products</a></li>
+              <li class="nav-item"><a class="nav-link rounded px-2 active" href="pricing.html" aria-current="page">Pricing</a></li>
+              <li class="nav-item"><a class="nav-link rounded px-2" href="blog.html">Blog</a></li>
+              <li class="nav-item"><a class="nav-link rounded px-2" href="faq.html">FAQ</a></li>
+              <li class="nav-item"><a class="nav-link rounded px-2" href="contact.html">Contact</a></li>
             </ul>
           </div>
-        </div>
+        </section>
       </div>
     </nav>
   </header>
-  <main id="main-content" class="container py-5" tabindex="-1">
+  <main id="main-content" class="container py-5 flex-grow-1" tabindex="-1">
     <div class="text-center mb-5">
       <p class="eyebrow mb-3">Room to grow</p>
       <h1 class="display-5 fw-bold mb-3">A plan for your next chapter.</h1>
@@ -95,9 +100,16 @@
       </div>
       <a class="link-brand d-inline-block fw-semibold mt-4" href="dashboard.html">See the sample workspace <span aria-hidden="true">&rarr;</span></a>
     </section>
+<section class="card report-card border-0 rounded-4 mt-5" aria-labelledby="next-step-title"><div class="card-body p-4 p-md-5 d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between gap-4"><div><h2 id="next-step-title" class="h4 fw-bold">Need a hand choosing?</h2><p class="text-secondary mb-0">Review common questions or outline your team's needs in the sample brief.</p></div><a class="btn btn-primary flex-shrink-0" href="contact.html">Talk through your project <span aria-hidden="true">&rarr;</span></a></div></section>
   </main>
-  <footer class="container py-4 border-top d-flex flex-column flex-sm-row justify-content-between gap-2 small text-secondary">
-    <p class="m-0">TechNova &middot; B01 Responsive Pricing</p><p class="m-0">Learning project by Omar Farran</p>
+  <footer class="site-footer bg-white border-top mt-auto">
+    <div class="container py-4 py-md-5">
+      <div class="row g-4">
+        <div class="col-12 col-md-4"><a class="brand text-decoration-none" href="index.html">TechNova<span class="brand-dot" aria-hidden="true">.</span></a><p class="text-secondary small mt-2 mb-0">A clearer way to plan, collaborate, and deliver.<br>Fictional software company and learning project.</p></div>
+        <div class="col-12 col-md-8"><nav aria-label="Footer navigation"><ul class="list-unstyled row gy-2 mb-0"><li class="col-6 col-sm-4"><a class="link-brand" href="index.html">Home</a></li><li class="col-6 col-sm-4"><a class="link-brand" href="about.html">About</a></li><li class="col-6 col-sm-4"><a class="link-brand" href="services.html">Services</a></li><li class="col-6 col-sm-4"><a class="link-brand" href="products.html">Products</a></li><li class="col-6 col-sm-4"><a class="link-brand" href="service-detail.html">Service detail</a></li><li class="col-6 col-sm-4"><a class="link-brand" href="pricing.html">Pricing</a></li><li class="col-6 col-sm-4"><a class="link-brand" href="blog.html">Blog</a></li><li class="col-6 col-sm-4"><a class="link-brand" href="faq.html">FAQ</a></li><li class="col-6 col-sm-4"><a class="link-brand" href="contact.html">Contact</a></li><li class="col-6 col-sm-4"><a class="link-brand" href="blog-detail.html">Blog detail</a></li><li class="col-6 col-sm-4"><a class="link-brand" href="dashboard.html">Demo dashboard</a></li></ul></nav></div>
+      </div>
+      <div class="border-top mt-4 pt-3 d-flex flex-column flex-sm-row justify-content-between gap-2 small text-secondary"><p class="m-0">&copy; 2026 TechNova &middot; Omar Farran</p><p class="m-0">Demo only &middot; No purchases or submissions</p></div>
+    </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>

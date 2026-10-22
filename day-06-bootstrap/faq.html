@@ -7,8 +7,9 @@
   <title>TechNova | Frequently Asked Questions</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link href="assets/css/custom.css" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
   <a class="visually-hidden-focusable skip-link" href="#main-content">Skip to main content</a>
   <header class="bg-white border-bottom">
     <nav class="navbar navbar-expand-lg py-3" aria-label="Main navigation">
@@ -17,24 +18,28 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#main-navigation" aria-controls="main-navigation" aria-label="Open main navigation">
           <span class="navbar-toggler-icon" aria-hidden="true"></span>
         </button>
-        <div class="offcanvas offcanvas-end brand-offcanvas" tabindex="-1" id="main-navigation" aria-labelledby="navigation-title">
+        <section class="offcanvas offcanvas-end brand-offcanvas" tabindex="-1" id="main-navigation" aria-labelledby="navigation-title">
           <div class="offcanvas-header">
             <h2 class="offcanvas-title h5" id="navigation-title">TechNova navigation</h2>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close main navigation"></button>
           </div>
           <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 gap-2">
-                <li class="nav-item"><a class="nav-link rounded px-3" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link rounded px-3" href="pricing.html">Pricing</a></li>
-                <li class="nav-item"><a class="nav-link rounded px-3" href="dashboard.html">Dashboard</a></li>
-                <li class="nav-item"><a class="nav-link rounded px-3 active" href="faq.html" aria-current="page">FAQ</a></li>
+            <ul class="navbar-nav justify-content-end flex-grow-1 gap-1">
+              <li class="nav-item"><a class="nav-link rounded px-2" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link rounded px-2" href="about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link rounded px-2" href="services.html">Services</a></li>
+              <li class="nav-item"><a class="nav-link rounded px-2" href="products.html">Products</a></li>
+              <li class="nav-item"><a class="nav-link rounded px-2" href="pricing.html">Pricing</a></li>
+              <li class="nav-item"><a class="nav-link rounded px-2" href="blog.html">Blog</a></li>
+              <li class="nav-item"><a class="nav-link rounded px-2 active" href="faq.html" aria-current="page">FAQ</a></li>
+              <li class="nav-item"><a class="nav-link rounded px-2" href="contact.html">Contact</a></li>
             </ul>
           </div>
-        </div>
+        </section>
       </div>
     </nav>
   </header>
-  <main id="main-content" class="container py-5" tabindex="-1">
+  <main id="main-content" class="container py-5 flex-grow-1" tabindex="-1">
     <div class="row justify-content-center">
       <div class="col-12 col-lg-9 col-xl-8">
         <p class="eyebrow mb-3">A little clarity before you begin</p>
@@ -46,15 +51,15 @@
           <h2 class="accordion-header" id="faq-services-heading">
             <button class="accordion-button collapsed" id="faq-services-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq-services-answer" aria-expanded="false" aria-controls="faq-services-answer">What services do you provide?</button>
           </h2>
-          <div id="faq-services-answer" class="accordion-collapse collapse" aria-labelledby="faq-services-button" data-bs-parent="#faq-accordion">
-            <div class="accordion-body text-secondary">TechNova is a fictional workspace for project planning, client collaboration, and progress reporting. Explore the three feature cards on Home or the sample projects on Dashboard to see how these services fit together.</div>
+          <div id="faq-services-answer" class="accordion-collapse collapse" role="region" aria-labelledby="faq-services-button" data-bs-parent="#faq-accordion">
+            <div class="accordion-body text-secondary">TechNova is a fictional workspace for project planning, client collaboration, and progress reporting. Explore the <a href="index.html#features">three feature cards on Home</a> or the <a href="dashboard.html#projects">sample projects on Dashboard</a> to see how these services fit together.</div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header" id="faq-timeline-heading">
             <button class="accordion-button collapsed" id="faq-timeline-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq-timeline-answer" aria-expanded="false" aria-controls="faq-timeline-answer">How long does a project usually take?</button>
           </h2>
-          <div id="faq-timeline-answer" class="accordion-collapse collapse" aria-labelledby="faq-timeline-button" data-bs-parent="#faq-accordion">
+          <div id="faq-timeline-answer" class="accordion-collapse collapse" role="region" aria-labelledby="faq-timeline-button" data-bs-parent="#faq-accordion">
             <div class="accordion-body text-secondary">Timing depends on the scope, content readiness, and integration needs. A small workspace setup might take a few weeks, while a larger rollout needs more planning. A consultation would define milestones before a delivery date is agreed.</div>
           </div>
         </div>
@@ -62,15 +67,15 @@
           <h2 class="accordion-header" id="faq-support-heading">
             <button class="accordion-button collapsed" id="faq-support-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq-support-answer" aria-expanded="false" aria-controls="faq-support-answer">Do you provide maintenance and support?</button>
           </h2>
-          <div id="faq-support-answer" class="accordion-collapse collapse" aria-labelledby="faq-support-button" data-bs-parent="#faq-accordion">
-            <div class="accordion-body text-secondary">The sample plans include email support, with priority support in Professional and guided onboarding in Business. For a real project, ongoing maintenance, response times, and support coverage should be agreed before work begins.</div>
+          <div id="faq-support-answer" class="accordion-collapse collapse" role="region" aria-labelledby="faq-support-button" data-bs-parent="#faq-accordion">
+            <div class="accordion-body text-secondary">The <a href="pricing.html">sample plans</a> include email support, with priority support in Professional and guided onboarding in Business. For a real project, ongoing maintenance, response times, and support coverage should be agreed before work begins.</div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header" id="faq-integration-heading">
             <button class="accordion-button collapsed" id="faq-integration-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq-integration-answer" aria-expanded="false" aria-controls="faq-integration-answer">Can you integrate with existing systems?</button>
           </h2>
-          <div id="faq-integration-answer" class="accordion-collapse collapse" aria-labelledby="faq-integration-button" data-bs-parent="#faq-accordion">
+          <div id="faq-integration-answer" class="accordion-collapse collapse" role="region" aria-labelledby="faq-integration-button" data-bs-parent="#faq-accordion">
             <div class="accordion-body text-secondary">Integration starts with reviewing your current tools, available interfaces, and access requirements. The consultation form includes a workspace integration option. This learning project shows the layout only and does not connect to external systems.</div>
           </div>
         </div>
@@ -78,8 +83,8 @@
           <h2 class="accordion-header" id="faq-quotation-heading">
             <button class="accordion-button collapsed" id="faq-quotation-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq-quotation-answer" aria-expanded="false" aria-controls="faq-quotation-answer">How can I request a quotation?</button>
           </h2>
-          <div id="faq-quotation-answer" class="accordion-collapse collapse" aria-labelledby="faq-quotation-button" data-bs-parent="#faq-accordion">
-            <div class="accordion-body text-secondary">Use the Request a consultation button on Home to open the sample form. Include the service you are interested in, your goals, and a short project outline. The demo validates your entries in the browser; it does not send a request or create a quotation.</div>
+          <div id="faq-quotation-answer" class="accordion-collapse collapse" role="region" aria-labelledby="faq-quotation-button" data-bs-parent="#faq-accordion">
+            <div class="accordion-body text-secondary">Use the <a href="index.html#consultation">Request a consultation button on Home</a> to open the sample form. Include the service you are interested in, your goals, and a short project outline. The demo validates your entries in the browser; it does not send a request or create a quotation.</div>
           </div>
         </div>
         </div>
@@ -93,8 +98,14 @@
       </div>
     </div>
   </main>
-  <footer class="container py-4 border-top d-flex flex-column flex-sm-row justify-content-between gap-2 small text-secondary">
-    <p class="m-0">TechNova &middot; Day 7 FAQ</p><p class="m-0">Learning project by Omar Farran</p>
+  <footer class="site-footer bg-white border-top mt-auto">
+    <div class="container py-4 py-md-5">
+      <div class="row g-4">
+        <div class="col-12 col-md-4"><a class="brand text-decoration-none" href="index.html">TechNova<span class="brand-dot" aria-hidden="true">.</span></a><p class="text-secondary small mt-2 mb-0">A clearer way to plan, collaborate, and deliver.<br>Fictional software company and learning project.</p></div>
+        <div class="col-12 col-md-8"><nav aria-label="Footer navigation"><ul class="list-unstyled row gy-2 mb-0"><li class="col-6 col-sm-4"><a class="link-brand" href="index.html">Home</a></li><li class="col-6 col-sm-4"><a class="link-brand" href="about.html">About</a></li><li class="col-6 col-sm-4"><a class="link-brand" href="services.html">Services</a></li><li class="col-6 col-sm-4"><a class="link-brand" href="products.html">Products</a></li><li class="col-6 col-sm-4"><a class="link-brand" href="service-detail.html">Service detail</a></li><li class="col-6 col-sm-4"><a class="link-brand" href="pricing.html">Pricing</a></li><li class="col-6 col-sm-4"><a class="link-brand" href="blog.html">Blog</a></li><li class="col-6 col-sm-4"><a class="link-brand" href="faq.html">FAQ</a></li><li class="col-6 col-sm-4"><a class="link-brand" href="contact.html">Contact</a></li><li class="col-6 col-sm-4"><a class="link-brand" href="blog-detail.html">Blog detail</a></li><li class="col-6 col-sm-4"><a class="link-brand" href="dashboard.html">Demo dashboard</a></li></ul></nav></div>
+      </div>
+      <div class="border-top mt-4 pt-3 d-flex flex-column flex-sm-row justify-content-between gap-2 small text-secondary"><p class="m-0">&copy; 2026 TechNova &middot; Omar Farran</p><p class="m-0">Demo only &middot; No purchases or submissions</p></div>
+    </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
