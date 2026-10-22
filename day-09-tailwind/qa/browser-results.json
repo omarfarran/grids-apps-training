@@ -1,0 +1,262 @@
+{
+  "browser": "155.0.8059.86",
+  "base": "http://127.0.0.1:5173",
+  "results": [
+    {
+      "page": "index.html",
+      "width": 320,
+      "viewport": 320,
+      "document": 320,
+      "productColumns": 1,
+      "kpiColumns": null,
+      "sidebarPosition": null,
+      "tableWidth": null,
+      "tableViewport": null,
+      "heroColumns": 1,
+      "headings": [
+        "\n            Less busywork.More\n            good work.\n          "
+      ],
+      "keyboardControlsChecked": 12,
+      "passed": true
+    },
+    {
+      "page": "dashboard.html",
+      "width": 320,
+      "viewport": 320,
+      "document": 320,
+      "productColumns": null,
+      "kpiColumns": 1,
+      "sidebarPosition": "static",
+      "tableWidth": 672,
+      "tableViewport": 278,
+      "heroColumns": 1,
+      "headings": [
+        "\n                  Looking good, Alex.\n                "
+      ],
+      "keyboardControlsChecked": 11,
+      "passed": true
+    },
+    {
+      "page": "auth.html",
+      "width": 320,
+      "viewport": 320,
+      "document": 320,
+      "productColumns": null,
+      "kpiColumns": null,
+      "sidebarPosition": null,
+      "tableWidth": null,
+      "tableViewport": null,
+      "heroColumns": null,
+      "headings": [
+        "\n          Make room for good work.\n        "
+      ],
+      "keyboardControlsChecked": 20,
+      "passed": true
+    },
+    {
+      "page": "index.html",
+      "width": 390,
+      "viewport": 390,
+      "document": 390,
+      "productColumns": 1,
+      "kpiColumns": null,
+      "sidebarPosition": null,
+      "tableWidth": null,
+      "tableViewport": null,
+      "heroColumns": 1,
+      "headings": [
+        "\n            Less busywork.More\n            good work.\n          "
+      ],
+      "keyboardControlsChecked": 12,
+      "passed": true
+    },
+    {
+      "page": "dashboard.html",
+      "width": 390,
+      "viewport": 390,
+      "document": 390,
+      "productColumns": null,
+      "kpiColumns": 1,
+      "sidebarPosition": "static",
+      "tableWidth": 672,
+      "tableViewport": 348,
+      "heroColumns": 1,
+      "headings": [
+        "\n                  Looking good, Alex.\n                "
+      ],
+      "keyboardControlsChecked": 11,
+      "passed": true
+    },
+    {
+      "page": "auth.html",
+      "width": 390,
+      "viewport": 390,
+      "document": 390,
+      "productColumns": null,
+      "kpiColumns": null,
+      "sidebarPosition": null,
+      "tableWidth": null,
+      "tableViewport": null,
+      "heroColumns": null,
+      "headings": [
+        "\n          Make room for good work.\n        "
+      ],
+      "keyboardControlsChecked": 20,
+      "passed": true
+    },
+    {
+      "page": "index.html",
+      "width": 768,
+      "viewport": 768,
+      "document": 768,
+      "productColumns": 2,
+      "kpiColumns": null,
+      "sidebarPosition": null,
+      "tableWidth": null,
+      "tableViewport": null,
+      "heroColumns": 1,
+      "headings": [
+        "\n            Less busywork.More\n            good work.\n          "
+      ],
+      "keyboardControlsChecked": 12,
+      "passed": true
+    },
+    {
+      "page": "dashboard.html",
+      "width": 768,
+      "viewport": 768,
+      "document": 768,
+      "productColumns": null,
+      "kpiColumns": 2,
+      "sidebarPosition": "static",
+      "tableWidth": 702,
+      "tableViewport": 702,
+      "heroColumns": 1,
+      "headings": [
+        "\n                  Looking good, Alex.\n                "
+      ],
+      "keyboardControlsChecked": 11,
+      "passed": true
+    },
+    {
+      "page": "auth.html",
+      "width": 768,
+      "viewport": 768,
+      "document": 768,
+      "productColumns": null,
+      "kpiColumns": null,
+      "sidebarPosition": null,
+      "tableWidth": null,
+      "tableViewport": null,
+      "heroColumns": null,
+      "headings": [
+        "\n          Make room for good work.\n        "
+      ],
+      "keyboardControlsChecked": 21,
+      "passed": true
+    },
+    {
+      "page": "index.html",
+      "width": 1024,
+      "viewport": 1024,
+      "document": 1024,
+      "productColumns": 3,
+      "kpiColumns": null,
+      "sidebarPosition": null,
+      "tableWidth": null,
+      "tableViewport": null,
+      "heroColumns": 2,
+      "headings": [
+        "\n            Less busywork.More\n            good work.\n          "
+      ],
+      "keyboardControlsChecked": 12,
+      "passed": true
+    },
+    {
+      "page": "dashboard.html",
+      "width": 1024,
+      "viewport": 1024,
+      "document": 1024,
+      "productColumns": null,
+      "kpiColumns": 2,
+      "sidebarPosition": "sticky",
+      "tableWidth": 718,
+      "tableViewport": 718,
+      "heroColumns": 1,
+      "headings": [
+        "\n                  Looking good, Alex.\n                "
+      ],
+      "keyboardControlsChecked": 11,
+      "passed": true
+    },
+    {
+      "page": "auth.html",
+      "width": 1024,
+      "viewport": 1024,
+      "document": 1024,
+      "productColumns": null,
+      "kpiColumns": null,
+      "sidebarPosition": null,
+      "tableWidth": null,
+      "tableViewport": null,
+      "heroColumns": null,
+      "headings": [
+        "\n          Make room for good work.\n        "
+      ],
+      "keyboardControlsChecked": 20,
+      "passed": true
+    },
+    {
+      "page": "index.html",
+      "width": 1366,
+      "viewport": 1366,
+      "document": 1366,
+      "productColumns": 3,
+      "kpiColumns": null,
+      "sidebarPosition": null,
+      "tableWidth": null,
+      "tableViewport": null,
+      "heroColumns": 2,
+      "headings": [
+        "\n            Less busywork.More\n            good work.\n          "
+      ],
+      "keyboardControlsChecked": 12,
+      "passed": true
+    },
+    {
+      "page": "dashboard.html",
+      "width": 1366,
+      "viewport": 1366,
+      "document": 1366,
+      "productColumns": null,
+      "kpiColumns": 4,
+      "sidebarPosition": "sticky",
+      "tableWidth": 1044,
+      "tableViewport": 1044,
+      "heroColumns": 1,
+      "headings": [
+        "\n                  Looking good, Alex.\n                "
+      ],
+      "keyboardControlsChecked": 12,
+      "passed": true
+    },
+    {
+      "page": "auth.html",
+      "width": 1366,
+      "viewport": 1366,
+      "document": 1366,
+      "productColumns": null,
+      "kpiColumns": null,
+      "sidebarPosition": null,
+      "tableWidth": null,
+      "tableViewport": null,
+      "heroColumns": null,
+      "headings": [
+        "\n          Make room for good work.\n        "
+      ],
+      "keyboardControlsChecked": 20,
+      "passed": true
+    }
+  ],
+  "errors": []
+}
